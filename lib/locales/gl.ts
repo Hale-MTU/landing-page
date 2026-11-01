@@ -97,7 +97,7 @@ const gl: Messages = {
       },
       {
         title: 'Importa o que xa tes',
-        text: 'Trae exportacións de Apple Health e ficheiros FIT, GPX, KML/KMZ, TCX e CSV, dun en un ou por cartafoles enteiros. Un CSV pode traer as pesaxes dunha báscula ou unha folla de comidas. O historial que fixeches noutro sitio vén contigo.',
+        text: 'Trae exportacións de Apple Health e ficheiros FIT, GPX, KML/KMZ, TCX e CSV, dun en un ou por cartafoles enteiros. Un CSV pode traer as pesaxes dunha báscula, un rexistro de presión arterial, unha folla de comidas ou os adestramentos que exportaches. O historial que fixeches noutro sitio vén contigo.',
         accent: '#2f6f9f'
       },
       {

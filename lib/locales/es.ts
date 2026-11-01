@@ -97,7 +97,7 @@ const es: Messages = {
       },
       {
         title: 'Importa lo que ya tienes',
-        text: 'Trae exportaciones de Apple Health, y archivos FIT, GPX, KML/KMZ, TCX y CSV, de uno en uno o por carpetas enteras. Un CSV puede traer los pesajes de una báscula o una hoja de cálculo de comidas. El historial que construiste en otro sitio te acompaña.',
+        text: 'Trae exportaciones de Apple Health, y archivos FIT, GPX, KML/KMZ, TCX y CSV, de uno en uno o por carpetas enteras. Un CSV puede traer los pesajes de una báscula, un registro de presión arterial, una hoja de cálculo de comidas o los entrenamientos que exportaste. El historial que construiste en otro sitio te acompaña.',
         accent: '#2f6f9f'
       },
       {

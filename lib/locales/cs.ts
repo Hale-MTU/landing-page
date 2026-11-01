@@ -97,7 +97,7 @@ const cs: Messages = {
       },
       {
         title: 'Importujte, co už máte',
-        text: 'Přeneste si exporty z Apple Health a soubory FIT, GPX, KML/KMZ, TCX a CSV, po jednom nebo celé složky. CSV může obsahovat vážení z váhy i tabulku jídel. Historie, kterou jste nasbírali jinde, jde s vámi.',
+        text: 'Přeneste si exporty z Apple Health a soubory FIT, GPX, KML/KMZ, TCX a CSV, po jednom nebo celé složky. CSV může obsahovat vážení z váhy, deník krevního tlaku, tabulku jídel nebo exportované tréninky. Historie, kterou jste nasbírali jinde, jde s vámi.',
         accent: '#2f6f9f'
       },
       {

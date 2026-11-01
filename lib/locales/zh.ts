@@ -97,7 +97,7 @@ const zh: Messages = {
       },
       {
         title: '带上你已有的数据',
-        text: '可导入 Apple Health 导出数据，以及 FIT、GPX、KML/KMZ、TCX 和 CSV 文件，既能逐个导入，也能整个文件夹导入。CSV 既可以是体重秤的称重记录，也可以是一份餐食表格。你在别处积累的历史记录，都能一起带过来。',
+        text: '可导入 Apple Health 导出数据，以及 FIT、GPX、KML/KMZ、TCX 和 CSV 文件，既能逐个导入，也能整个文件夹导入。CSV 可以是体重秤的称重记录、血压记录、餐食表格，或你导出的锻炼记录。你在别处积累的历史记录，都能一起带过来。',
         accent: '#2f6f9f'
       },
       {

@@ -97,7 +97,7 @@ const fi: Messages = {
       },
       {
         title: 'Tuo se, mitä sinulla jo on',
-        text: 'Tuo Apple Health -viennit sekä FIT-, GPX-, KML/KMZ-, TCX- ja CSV-tiedostot yksitellen tai kokonaisina kansioina. CSV-tiedostossa voi olla vaa\'an punnitukset tai aterioiden taulukko. Muualla kertynyt historiasi tulee mukanasi.',
+        text: 'Tuo Apple Health -viennit sekä FIT-, GPX-, KML/KMZ-, TCX- ja CSV-tiedostot yksitellen tai kokonaisina kansioina. CSV-tiedostossa voi olla vaa\'an punnitukset, verenpaineloki, aterioiden taulukko tai viedyt harjoitukset. Muualla kertynyt historiasi tulee mukanasi.',
         accent: '#2f6f9f'
       },
       {

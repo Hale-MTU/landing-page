@@ -97,7 +97,7 @@ const fr: Messages = {
       },
       {
         title: 'Importez ce que vous avez déjà',
-        text: "Importez vos exports Apple Santé et vos fichiers FIT, GPX, KML/KMZ, TCX et CSV, un par un ou par dossiers entiers. Un CSV peut contenir les pesées d'une balance ou un tableau de vos repas. L'historique que vous avez construit ailleurs vous suit.",
+        text: "Importez vos exports Apple Santé et vos fichiers FIT, GPX, KML/KMZ, TCX et CSV, un par un ou par dossiers entiers. Un CSV peut contenir les pesées d'une balance, un relevé de tension, un tableau de vos repas ou les entraînements que vous avez exportés. L'historique que vous avez construit ailleurs vous suit.",
         accent: '#2f6f9f'
       },
       {

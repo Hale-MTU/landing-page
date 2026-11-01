@@ -97,7 +97,7 @@ const it: Messages = {
       },
       {
         title: 'Importa quello che hai già',
-        text: 'Aggiungi le esportazioni di Apple Health e i file FIT, GPX, KML/KMZ, TCX e CSV, uno alla volta o per cartelle intere. Un CSV può contenere le pesate di una bilancia o un foglio con i tuoi pasti. Lo storico che hai costruito altrove ti segue.',
+        text: 'Aggiungi le esportazioni di Apple Health e i file FIT, GPX, KML/KMZ, TCX e CSV, uno alla volta o per cartelle intere. Un CSV può contenere le pesate di una bilancia, un diario della pressione, un foglio con i tuoi pasti o gli allenamenti che hai esportato. Lo storico che hai costruito altrove ti segue.',
         accent: '#2f6f9f'
       },
       {

@@ -97,7 +97,7 @@ const et: Messages = {
       },
       {
         title: 'Too kaasa, mis sul juba olemas on',
-        text: 'Impordi Apple Healthi ekspordid ning FIT-, GPX-, KML/KMZ-, TCX- ja CSV-failid ükshaaval või terve kausta korraga. CSV-fail võib sisaldada kaalu mõõtmisi või toidukordade tabelit. Mujal kogunenud ajalugu tuleb sinuga kaasa.',
+        text: 'Impordi Apple Healthi ekspordid ning FIT-, GPX-, KML/KMZ-, TCX- ja CSV-failid ükshaaval või terve kausta korraga. CSV-fail võib sisaldada kaalu mõõtmisi, vererõhu logi, toidukordade tabelit või eksporditud treeninguid. Mujal kogunenud ajalugu tuleb sinuga kaasa.',
         accent: '#2f6f9f'
       },
       {

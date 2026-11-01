@@ -97,7 +97,7 @@ const de: Messages = {
       },
       {
         title: 'Importiere, was du schon hast',
-        text: 'Übernimm Exporte aus Apple Health sowie FIT-, GPX-, KML/KMZ-, TCX- und CSV-Dateien, einzeln oder als ganze Ordner. Eine CSV-Datei kann die Messungen einer Waage oder eine Tabelle deiner Mahlzeiten enthalten. Was du anderswo gesammelt hast, kommt mit.',
+        text: 'Übernimm Exporte aus Apple Health sowie FIT-, GPX-, KML/KMZ-, TCX- und CSV-Dateien, einzeln oder als ganze Ordner. Eine CSV-Datei kann die Messungen einer Waage, ein Blutdruckprotokoll, eine Tabelle deiner Mahlzeiten oder exportierte Trainings enthalten. Was du anderswo gesammelt hast, kommt mit.',
         accent: '#2f6f9f'
       },
       {

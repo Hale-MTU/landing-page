@@ -97,7 +97,7 @@ const en: Messages = {
       },
       {
         title: 'Import what you already have',
-        text: 'Bring in Apple Health exports, FIT, GPX, KML/KMZ, TCX, and CSV files, one at a time or whole folders. A CSV can hold a scale\'s weigh-ins or a spreadsheet of meals. The history you built elsewhere comes with you.',
+        text: 'Bring in Apple Health exports, FIT, GPX, KML/KMZ, TCX, and CSV files, one at a time or whole folders. A CSV can hold a scale\'s weigh-ins, a blood pressure log, a spreadsheet of meals or the workouts you exported. The history you built elsewhere comes with you.',
         accent: '#2f6f9f'
       },
       {
