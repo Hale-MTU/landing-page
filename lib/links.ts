@@ -4,10 +4,12 @@ export const siteUrl = 'https://hale.ngo'
 export const orgUrl = 'https://github.com/Hale-MTU'
 
 export const docsUrl = 'https://docs.hale.ngo'
-export const installUrl = `${docsUrl}/app/install`
-export const privacyUrl = `${docsUrl}/app/privacy`
-export const supportUrl = `${docsUrl}/support`
-export const healthConnectDocsUrl = `${docsUrl}/app/health-connect`
+/** The OpenVitals section of the docs; the docs give each app its own. */
+export const openVitalsDocsUrl = `${docsUrl}/openvitals/`
+export const installUrl = `${openVitalsDocsUrl}app/install/`
+export const privacyUrl = `${openVitalsDocsUrl}app/privacy/`
+export const supportUrl = `${openVitalsDocsUrl}support/`
+export const healthConnectDocsUrl = `${openVitalsDocsUrl}app/health-connect/`
 
 export const translateUrl = 'https://translate.codeberg.org/projects/openvitals/mobile-app/'
 export const liberapayUrl = 'https://liberapay.com/manuel.mmarca.tech/donate'
