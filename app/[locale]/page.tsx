@@ -1,106 +1,31 @@
 import Image from 'next/image'
-import type { CSSProperties } from 'react'
+import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { LanguageSwitcher } from '@/app/components/LanguageSwitcher'
-import { isLocale, localeTags, type Locale } from '@/lib/i18n'
+import { ArrowIcon, CheckIcon } from '@/app/components/Icons'
+import { OpenVitalsHashForward } from '@/app/components/OpenVitalsHashForward'
+import { SiteFooter } from '@/app/components/SiteFooter'
+import { SiteHeader } from '@/app/components/SiteHeader'
+import { isLocale, type Locale } from '@/lib/i18n'
+import { appMarks, appNames, appPath, apps } from '@/lib/links'
 import { getMessages } from '@/lib/messages'
+import { pageMetadata } from '@/lib/seo'
 
-const docsUrl = 'https://docs.hale.ngo'
-const installUrl = `${docsUrl}/app/install`
-const privacyUrl = `${docsUrl}/app/privacy`
-const supportUrl = `${docsUrl}/support`
-const codeUrl = 'https://github.com/Hale-MTU/android-app'
-const translateUrl = 'https://translate.codeberg.org/projects/openvitals/mobile-app/'
-const liberapayUrl = 'https://liberapay.com/manuel.mmarca.tech/donate'
-const releasesUrl = `${codeUrl}/releases`
-const playStoreUrl =
-  'https://play.google.com/store/apps/details?id=tech.mmarca.openvitals'
-const openWatchPlayUrl =
-  'https://play.google.com/store/apps/details?id=tech.mmarca.openwatch'
-const openBridgeUrl = 'https://github.com/Hale-MTU/OpenBridge'
-const fdroidUrl = 'https://f-droid.org/en/packages/tech.mmarca.openvitals/'
-const healthConnectDocsUrl = `${docsUrl}/app/health-connect`
-
-/** The Play listing in the page's language; each app language has one. */
-function playStoreHref(locale: Locale) {
-  return `${playStoreUrl}&hl=${localeTags[locale].replace('-', '_')}`
-}
-
-function installHref(key: 'playStore' | 'fdroid' | 'releases', locale: Locale) {
-  if (key === 'playStore') return playStoreHref(locale)
-  return key === 'fdroid' ? fdroidUrl : releasesUrl
-}
-
-function ArrowIcon() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24">
-      <path d="M5 12h12.1m-4.6-5 5 5-5 5" />
-    </svg>
-  )
-}
-
-function ExternalIcon() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24">
-      <path d="M14 5h5v5" />
-      <path d="m10 14 9-9" />
-      <path d="M19 14v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4" />
-    </svg>
-  )
-}
-
-function CheckIcon() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24">
-      <path d="m5 12 4.1 4.1L19 6.2" />
-    </svg>
-  )
-}
-
-function StarIcon({ filled }: { filled: boolean }) {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      className={filled ? 'star star-filled' : 'star'}
-    >
-      <path d="m12 2.8 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.7l-5.9 3.1 1.2-6.5-4.8-4.6 6.6-.9z" />
-    </svg>
-  )
-}
-
-function ReviewStars({ rating, label }: { rating: number; label: string }) {
-  return (
-    <span className="review-stars" role="img" aria-label={label}>
-      {[1, 2, 3, 4, 5].map((step) => (
-        <StarIcon key={step} filled={step <= rating} />
-      ))}
-    </span>
-  )
-}
-
-function PhoneShot({
-  src,
-  alt,
-  priority = false,
-  className = ''
+export async function generateMetadata({
+  params
 }: {
-  src: string
-  alt: string
-  priority?: boolean
-  className?: string
-}) {
-  return (
-    <div className={`phone-shot ${className}`}>
-      <Image
-        src={src}
-        alt={alt}
-        fill
-        priority={priority}
-        sizes="(max-width: 760px) 56vw, 260px"
-      />
-    </div>
-  )
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  if (!isLocale(locale)) return {}
+  const copy = getMessages(locale)
+  return pageMetadata({
+    locale,
+    path: '',
+    title: copy.hale.metaTitle,
+    description: copy.hale.metaDescription,
+    image: { url: '/images/social-hale.png', width: 1280, height: 640, alt: 'Hale' },
+    absoluteTitle: true
+  })
 }
 
 export default async function Home({
@@ -112,47 +37,20 @@ export default async function Home({
   if (!isLocale(rawLocale)) notFound()
   const locale: Locale = rawLocale
   const copy = getMessages(locale)
-  // Review dates are rendered as "August 2026" / "agosto de 2026", in UTC so
-  // the ISO day never shifts across the server's timezone.
-  const reviewDate = new Intl.DateTimeFormat(localeTags[locale], {
-    year: 'numeric',
-    month: 'long',
-    timeZone: 'UTC'
-  })
 
   return (
     <main>
-      <header className="site-header" aria-label={copy.nav.primary}>
-        <a className="brand" href={`/${locale}/#top`} aria-label={copy.nav.home}>
-          <Image src="/images/hale-mark.png" alt="" width={40} height={40} priority />
-          <Image
-            className="brand-wordmark"
-            src="/images/hale-wordmark.png"
-            alt="Hale"
-            width={96}
-            height={32}
-            priority
-          />
-        </a>
-        <nav>
-          <a href={`/${locale}/#privacy`}>{copy.nav.privacy}</a>
-          <a href={`/${locale}/#features`}>{copy.nav.features}</a>
-          <a href={docsUrl}>{copy.nav.docs}</a>
-          <LanguageSwitcher locale={locale} label={copy.nav.language} />
-          <a className="nav-action" href={`/${locale}/#install`}>
-            {copy.nav.install}
-          </a>
-        </nav>
-      </header>
+      <OpenVitalsHashForward locale={locale} />
+      <SiteHeader locale={locale} copy={copy} />
 
       <section className="hale-hero" id="top">
-        <div className="hale-copy">
+        <div>
           <p className="eyebrow">{copy.hale.eyebrow}</p>
           <h1>{copy.hale.title}</h1>
           <p className="hale-lede">{copy.hale.text}</p>
         </div>
         <Image
-          className="hale-mark"
+          className="hale-hero-mark"
           src="/images/hale-mark.png"
           alt=""
           width={300}
@@ -161,289 +59,39 @@ export default async function Home({
         />
       </section>
 
-      <section className="apps-grid" id="apps" aria-label={copy.hale.appsLabel}>
-        <article className="app-card">
-          <Image src="/images/openvitals-logo.png" alt="" width={64} height={44} />
-          <h3>OpenVitals</h3>
-          <p>{copy.hale.apps.openvitals.text}</p>
-          <a className="text-link" href={`/${locale}/#openvitals`}>
-            {copy.hale.apps.openvitals.link}
-            <ArrowIcon />
-          </a>
-        </article>
-        <article className="app-card">
-          <Image src="/images/openwatch-mark.png" alt="" width={64} height={64} />
-          <h3>OpenWatch</h3>
-          <p>{copy.hale.apps.openwatch.text}</p>
-          <a className="text-link" href={openWatchPlayUrl}>
-            {copy.hale.apps.openwatch.link}
-            <ExternalIcon />
-          </a>
-        </article>
-        <article className="app-card">
-          <Image src="/images/openbridge-mark.png" alt="" width={64} height={64} />
-          <h3>OpenBridge</h3>
-          <p>{copy.hale.apps.openbridge.text}</p>
-          <a className="text-link" href={openBridgeUrl}>
-            {copy.hale.apps.openbridge.link}
-            <ExternalIcon />
-          </a>
-        </article>
-      </section>
-
-      <section className="hero" id="openvitals">
-        <div className="hero-media" aria-hidden="true">
-          <PhoneShot
-            src={`/images/screens/${locale}/dashboard.png`}
-            alt=""
-            priority
-            className="phone-shot-primary"
-          />
-          <PhoneShot
-            src={`/images/screens/${locale}/steps-day.png`}
-            alt=""
-            priority
-            className="phone-shot-secondary"
-          />
-        </div>
-
-        <div className="hero-copy">
-          <p className="eyebrow">{copy.hero.eyebrow}</p>
-          <h2 className="hero-title">OpenVitals</h2>
-          <p className="hero-lede">{copy.hero.lede}</p>
-          <div className="hero-actions" aria-label={copy.hero.actionsLabel}>
-            <a className="button button-primary" href={`/${locale}/#install`}>
-              {copy.hero.install}
+      <section className="apps-grid" aria-label={copy.hale.appsLabel}>
+        {apps.map((app) => (
+          <a className="app-card" href={appPath(locale, app)} key={app}>
+            <Image src={appMarks[app]} alt="" width={96} height={96} />
+            <h2>{appNames[app]}</h2>
+            <p>{copy.hale.apps[app].text}</p>
+            <span className="text-link">
+              {copy.hale.apps[app].link}
               <ArrowIcon />
-            </a>
-            <a className="button button-secondary" href={docsUrl}>
-              {copy.hero.docs}
-              <ExternalIcon />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section className="proof-band" aria-label={copy.proof.label}>
-        {copy.proof.points.map((point) => (
-          <div className="proof-item" key={point}>
-            <CheckIcon />
-            <span>{point}</span>
-          </div>
+            </span>
+          </a>
         ))}
       </section>
 
-      <section className="section section-intro">
-        <div className="section-copy">
-          <p className="eyebrow">{copy.intro.eyebrow}</p>
-          <h2>{copy.intro.title}</h2>
-        </div>
-        <p className="section-text">{copy.intro.text}</p>
-      </section>
-
-      <section className="privacy-section" id="privacy">
-        <div className="privacy-copy">
-          <p className="eyebrow">{copy.privacy.eyebrow}</p>
-          <h2>{copy.privacy.title}</h2>
-          <p>{copy.privacy.text}</p>
-          <a className="text-link" href={privacyUrl}>
-            {copy.privacy.link}
-            <ArrowIcon />
-          </a>
-        </div>
-        <div className="privacy-list" aria-label={copy.privacy.detailsLabel}>
-          {copy.privacy.items.map((item) => (
-            <div key={item.title}>
-              <strong>{item.title}</strong>
-              <span>{item.text}</span>
+      <section className="principles" aria-labelledby="principles-heading">
+        <h2 id="principles-heading">{copy.hale.principlesTitle}</h2>
+        <div className="principles-grid">
+          {copy.hale.principles.map((principle) => (
+            <div key={principle.title}>
+              <CheckIcon />
+              <strong>{principle.title}</strong>
+              <span>{principle.text}</span>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="devices-section" id="devices">
-        <div className="devices-copy">
-          <p className="eyebrow">{copy.devices.eyebrow}</p>
-          <h2>{copy.devices.title}</h2>
-          <p>{copy.devices.text}</p>
-          <a className="text-link" href={healthConnectDocsUrl}>
-            {copy.devices.link}
-            <ArrowIcon />
-          </a>
-        </div>
-        <div className="devices-list" aria-label={copy.devices.listLabel}>
-          {copy.devices.points.map((point) => (
-            <div key={point.title}>
-              <strong>{point.title}</strong>
-              <span>{point.text}</span>
-            </div>
-          ))}
-        </div>
+      <section className="about-hale" aria-labelledby="about-heading">
+        <h2 id="about-heading">{copy.hale.aboutTitle}</h2>
+        <p>{copy.hale.aboutText}</p>
       </section>
 
-      <section className="feature-section" id="features">
-        <div className="section-heading">
-          <p className="eyebrow">{copy.features.eyebrow}</p>
-          <h2>{copy.features.title}</h2>
-        </div>
-        <div className="feature-grid">
-          {copy.features.cards.map((feature) => (
-            <article
-              className="feature-card"
-              key={feature.title}
-              style={{ '--accent': feature.accent } as CSSProperties}
-            >
-              <span aria-hidden="true" />
-              <h3>{feature.title}</h3>
-              <p>{feature.text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="screens-section" aria-label={copy.screens.label}>
-        <div className="section-heading">
-          <p className="eyebrow">{copy.screens.eyebrow}</p>
-          <h2>{copy.screens.title}</h2>
-        </div>
-        <div className="screens-grid">
-          {copy.screens.items.map((screenshot) => (
-            <figure key={screenshot.label}>
-              <PhoneShot src={screenshot.src} alt={screenshot.alt} />
-              <figcaption>{screenshot.label}</figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
-
-      <section className="reviews-section" aria-label={copy.reviews.label}>
-        <div className="section-heading reviews-heading">
-          <div>
-            <p className="eyebrow">{copy.reviews.eyebrow}</p>
-            <h2>{copy.reviews.title}</h2>
-            <p className="section-text">{copy.reviews.text}</p>
-          </div>
-          <a className="text-link" href={playStoreHref(locale)}>
-            {copy.reviews.link}
-            <ExternalIcon />
-          </a>
-        </div>
-        <div
-          className="reviews-track"
-          role="region"
-          aria-label={copy.reviews.trackLabel}
-          tabIndex={0}
-        >
-          {copy.reviews.items.map((review, index) => (
-            <figure className="review-card" key={`${review.author}-${index}`}>
-              <ReviewStars
-                rating={review.rating}
-                label={copy.reviews.ratingLabel.replace(
-                  '{rating}',
-                  String(review.rating)
-                )}
-              />
-              <blockquote>
-                <p>{review.text}</p>
-              </blockquote>
-              <figcaption>
-                <span>{review.author}</span>
-                <time dateTime={review.date}>
-                  {reviewDate.format(new Date(review.date))}
-                </time>
-                {review.translated && (
-                  <small className="review-translated">
-                    {copy.reviews.translatedNote}
-                  </small>
-                )}
-              </figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
-
-      <section className="install-section" id="install">
-        <div>
-          <p className="eyebrow">{copy.install.eyebrow}</p>
-          <h2>{copy.install.title}</h2>
-          <p>{copy.install.text}</p>
-        </div>
-        <div className="install-card-grid">
-          {copy.install.cards.map((card) => (
-            <a
-              className="install-card"
-              href={installHref(card.hrefKey, locale)}
-              key={card.title}
-            >
-              <span className="badge-frame">
-                <img src={card.badge} alt={card.alt} loading="lazy" />
-              </span>
-              <span>
-                <strong>{card.title}</strong>
-                <small>{card.text}</small>
-              </span>
-            </a>
-          ))}
-        </div>
-        <div className="install-links" aria-label={copy.install.moreLabel}>
-          <a href={installUrl}>
-            {copy.install.guide}
-            <ArrowIcon />
-          </a>
-        </div>
-      </section>
-
-      <section className="support-section" aria-labelledby="support-heading">
-        <div>
-          <p className="eyebrow">{copy.support.eyebrow}</p>
-          <h2 id="support-heading">{copy.support.title}</h2>
-          <p>{copy.support.text}</p>
-        </div>
-        <div className="support-actions" aria-label={copy.support.actionsLabel}>
-          <a className="button button-primary" href={playStoreHref(locale)}>
-            {copy.support.review}
-            <ExternalIcon />
-          </a>
-          <a className="button button-secondary" href={translateUrl}>
-            {copy.support.translate}
-            <ExternalIcon />
-          </a>
-          <a className="liberapay-badge" href={liberapayUrl}>
-            <img
-              src="https://liberapay.com/assets/widgets/donate.svg"
-              alt={copy.support.liberapayAlt}
-              width="83"
-              height="30"
-              loading="lazy"
-            />
-          </a>
-          <a className="button button-secondary" href={supportUrl}>
-            {copy.support.more}
-            <ArrowIcon />
-          </a>
-        </div>
-      </section>
-
-      <footer className="site-footer">
-        <a className="brand" href={`/${locale}/#top`} aria-label={copy.nav.home}>
-          <Image src="/images/hale-mark.png" alt="" width={34} height={34} />
-          <Image
-            className="brand-wordmark"
-            src="/images/hale-wordmark.png"
-            alt="Hale"
-            width={84}
-            height={28}
-          />
-        </a>
-        <p className="footer-publisher">{copy.footer.publisher}</p>
-        <nav aria-label={copy.footer.nav}>
-          <a href={docsUrl}>{copy.footer.documentation}</a>
-          <a href={privacyUrl}>{copy.footer.privacy}</a>
-          <a href={codeUrl}>{copy.footer.source}</a>
-          <a href={translateUrl}>{copy.footer.translate}</a>
-          <a href={supportUrl}>{copy.footer.support}</a>
-        </nav>
-      </footer>
+      <SiteFooter locale={locale} copy={copy} />
     </main>
   )
 }

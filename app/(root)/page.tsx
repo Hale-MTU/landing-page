@@ -6,7 +6,7 @@ import { getMessages } from '@/lib/messages'
 export const metadata: Metadata = {
   metadataBase: new URL('https://hale.ngo'),
   title: 'Hale',
-  description: getMessages('en').meta.description,
+  description: getMessages('en').hale.metaDescription,
   alternates: {
     languages: {
       ...Object.fromEntries(locales.map((code) => [localeTags[code], `/${code}/`])),

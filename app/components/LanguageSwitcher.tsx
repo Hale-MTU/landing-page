@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import type { Locale } from '@/lib/i18n'
 import { localeCookieName, localeLabels, locales } from '@/lib/i18n'
 
@@ -18,6 +18,7 @@ export function LanguageSwitcher({
   label: string
 }) {
   const router = useRouter()
+  const pathname = usePathname()
 
   // Every language page remembers its language, as the server's middleware did
   // before the site went static.
@@ -26,7 +27,9 @@ export function LanguageSwitcher({
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value as Locale
     rememberLocale(newLocale)
-    router.push(`/${newLocale}/`)
+    // Stay on the same page: /en/openwatch/ becomes /de/openwatch/.
+    const rest = pathname.split('/').slice(2).join('/')
+    router.push(`/${newLocale}/${rest}`)
   }
 
   return (

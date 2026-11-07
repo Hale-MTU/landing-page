@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const pl: Messages = {
   meta: {
-    title: 'Hale: OpenVitals - Panel zdrowia na Androida, dane zostają w telefonie',
+    title: 'OpenVitals - Panel zdrowia na Androida, dane zostają w telefonie',
     description:
       'OpenVitals to aplikacja na Androida do przeglądania, zapisywania, importowania i lepszego rozumienia danych z Health Connect. Dane zostają w telefonie. Bez konta, reklam i analityki.',
     ogDescription:
@@ -17,14 +17,56 @@ const pl: Messages = {
     appsLabel: 'Aplikacje',
     apps: {
       openvitals: { text: 'Pulpit. Odczytuje Twoje rekordy Health Connect i zamienia je w dzienny widok; importuje, rejestruje i zapisuje, wszystko w telefonie.', link: 'O OpenVitals' },
-      openwatch: { text: 'Urządzenia. Paruje zegarki Garmin i Wear OS oraz wagę Xiaomi przez Bluetooth i kopiuje ich zapisy do Health Connect.', link: 'OpenWatch w Google Play' },
-      openbridge: { text: 'Wyjście na zewnątrz. Opcjonalna aplikacja, która przekazuje dane udostępnione przez OpenVitals do usług online. Wczesna faza.', link: 'OpenBridge na GitHubie' }
-    }
+      openwatch: { text: 'Urządzenia. Paruje zegarki Garmin i Wear OS oraz wagę Xiaomi przez Bluetooth i kopiuje ich zapisy do Health Connect.', link: 'O OpenWatch' },
+      openbridge: { text: 'Wyjście na zewnątrz. Opcjonalna aplikacja, która przekazuje dane udostępnione przez OpenVitals do usług online. Wczesna faza.', link: 'O OpenBridge' }
+    },
+    metaTitle: 'Hale - Bezpłatne aplikacje zdrowotne offline na Androida',
+    metaDescription: 'Hale MTÜ to estońskie stowarzyszenie non-profit stojące za OpenVitals, OpenWatch i OpenBridge: bezpłatne aplikacje zdrowotne na Androida z otwartym kodem, bez kont, reklam i chmury.',
+    principlesTitle: 'Co łączy trzy aplikacje',
+    principles: [
+      { title: 'Bez konta, bez chmury Hale', text: 'Nie trzeba się rejestrować i nie ma serwera Hale. Twoje dane zostają w Health Connect na Androidzie, chyba że sam zdecydujesz się je przekazać.' },
+      { title: 'Bez reklam, bez analityki', text: 'Żadna aplikacja nie zawiera SDK śledzących i nikt nie robi interesów na Twoich danych.' },
+      { title: 'Wolne i otwarte oprogramowanie', text: 'Każda aplikacja to wolne oprogramowanie na licencji AGPL-3.0-or-later, z kodem źródłowym na GitHubie.' },
+      { title: 'Prowadzone przez stowarzyszenie non-profit', text: 'Hale MTÜ jest zarejestrowane w Tallinie w Estonii. Jego przychody służą wyłącznie jego celom i nigdy nie są dzielone.' }
+    ],
+    aboutTitle: 'O Hale',
+    aboutText: 'Hale to stare angielskie słowo oznaczające zdrowy, jak w „hale and hearty”. Stowarzyszenie wydaje aplikacje i dba o ich kod i społeczność. Napisz na hello@hale.ngo.'
+  },
+  openwatch: {
+    metaTitle: 'OpenWatch - Zegarki i waga dla Health Connect',
+    metaDescription: 'OpenWatch paruje zegarki Garmin i Wear OS oraz wagę Xiaomi przez Bluetooth i kopiuje ich zapisy do Health Connect. Bez konta, bez serwera, bez uprawnienia do internetu.',
+    eyebrow: 'Zegarki i waga dla Health Connect',
+    lede: 'OpenWatch paruje Twój zegarek i wagę przez Bluetooth, kopiuje ich zapisy do Health Connect i nimi zarządza. Bez konta, bez serwera, bez uprawnienia do internetu.',
+    devicesTitle: 'Obsługiwane urządzenia',
+    devices: [
+      { title: 'Zegarki Garmin', text: 'Aktywności, sen i samopoczucie synchronizowane własnym protokołem Bluetooth Garmina, a do tego powiadomienia, sterowanie muzyką, pogoda, kalendarz, alarmy i znajdowanie zegarka.' },
+      { title: 'Zegarki Wear OS', text: 'Aplikacja OpenWatch na zegarek zapisuje tętno, kroki i piętra i synchronizuje je jednym dotknięciem lub według harmonogramu, co noc z szacunkiem snu i tętna spoczynkowego.' },
+      { title: 'Waga Xiaomi S400', text: 'Każde ważenie trafia od razu do Health Connect, przy otwartej lub zamkniętej aplikacji. Tkankę tłuszczową, beztłuszczową masę ciała i wodę szacuje telefon.' }
+    ],
+    privacyTitle: 'Dokąd trafiają Twoje dane',
+    privacy: [
+      { title: 'Bez uprawnienia do internetu', text: 'Aplikacja w telefonie nie ma dostępu do internetu. Wszystko przechodzi przez Bluetooth między urządzeniem a telefonem.' },
+      { title: 'Do Health Connect', text: 'To, co zapisze urządzenie, trafia do magazynu danych zdrowotnych Androida, gdzie może to odczytać OpenVitals i każda aplikacja, której na to pozwolisz.' },
+      { title: 'Reszta zostaje w telefonie', text: 'Pomiary, których Health Connect nie przechowuje, na przykład stres lub Body Battery, zostają we własnej bazie danych OpenWatch.' }
+    ],
+    pairText: 'OpenWatch to źródło danych; OpenVitals to miejsce, w którym je oglądasz.'
+  },
+  openbridge: {
+    metaTitle: 'OpenBridge - Przekazywanie danych z OpenVitals do usług online',
+    metaDescription: 'OpenBridge to opcjonalna aplikacja na Androida, która odczytuje dane udostępniane przez OpenVitals i może przekazywać je do usług online. Wczesna faza.',
+    eyebrow: 'Opcjonalna, wczesna faza',
+    lede: 'OpenVitals nigdy nie łączy się z internetem. OpenBridge to osobna aplikacja, która to potrafi: odczytuje tylko to, co pozwolisz udostępnić OpenVitals, i może przekazać to do usług online.',
+    stepsTitle: 'Jak otrzymuje dane',
+    steps: [
+      'W ustawieniach OpenVitals włącz udostępnianie innym aplikacjom. Domyślnie jest wyłączone.',
+      'W OpenBridge poproś o grupy, które chcesz udostępnić. Android zapyta raz o każdą z jedenastu grup, a odpowiedź możesz później zmienić w jego ustawieniach.',
+      'Odczytaj jedną grupę lub wszystkie: dzienne sumy z ostatniego tygodnia, próbki z ostatniego dnia, sesje i trasy z ostatniego miesiąca.'
+    ],
+    statusTitle: 'Na jakim jest etapie',
+    statusText: 'Żadna usługa online nie jest jeszcze podłączona, a interfejs udostępniania jest na razie tylko w testowych wersjach OpenVitals. Śledź prace na GitHubie.'
   },
   nav: {
     primary: 'Główna nawigacja',
-    privacy: 'Prywatność',
-    features: 'Funkcje',
     docs: 'Dokumentacja',
     install: 'Instalacja',
     home: 'Strona główna Hale',

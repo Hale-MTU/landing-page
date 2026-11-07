@@ -1011,77 +1011,121 @@ figcaption {
   }
 }
 
-/* The Hale opening: the publisher above the three apps. */
+/* Hale: the publisher's home and the three app pages. The marks use the
+   identity's palette; the OpenVitals page keeps its own. */
+:root {
+  --hale-deep: #1f4e5f;
+  --hale-blue: #006e8f;
+  --hale-pale: #e8f2f5;
+}
+
+/* The header and footer carry the wordmark alone; the mark is the page icon. */
 .brand .brand-wordmark {
-  width: 92px;
+  width: auto;
+  height: 32px;
   border-radius: 0;
 }
 
 .site-footer .brand .brand-wordmark {
-  width: 80px;
+  height: 28px;
 }
 
-.hale-hero {
+.site-header nav a[aria-current='page'] {
+  color: var(--ink);
+  background: rgb(0 110 143 / 10%);
+}
+
+.hale-hero,
+.product-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
+  grid-template-columns: minmax(0, 1fr) 300px;
   gap: 3rem;
   align-items: center;
   width: min(1180px, calc(100% - 3rem));
-  /* Clears the fixed header, like the hero's own top padding did. */
   margin: 0 auto;
-  padding-top: 8.5rem;
-}
-
-/* The OpenVitals hero follows the app cards, so it needs less room above. */
-#openvitals.hero {
-  min-height: auto;
-  padding-top: 5rem;
+  /* Clears the fixed header. */
+  padding: 9rem 0 3rem;
 }
 
 .hale-hero h1 {
-  max-width: 14ch;
+  max-width: 13ch;
+  color: var(--hale-deep);
 }
 
-.hale-hero .hale-mark {
-  width: 100%;
-  max-width: 280px;
-  height: auto;
-  justify-self: center;
+/* Break long words at hyphens in the page's language, never mid-letter. */
+.hale-hero h1,
+.product-hero h1,
+.principles h2,
+.app-card h2 {
+  overflow-wrap: normal;
+  hyphens: auto;
 }
 
-.hale-lede {
-  max-width: 60ch;
-  margin: 1.2rem 0 0;
-  font-size: 1.2rem;
-  line-height: 1.55;
+.product-hero h1 {
+  color: var(--hale-deep);
+}
+
+.hale-lede,
+.product-lede {
+  max-width: 58ch;
+  margin: 1.4rem 0 0;
   color: var(--muted);
+  font-size: 1.22rem;
+  line-height: 1.55;
+}
+
+.hale-hero-mark,
+.product-mark {
+  justify-self: center;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
 
 .apps-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
   width: min(1180px, calc(100% - 3rem));
-  margin: 2.5rem auto 0;
+  margin: 0 auto;
 }
 
 .app-card {
   display: grid;
-  align-content: start;
-  gap: 0.7rem;
-  padding: 1.2rem;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 0.6rem;
+  padding: 1.25rem 1.5rem 1.5rem;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 12px;
   background: var(--panel);
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.app-card:hover,
+.app-card:focus-visible {
+  border-color: var(--hale-blue);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.app-card:focus-visible {
+  outline: 2px solid var(--hale-blue);
+  outline-offset: 2px;
 }
 
 .app-card img {
-  width: 64px;
-  height: auto;
+  /* The marks sit on a square canvas with room around them; pull them flush with the text. */
+  width: 96px;
+  height: 96px;
+  margin: -0.5rem 0 -0.75rem -1rem;
 }
 
-.app-card h3 {
-  font-size: 1.3rem;
+.app-card h2 {
+  color: var(--hale-deep);
+  font-size: 1.7rem;
 }
 
 .app-card p {
@@ -1089,40 +1133,264 @@ figcaption {
   color: var(--muted);
 }
 
-.hero-title {
-  max-width: 10ch;
-  margin: 0;
-  font-size: 5rem;
-  line-height: 0.96;
+.app-card .text-link {
+  justify-content: flex-start;
+  justify-self: start;
+  margin-top: 0.4rem;
 }
 
-.footer-publisher {
-  max-width: 34ch;
+.principles,
+.product-section {
+  display: grid;
+  gap: 1.5rem;
+  width: min(1180px, calc(100% - 3rem));
+  margin: 5rem auto 0;
+}
+
+.principles h2,
+.product-section h2,
+.about-hale h2 {
+  color: var(--hale-deep);
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.principles-grid.principles-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.principles-grid > div {
+  display: grid;
+  align-content: start;
+  gap: 0.45rem;
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: var(--hale-pale);
+}
+
+.principles-grid svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: var(--hale-blue);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.4;
+}
+
+.principles-grid strong {
+  color: var(--hale-deep);
+  font-size: 1.05rem;
+}
+
+.principles-grid span {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.about-hale {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 2rem;
+  width: min(1180px, calc(100% - 3rem));
+  margin: 5rem auto 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.about-hale p {
+  max-width: 62ch;
   margin: 0;
-  font-size: 0.9rem;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.product-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.badge-link img {
+  width: auto;
+  height: 56px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.product-card {
+  display: grid;
+  align-content: start;
+  gap: 0.6rem;
+  padding: 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+}
+
+.product-card h3 {
+  color: var(--hale-deep);
+}
+
+.product-card p {
+  margin: 0;
   color: var(--muted);
 }
 
+.steps {
+  display: grid;
+  gap: 0.9rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.steps li {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  counter-increment: step;
+}
+
+.steps li::before {
+  content: counter(step);
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--hale-blue);
+  color: #fff;
+  font-weight: 800;
+}
+
+.product-pair {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  width: min(1180px, calc(100% - 3rem));
+  margin: 5rem auto 3rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  background: var(--hale-pale);
+}
+
+.product-pair img {
+  width: 72px;
+  height: 72px;
+  margin: -0.5rem -0.5rem -0.5rem -0.75rem;
+}
+
+.product-pair p {
+  flex: 1 1 320px;
+  margin: 0;
+  color: var(--hale-deep);
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+.product-pair.product-status > div {
+  display: grid;
+  flex: 1 1 420px;
+  gap: 0.5rem;
+}
+
+.product-pair.product-status h2 {
+  color: var(--hale-deep);
+  font-size: 1.5rem;
+}
+
+.product-pair.product-status p {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.footer-brand {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.footer-publisher {
+  max-width: 36ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-card {
+    transition: none;
+  }
+
+  .app-card:hover,
+  .app-card:focus-visible {
+    transform: none;
+  }
+}
+
 @media (max-width: 1040px) {
-  .hero-title {
-    font-size: 4.1rem;
+  .apps-grid,
+  .product-grid,
+  .principles-grid.principles-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .principles-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 760px) {
-  .hale-hero {
+  .hale-hero,
+  .product-hero {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    width: min(100% - 2rem, 1180px);
+    /* The header is sticky here, not fixed. */
+    padding-top: 2.5rem;
   }
 
-  .hale-hero .hale-mark {
-    max-width: 160px;
+  .hale-hero h1,
+  .product-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hale-hero-mark,
+  .product-mark {
+    order: -1;
     justify-self: start;
+    max-width: 120px;
+    margin-left: -0.75rem;
   }
 
-  .hero-title {
-    max-width: 100%;
-    font-size: 3.15rem;
+  .apps-grid,
+  .principles,
+  .product-section,
+  .about-hale,
+  .product-pair {
+    width: min(100% - 2rem, 1180px);
+  }
+
+  .principles-grid,
+  .about-hale {
+    grid-template-columns: 1fr;
   }
 
   .site-footer {

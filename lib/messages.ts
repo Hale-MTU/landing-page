@@ -28,11 +28,38 @@ export type Messages = {
     /** Accessible name of the app cards. */
     appsLabel: string
     apps: Record<'openvitals' | 'openwatch' | 'openbridge', { text: string; link: string }>
+    metaTitle: string
+    metaDescription: string
+    principlesTitle: string
+    principles: { title: string; text: string }[]
+    aboutTitle: string
+    aboutText: string
+  }
+  openwatch: {
+    metaTitle: string
+    metaDescription: string
+    eyebrow: string
+    lede: string
+    devicesTitle: string
+    devices: { title: string; text: string }[]
+    privacyTitle: string
+    privacy: { title: string; text: string }[]
+    /** One line that places OpenWatch next to OpenVitals. */
+    pairText: string
+  }
+  openbridge: {
+    metaTitle: string
+    metaDescription: string
+    eyebrow: string
+    lede: string
+    stepsTitle: string
+    /** In order: the steps are numbered on the page. */
+    steps: string[]
+    statusTitle: string
+    statusText: string
   }
   nav: {
     primary: string
-    privacy: string
-    features: string
     docs: string
     install: string
     home: string

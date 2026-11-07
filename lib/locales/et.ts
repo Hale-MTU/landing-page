@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const et: Messages = {
   meta: {
-    title: 'Hale: OpenVitals - Seadmes töötav tervisekokkuvõte Androidile',
+    title: 'OpenVitals - Seadmes töötav tervisekokkuvõte Androidile',
     description:
       'OpenVitals on seadmes töötav Androidi rakendus, millega saad oma Health Connecti andmeid vaadata, logida, importida ja mõista ilma konto, reklaamide ja analüütikata.',
     ogDescription:
@@ -17,14 +17,56 @@ const et: Messages = {
     appsLabel: 'Rakendused',
     apps: {
       openvitals: { text: 'Töölaud. Loeb sinu Health Connecti kirjeid ja teeb neist päevavaate; impordib, salvestab ja logib, kõik telefonis.', link: 'OpenVitalsist lähemalt' },
-      openwatch: { text: 'Seadmed. Seob Garmini ja Wear OS-i kellad ning Xiaomi kaalu Bluetoothi kaudu ja kopeerib nende salvestused Health Connecti.', link: 'OpenWatch Google Plays' },
-      openbridge: { text: 'Väljapääs. Valikuline rakendus, mis edastab OpenVitalsi jagatud andmed veebiteenustele. Varajases faasis.', link: 'OpenBridge GitHubis' }
-    }
+      openwatch: { text: 'Seadmed. Seob Garmini ja Wear OS-i kellad ning Xiaomi kaalu Bluetoothi kaudu ja kopeerib nende salvestused Health Connecti.', link: 'OpenWatchist lähemalt' },
+      openbridge: { text: 'Väljapääs. Valikuline rakendus, mis edastab OpenVitalsi jagatud andmed veebiteenustele. Varajases faasis.', link: 'OpenBridge’ist lähemalt' }
+    },
+    metaTitle: 'Hale - Tasuta võrguühenduseta terviserakendused Androidile',
+    metaDescription: 'Hale MTÜ on Eesti mittetulundusühing rakenduste OpenVitals, OpenWatch ja OpenBridge taga: tasuta avatud lähtekoodiga terviserakendused Androidile, ilma kontode, reklaamide ja pilveta.',
+    principlesTitle: 'Mis on kolmel rakendusel ühist',
+    principles: [
+      { title: 'Ei kontot, ei Hale pilve', text: 'Midagi pole vaja registreerida ja Hale serverit pole. Sinu kirjed jäävad Androidi Health Connecti, kui sa ise neid edasi ei saada.' },
+      { title: 'Ei reklaame, ei analüütikat', text: 'Üheski rakenduses pole jälgimis-SDK-sid ega äri sinu andmetega.' },
+      { title: 'Vaba ja avatud lähtekoodiga', text: 'Iga rakendus on vaba tarkvara AGPL-3.0-or-later litsentsi all ja selle lähtekood on GitHubis.' },
+      { title: 'Mittetulundusühingu hallata', text: 'Hale MTÜ on registreeritud Tallinnas. Ühingu tulu läheb ainult põhikirjaliste eesmärkide täitmiseks ja seda ei jagata.' }
+    ],
+    aboutTitle: 'Halest',
+    aboutText: 'Hale on vana ingliskeelne sõna, mis tähendab tervet, nagu väljendis „hale and hearty“. Ühing annab rakendused välja ning hoolitseb nende koodi ja kogukonna eest. Kirjuta aadressil hello@hale.ngo.'
+  },
+  openwatch: {
+    metaTitle: 'OpenWatch - Kellad ja kaal Health Connecti jaoks',
+    metaDescription: 'OpenWatch seob Garmini ja Wear OS-i kellad ning Xiaomi kaalu Bluetoothi kaudu ja kopeerib nende salvestused Health Connecti. Ilma kontota, ilma serverita, ilma internetiloata.',
+    eyebrow: 'Kellad ja kaal Health Connecti jaoks',
+    lede: 'OpenWatch seob sinu kella ja kaalu Bluetoothi kaudu, kopeerib nende salvestused Health Connecti ja haldab neid. Ilma kontota, ilma serverita, ilma internetiloata.',
+    devicesTitle: 'Toetatud seadmed',
+    devices: [
+      { title: 'Garmini kellad', text: 'Tegevused, uni ja heaolu sünkroonitakse Garmini enda Bluetoothi-protokolliga, lisaks teavitused, muusika juhtimine, ilm, kalender, äratused ja kella otsimine.' },
+      { title: 'Wear OS-i kellad', text: 'OpenWatchi kellarakendus salvestab pulsi, sammud ja korrused ning sünkroonib need puudutusega või ajakava järgi, iga öö kohta une ja puhkepulsi hinnanguga.' },
+      { title: 'Xiaomi S400 kaal', text: 'Iga kaalumine salvestub kohe Health Connecti, olgu rakendus avatud või suletud. Keharasva, rasvavaba massi ja kehavett hindab telefon.' }
+    ],
+    privacyTitle: 'Kuhu sinu andmed lähevad',
+    privacy: [
+      { title: 'Internetiluba puudub', text: 'Telefonirakendus ei pääse internetti. Kõik liigub Bluetoothi kaudu seadme ja telefoni vahel.' },
+      { title: 'Health Connecti', text: 'Mida seade salvestab, jõuab Androidi terviseandmete hoidlasse, kust OpenVitals ja iga rakendus, millele loa annad, seda lugeda saab.' },
+      { title: 'Ülejäänu jääb telefoni', text: 'Mõõtmised, mida Health Connect hoida ei saa, näiteks stress või Body Battery, jäävad OpenWatchi enda andmebaasi.' }
+    ],
+    pairText: 'OpenWatchiga andmed tulevad; OpenVitalsiga sa neid vaatad.'
+  },
+  openbridge: {
+    metaTitle: 'OpenBridge - OpenVitalsi andmete edastamine veebiteenustele',
+    metaDescription: 'OpenBridge on valikuline Androidi rakendus, mis loeb OpenVitalsi jagatud andmeid ja saab neid veebiteenustele edastada. Varajases faasis.',
+    eyebrow: 'Valikuline, varajases faasis',
+    lede: 'OpenVitals ei ühendu kunagi internetti. OpenBridge on eraldi rakendus, mis seda suudab: ta loeb ainult seda, mida lubad OpenVitalsil jagada, ja saab selle veebiteenustele edastada.',
+    stepsTitle: 'Kuidas ta andmed saab',
+    steps: [
+      'Lülita OpenVitalsi seadetes sisse jagamine teiste rakendustega. Algul on see väljas.',
+      'Küsi OpenBridge’is gruppe, mida soovid jagada. Android küsib iga üheteistkümnest grupist ühe korra ja vastust saad hiljem tema seadetes muuta.',
+      'Loe üht gruppi või kõiki: viimase nädala päevakokkuvõtted, viimase päeva mõõtmised, viimase kuu treeningud ja marsruudid.'
+    ],
+    statusTitle: 'Kus asi on',
+    statusText: 'Ükski veebiteenus pole veel ühendatud ja jagamise liides on praegu ainult OpenVitalsi testversioonides. Jälgi tööd GitHubis.'
   },
   nav: {
     primary: 'Põhinavigatsioon',
-    privacy: 'Privaatsus',
-    features: 'Funktsioonid',
     docs: 'Juhendid',
     install: 'Paigalda',
     home: 'Hale avaleht',
