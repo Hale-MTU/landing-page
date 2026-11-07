@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const et: Messages = {
   meta: {
-    title: 'OpenVitals - Seadmes töötav tervisekokkuvõte Androidile',
+    title: 'Hale: OpenVitals - Seadmes töötav tervisekokkuvõte Androidile',
     description:
       'OpenVitals on seadmes töötav Androidi rakendus, millega saad oma Health Connecti andmeid vaadata, logida, importida ja mõista ilma konto, reklaamide ja analüütikata.',
     ogDescription:
@@ -10,13 +10,24 @@ const et: Messages = {
     twitterDescription:
       'Seadmes töötavad tervisetööriistad Androidile ja sinu Health Connecti andmetele, ilma konto, reklaamide ja analüütikata.'
   },
+  hale: {
+    eyebrow: 'Tasuta võrguühenduseta terviserakendused Androidile',
+    title: 'Sinu terviseandmed, sinu telefonis ja mitte kusagil mujal.',
+    text: 'Hale MTÜ on Eesti mittetulundusühing rakenduste OpenVitals, OpenWatch ja OpenBridge taga: ei kontosid, ei reklaame, ei analüütikat, ei pilve.',
+    appsLabel: 'Rakendused',
+    apps: {
+      openvitals: { text: 'Töölaud. Loeb sinu Health Connecti kirjeid ja teeb neist päevavaate; impordib, salvestab ja logib, kõik telefonis.', link: 'OpenVitalsist lähemalt' },
+      openwatch: { text: 'Seadmed. Seob Garmini ja Wear OS-i kellad ning Xiaomi kaalu Bluetoothi kaudu ja kopeerib nende salvestused Health Connecti.', link: 'OpenWatch Google Plays' },
+      openbridge: { text: 'Väljapääs. Valikuline rakendus, mis edastab OpenVitalsi jagatud andmed veebiteenustele. Varajases faasis.', link: 'OpenBridge GitHubis' }
+    }
+  },
   nav: {
     primary: 'Põhinavigatsioon',
     privacy: 'Privaatsus',
     features: 'Funktsioonid',
     docs: 'Juhendid',
     install: 'Paigalda',
-    home: 'OpenVitalsi avaleht',
+    home: 'Hale avaleht',
     language: 'Keel'
   },
   hero: {
@@ -273,6 +284,7 @@ const et: Messages = {
     more: 'Veel võimalusi toetada'
   },
   footer: {
+    publisher: 'Välja andnud Hale MTÜ, Tallinnas tegutsev mittetulundusühing.',
     nav: 'Jaluse navigatsioon',
     documentation: 'Dokumentatsioon',
     privacy: 'Privaatsus',

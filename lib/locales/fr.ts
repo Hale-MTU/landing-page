@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const fr: Messages = {
   meta: {
-    title: 'OpenVitals - Tableau de bord santé Android, en local',
+    title: 'Hale: OpenVitals - Tableau de bord santé Android, en local',
     description:
       "OpenVitals est une application Android qui fonctionne en local pour consulter, noter, importer et comprendre vos données Santé Connect, sans compte, sans publicité ni analyse d'usage.",
     ogDescription:
@@ -10,13 +10,24 @@ const fr: Messages = {
     twitterDescription:
       "Des outils santé Android qui fonctionnent en local avec vos données Santé Connect, sans compte, sans publicité ni analyse d'usage."
   },
+  hale: {
+    eyebrow: 'Des applis santé gratuites et hors ligne pour Android',
+    title: 'Vos données de santé, sur votre téléphone et nulle part ailleurs.',
+    text: 'Hale MTÜ est l\'association estonienne à but non lucratif derrière OpenVitals, OpenWatch et OpenBridge : pas de compte, pas de publicité, pas d\'analytique, pas de cloud.',
+    appsLabel: 'Les applis',
+    apps: {
+      openvitals: { text: 'Le tableau de bord. Lit vos enregistrements Health Connect et en fait une vue quotidienne ; importe, enregistre et consigne, tout sur le téléphone.', link: 'À propos d\'OpenVitals' },
+      openwatch: { text: 'Les appareils. Appaire les montres Garmin et Wear OS et une balance Xiaomi en Bluetooth et copie leurs enregistrements dans Health Connect.', link: 'OpenWatch sur Google Play' },
+      openbridge: { text: 'La sortie. Une appli facultative qui transmet les données partagées par OpenVitals à des services en ligne. À un stade précoce.', link: 'OpenBridge sur GitHub' }
+    }
+  },
   nav: {
     primary: 'Navigation principale',
     privacy: 'Confidentialité',
     features: 'Fonctionnalités',
     docs: 'Documentation',
     install: 'Installer',
-    home: 'Accueil OpenVitals',
+    home: 'Accueil Hale',
     language: 'Langue'
   },
   hero: {
@@ -273,6 +284,7 @@ const fr: Messages = {
     more: "D'autres façons de soutenir le projet"
   },
   footer: {
+    publisher: 'Publié par Hale MTÜ, association à but non lucratif à Tallinn, Estonie.',
     nav: 'Navigation du pied de page',
     documentation: 'Documentation',
     privacy: 'Confidentialité',

@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const ru: Messages = {
   meta: {
-    title: 'OpenVitals - Панель здоровья для Android, данные остаются на телефоне',
+    title: 'Hale: OpenVitals - Панель здоровья для Android, данные остаются на телефоне',
     description:
       'OpenVitals — приложение для Android, в котором можно просматривать, вносить, импортировать и лучше понимать данные Health Connect. Данные остаются на телефоне. Без аккаунтов, рекламы и аналитики.',
     ogDescription:
@@ -10,13 +10,24 @@ const ru: Messages = {
     twitterDescription:
       'Инструменты для здоровья на Android, которые работают с данными Health Connect. Данные остаются на телефоне. Без аккаунтов, рекламы и аналитики.'
   },
+  hale: {
+    eyebrow: 'Бесплатные офлайн-приложения для здоровья на Android',
+    title: 'Ваши данные о здоровье в вашем телефоне и больше нигде.',
+    text: 'Hale MTÜ, эстонская некоммерческая организация, стоит за OpenVitals, OpenWatch и OpenBridge: без аккаунтов, без рекламы, без аналитики, без облака.',
+    appsLabel: 'Приложения',
+    apps: {
+      openvitals: { text: 'Панель. Читает ваши записи Health Connect и превращает их в дневной обзор; импортирует, записывает и ведёт журнал, всё в телефоне.', link: 'Об OpenVitals' },
+      openwatch: { text: 'Устройства. Подключает часы Garmin и Wear OS и весы Xiaomi по Bluetooth и копирует их записи в Health Connect.', link: 'OpenWatch в Google Play' },
+      openbridge: { text: 'Мост наружу. Необязательное приложение, передающее данные, которыми делится OpenVitals, онлайн-сервисам. Ранняя стадия.', link: 'OpenBridge на GitHub' }
+    }
+  },
   nav: {
     primary: 'Основная навигация',
     privacy: 'Приватность',
     features: 'Возможности',
     docs: 'Документация',
     install: 'Установка',
-    home: 'Главная страница OpenVitals',
+    home: 'Главная Hale',
     language: 'Язык'
   },
   hero: {
@@ -273,6 +284,7 @@ const ru: Messages = {
     more: 'Другие способы поддержки'
   },
   footer: {
+    publisher: 'Издатель: Hale MTÜ, некоммерческая организация в Таллине, Эстония.',
     nav: 'Навигация внизу страницы',
     documentation: 'Документация',
     privacy: 'Приватность',

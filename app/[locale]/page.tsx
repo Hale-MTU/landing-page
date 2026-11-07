@@ -15,6 +15,9 @@ const liberapayUrl = 'https://liberapay.com/manuel.mmarca.tech/donate'
 const releasesUrl = `${codeUrl}/releases`
 const playStoreUrl =
   'https://play.google.com/store/apps/details?id=tech.mmarca.openvitals'
+const openWatchPlayUrl =
+  'https://play.google.com/store/apps/details?id=tech.mmarca.openwatch'
+const openBridgeUrl = 'https://github.com/Hale-MTU/OpenBridge'
 const fdroidUrl = 'https://f-droid.org/en/packages/tech.mmarca.openvitals/'
 const healthConnectDocsUrl = `${docsUrl}/app/health-connect`
 
@@ -121,14 +124,15 @@ export default async function Home({
     <main>
       <header className="site-header" aria-label={copy.nav.primary}>
         <a className="brand" href={`/${locale}/#top`} aria-label={copy.nav.home}>
+          <Image src="/images/hale-mark.png" alt="" width={40} height={40} priority />
           <Image
-            src="/images/openvitals-logo.png"
-            alt=""
-            width={40}
-            height={28}
+            className="brand-wordmark"
+            src="/images/hale-wordmark.png"
+            alt="Hale"
+            width={96}
+            height={32}
             priority
           />
-          <span>OpenVitals</span>
         </a>
         <nav>
           <a href={`/${locale}/#privacy`}>{copy.nav.privacy}</a>
@@ -141,7 +145,53 @@ export default async function Home({
         </nav>
       </header>
 
-      <section className="hero" id="top">
+      <section className="hale-hero" id="top">
+        <div className="hale-copy">
+          <p className="eyebrow">{copy.hale.eyebrow}</p>
+          <h1>{copy.hale.title}</h1>
+          <p className="hale-lede">{copy.hale.text}</p>
+        </div>
+        <Image
+          className="hale-mark"
+          src="/images/hale-mark.png"
+          alt=""
+          width={300}
+          height={300}
+          priority
+        />
+      </section>
+
+      <section className="apps-grid" id="apps" aria-label={copy.hale.appsLabel}>
+        <article className="app-card">
+          <Image src="/images/openvitals-logo.png" alt="" width={64} height={44} />
+          <h3>OpenVitals</h3>
+          <p>{copy.hale.apps.openvitals.text}</p>
+          <a className="text-link" href={`/${locale}/#openvitals`}>
+            {copy.hale.apps.openvitals.link}
+            <ArrowIcon />
+          </a>
+        </article>
+        <article className="app-card">
+          <Image src="/images/openwatch-mark.png" alt="" width={64} height={64} />
+          <h3>OpenWatch</h3>
+          <p>{copy.hale.apps.openwatch.text}</p>
+          <a className="text-link" href={openWatchPlayUrl}>
+            {copy.hale.apps.openwatch.link}
+            <ExternalIcon />
+          </a>
+        </article>
+        <article className="app-card">
+          <Image src="/images/openbridge-mark.png" alt="" width={64} height={64} />
+          <h3>OpenBridge</h3>
+          <p>{copy.hale.apps.openbridge.text}</p>
+          <a className="text-link" href={openBridgeUrl}>
+            {copy.hale.apps.openbridge.link}
+            <ExternalIcon />
+          </a>
+        </article>
+      </section>
+
+      <section className="hero" id="openvitals">
         <div className="hero-media" aria-hidden="true">
           <PhoneShot
             src={`/images/screens/${locale}/dashboard.png`}
@@ -159,7 +209,7 @@ export default async function Home({
 
         <div className="hero-copy">
           <p className="eyebrow">{copy.hero.eyebrow}</p>
-          <h1>OpenVitals</h1>
+          <h2 className="hero-title">OpenVitals</h2>
           <p className="hero-lede">{copy.hero.lede}</p>
           <div className="hero-actions" aria-label={copy.hero.actionsLabel}>
             <a className="button button-primary" href={`/${locale}/#install`}>
@@ -376,9 +426,16 @@ export default async function Home({
 
       <footer className="site-footer">
         <a className="brand" href={`/${locale}/#top`} aria-label={copy.nav.home}>
-          <Image src="/images/openvitals-logo.png" alt="" width={34} height={24} />
-          <span>OpenVitals</span>
+          <Image src="/images/hale-mark.png" alt="" width={34} height={34} />
+          <Image
+            className="brand-wordmark"
+            src="/images/hale-wordmark.png"
+            alt="Hale"
+            width={84}
+            height={28}
+          />
         </a>
+        <p className="footer-publisher">{copy.footer.publisher}</p>
         <nav aria-label={copy.footer.nav}>
           <a href={docsUrl}>{copy.footer.documentation}</a>
           <a href={privacyUrl}>{copy.footer.privacy}</a>

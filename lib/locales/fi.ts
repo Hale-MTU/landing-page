@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const fi: Messages = {
   meta: {
-    title: 'OpenVitals - Paikallisesti toimiva terveysyhteenveto Androidille',
+    title: 'Hale: OpenVitals - Paikallisesti toimiva terveysyhteenveto Androidille',
     description:
       'OpenVitals on paikallisesti toimiva Android-sovellus, jolla voit katsella, kirjata, tuoda ja ymmärtää Health Connect -tietojasi ilman tiliä, mainoksia tai analytiikkaa.',
     ogDescription:
@@ -10,13 +10,24 @@ const fi: Messages = {
     twitterDescription:
       'Paikallisesti toimivat terveystyökalut Androidille ja Health Connect -tiedoillesi ilman tiliä, mainoksia tai analytiikkaa.'
   },
+  hale: {
+    eyebrow: 'Ilmaisia, verkottomia terveyssovelluksia Androidille',
+    title: 'Terveystietosi omassa puhelimessasi, eikä missään muualla.',
+    text: 'Hale MTÜ on virolainen voittoa tavoittelematon yhdistys OpenVitalsin, OpenWatchin ja OpenBridgen takana: ei tilejä, ei mainoksia, ei analytiikkaa, ei pilveä.',
+    appsLabel: 'Sovellukset',
+    apps: {
+      openvitals: { text: 'Kojelauta. Lukee Health Connect -tietueesi ja kokoaa niistä päivänäkymän; tuo, tallentaa ja kirjaa, kaikki puhelimessa.', link: 'Tietoa OpenVitalsista' },
+      openwatch: { text: 'Laitteet. Yhdistää Garmin- ja Wear OS -kellot sekä Xiaomi-vaa\'an Bluetoothilla ja kopioi niiden tallenteet Health Connectiin.', link: 'OpenWatch Google Playssa' },
+      openbridge: { text: 'Ulospääsy. Valinnainen sovellus, joka välittää OpenVitalsin jakamat tiedot verkkopalveluihin. Varhaisessa vaiheessa.', link: 'OpenBridge GitHubissa' }
+    }
+  },
   nav: {
     primary: 'Päävalikko',
     privacy: 'Tietosuoja',
     features: 'Ominaisuudet',
     docs: 'Ohjeet',
     install: 'Asenna',
-    home: 'OpenVitalsin etusivu',
+    home: 'Halen etusivu',
     language: 'Kieli'
   },
   hero: {
@@ -273,6 +284,7 @@ const fi: Messages = {
     more: 'Muita tapoja tukea'
   },
   footer: {
+    publisher: 'Julkaisija Hale MTÜ, voittoa tavoittelematon yhdistys Tallinnassa, Virossa.',
     nav: 'Alatunnisteen valikko',
     documentation: 'Dokumentaatio',
     privacy: 'Tietosuoja',

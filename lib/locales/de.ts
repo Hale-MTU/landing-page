@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const de: Messages = {
   meta: {
-    title: 'OpenVitals - Gesundheitsübersicht für Android, lokal auf deinem Telefon',
+    title: 'Hale: OpenVitals - Gesundheitsübersicht für Android, lokal auf deinem Telefon',
     description:
       'OpenVitals ist eine Android-App, die lokal auf deinem Telefon arbeitet: Health-Connect-Daten ansehen, eintragen, importieren und verstehen, ohne Konto, Werbung oder Nutzungsanalyse.',
     ogDescription:
@@ -10,13 +10,24 @@ const de: Messages = {
     twitterDescription:
       'Gesundheits-Tools für Android, die lokal mit deinen Health-Connect-Daten arbeiten. Ohne Konto, Werbung oder Nutzungsanalyse.'
   },
+  hale: {
+    eyebrow: 'Kostenlose Offline-Gesundheits-Apps für Android',
+    title: 'Deine Gesundheitsdaten, auf deinem Telefon und nirgendwo sonst.',
+    text: 'Hale MTÜ ist der estnische gemeinnützige Verein hinter OpenVitals, OpenWatch und OpenBridge: keine Konten, keine Werbung, keine Analytik, keine Cloud.',
+    appsLabel: 'Die Apps',
+    apps: {
+      openvitals: { text: 'Das Dashboard. Liest deine Health-Connect-Einträge und macht daraus eine Tagesansicht; importiert, zeichnet auf und protokolliert, alles auf dem Telefon.', link: 'Über OpenVitals' },
+      openwatch: { text: 'Die Geräte. Koppelt Garmin- und Wear-OS-Uhren und eine Xiaomi-Waage per Bluetooth und kopiert ihre Aufzeichnungen nach Health Connect.', link: 'OpenWatch bei Google Play' },
+      openbridge: { text: 'Der Weg nach draußen. Eine optionale App, die von OpenVitals freigegebene Daten an Online-Dienste weitergibt. In früher Phase.', link: 'OpenBridge auf GitHub' }
+    }
+  },
   nav: {
     primary: 'Hauptnavigation',
     privacy: 'Datenschutz',
     features: 'Funktionen',
     docs: 'Doku',
     install: 'Installieren',
-    home: 'OpenVitals-Startseite',
+    home: 'Hale Startseite',
     language: 'Sprache'
   },
   hero: {
@@ -273,6 +284,7 @@ const de: Messages = {
     more: 'Weitere Wege zu helfen'
   },
   footer: {
+    publisher: 'Herausgegeben von Hale MTÜ, einem gemeinnützigen Verein in Tallinn, Estland.',
     nav: 'Fußzeilennavigation',
     documentation: 'Dokumentation',
     privacy: 'Datenschutz',

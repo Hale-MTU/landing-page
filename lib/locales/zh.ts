@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const zh: Messages = {
   meta: {
-    title: 'OpenVitals - 数据留在本机的 Android 健康概览',
+    title: 'Hale: OpenVitals - 数据留在本机的 Android 健康概览',
     description:
       'OpenVitals 是一款数据留在本机的 Android 应用，用来查看、记录、导入和读懂 Health Connect 数据。无需账号，没有广告，也不做使用统计。',
     ogDescription:
@@ -10,13 +10,24 @@ const zh: Messages = {
     twitterDescription:
       '在本机处理 Health Connect 数据的 Android 健康工具。无需账号，没有广告，也不做使用统计。'
   },
+  hale: {
+    eyebrow: '面向 Android 的免费离线健康应用',
+    title: '你的健康数据只在你的手机里，不在别处。',
+    text: 'Hale MTÜ 是 OpenVitals、OpenWatch 和 OpenBridge 背后的爱沙尼亚非营利协会：没有账户、没有广告、没有分析、没有云端。',
+    appsLabel: '应用',
+    apps: {
+      openvitals: { text: '仪表板。读取你的 Health Connect 记录并整理成每日视图；导入、记录和手动录入，全部在手机上完成。', link: '关于 OpenVitals' },
+      openwatch: { text: '设备。通过蓝牙配对 Garmin 和 Wear OS 手表以及小米体重秤，并把它们的记录写入 Health Connect。', link: 'Google Play 上的 OpenWatch' },
+      openbridge: { text: '对外的桥。一个可选应用，把 OpenVitals 共享的数据传给在线服务。尚处早期。', link: 'GitHub 上的 OpenBridge' }
+    }
+  },
   nav: {
     primary: '主导航',
     privacy: '隐私',
     features: '功能',
     docs: '文档',
     install: '安装',
-    home: 'OpenVitals 首页',
+    home: 'Hale 首页',
     language: '语言'
   },
   hero: {
@@ -273,6 +284,7 @@ const zh: Messages = {
     more: '更多支持方式'
   },
   footer: {
+    publisher: '由 Hale MTÜ 发布，一家位于爱沙尼亚塔林的非营利协会。',
     nav: '页脚导航',
     documentation: '文档',
     privacy: '隐私',

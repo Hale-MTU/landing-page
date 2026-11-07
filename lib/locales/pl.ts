@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const pl: Messages = {
   meta: {
-    title: 'OpenVitals - Panel zdrowia na Androida, dane zostają w telefonie',
+    title: 'Hale: OpenVitals - Panel zdrowia na Androida, dane zostają w telefonie',
     description:
       'OpenVitals to aplikacja na Androida do przeglądania, zapisywania, importowania i lepszego rozumienia danych z Health Connect. Dane zostają w telefonie. Bez konta, reklam i analityki.',
     ogDescription:
@@ -10,13 +10,24 @@ const pl: Messages = {
     twitterDescription:
       'Narzędzia zdrowotne na Androida dla danych z Health Connect. Dane zostają w telefonie. Bez konta, reklam i analityki.'
   },
+  hale: {
+    eyebrow: 'Bezpłatne aplikacje zdrowotne offline na Androida',
+    title: 'Twoje dane o zdrowiu w Twoim telefonie i nigdzie indziej.',
+    text: 'Hale MTÜ to estońskie stowarzyszenie non-profit stojące za OpenVitals, OpenWatch i OpenBridge: bez kont, bez reklam, bez analityki, bez chmury.',
+    appsLabel: 'Aplikacje',
+    apps: {
+      openvitals: { text: 'Pulpit. Odczytuje Twoje rekordy Health Connect i zamienia je w dzienny widok; importuje, rejestruje i zapisuje, wszystko w telefonie.', link: 'O OpenVitals' },
+      openwatch: { text: 'Urządzenia. Paruje zegarki Garmin i Wear OS oraz wagę Xiaomi przez Bluetooth i kopiuje ich zapisy do Health Connect.', link: 'OpenWatch w Google Play' },
+      openbridge: { text: 'Wyjście na zewnątrz. Opcjonalna aplikacja, która przekazuje dane udostępnione przez OpenVitals do usług online. Wczesna faza.', link: 'OpenBridge na GitHubie' }
+    }
+  },
   nav: {
     primary: 'Główna nawigacja',
     privacy: 'Prywatność',
     features: 'Funkcje',
     docs: 'Dokumentacja',
     install: 'Instalacja',
-    home: 'Strona główna OpenVitals',
+    home: 'Strona główna Hale',
     language: 'Język'
   },
   hero: {
@@ -273,6 +284,7 @@ const pl: Messages = {
     more: 'Więcej sposobów wsparcia'
   },
   footer: {
+    publisher: 'Wydawca: Hale MTÜ, stowarzyszenie non-profit z Tallina w Estonii.',
     nav: 'Nawigacja w stopce',
     documentation: 'Dokumentacja',
     privacy: 'Prywatność',

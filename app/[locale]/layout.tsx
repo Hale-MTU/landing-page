@@ -29,7 +29,7 @@ export async function generateMetadata({
     metadataBase: new URL('https://hale.ngo'),
     title: {
       default: copy.meta.title,
-      template: '%s - OpenVitals'
+      template: '%s - Hale'
     },
     description: copy.meta.description,
     alternates: {
@@ -40,10 +40,10 @@ export async function generateMetadata({
       }
     },
     openGraph: {
-      title: 'OpenVitals',
+      title: copy.meta.title,
       description: copy.meta.ogDescription,
       url: `https://hale.ngo/${locale}/`,
-      siteName: 'OpenVitals',
+      siteName: 'Hale',
       images: [
         {
           url: `/images/screens/${locale}/dashboard.png`,
@@ -57,13 +57,13 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'OpenVitals',
+      title: copy.meta.title,
       description: copy.meta.twitterDescription,
       images: [`/images/screens/${locale}/dashboard.png`]
     },
     icons: {
-      icon: '/images/openvitals-logo.png',
-      apple: '/images/openvitals-logo.png'
+      icon: '/images/hale-mark.png',
+      apple: '/images/hale-mark.png'
     }
   }
 }
