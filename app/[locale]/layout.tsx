@@ -26,7 +26,7 @@ export async function generateMetadata({
   const copy = getMessages(locale)
 
   return {
-    metadataBase: new URL('https://openvitals.health'),
+    metadataBase: new URL('https://hale.ngo'),
     title: {
       default: copy.meta.title,
       template: '%s - OpenVitals'
@@ -42,7 +42,7 @@ export async function generateMetadata({
     openGraph: {
       title: 'OpenVitals',
       description: copy.meta.ogDescription,
-      url: `https://openvitals.health/${locale}/`,
+      url: `https://hale.ngo/${locale}/`,
       siteName: 'OpenVitals',
       images: [
         {
