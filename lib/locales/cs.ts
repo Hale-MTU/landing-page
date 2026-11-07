@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const cs: Messages = {
   meta: {
-    title: 'Hale: OpenVitals - Přehled zdraví pro Android, data zůstávají v telefonu',
+    title: 'OpenVitals - Přehled zdraví pro Android, data zůstávají v telefonu',
     description:
       'OpenVitals je aplikace pro Android, ve které data z Health Connect prohlížíte, zapisujete, importujete a lépe jim rozumíte. Data zůstávají v telefonu. Bez účtu, reklam a analytiky.',
     ogDescription:
@@ -17,14 +17,56 @@ const cs: Messages = {
     appsLabel: 'Aplikace',
     apps: {
       openvitals: { text: 'Přehled. Čte vaše záznamy z Health Connect a převádí je na denní přehled; importuje, zaznamenává a eviduje, vše v telefonu.', link: 'O aplikaci OpenVitals' },
-      openwatch: { text: 'Zařízení. Páruje hodinky Garmin a Wear OS a váhu Xiaomi přes Bluetooth a kopíruje, co zaznamenají, do Health Connect.', link: 'OpenWatch na Google Play' },
-      openbridge: { text: 'Cesta ven. Volitelná aplikace, která předává data sdílená aplikací OpenVitals online službám. V rané fázi.', link: 'OpenBridge na GitHubu' }
-    }
+      openwatch: { text: 'Zařízení. Páruje hodinky Garmin a Wear OS a váhu Xiaomi přes Bluetooth a kopíruje, co zaznamenají, do Health Connect.', link: 'O aplikaci OpenWatch' },
+      openbridge: { text: 'Cesta ven. Volitelná aplikace, která předává data sdílená aplikací OpenVitals online službám. V rané fázi.', link: 'O aplikaci OpenBridge' }
+    },
+    metaTitle: 'Hale - Bezplatné offline zdravotní aplikace pro Android',
+    metaDescription: 'Hale MTÜ je estonský neziskový spolek, který stojí za aplikacemi OpenVitals, OpenWatch a OpenBridge: bezplatné zdravotní aplikace pro Android s otevřeným zdrojovým kódem, bez účtů, reklam a cloudu.',
+    principlesTitle: 'Co mají všechny tři aplikace společné',
+    principles: [
+      { title: 'Žádný účet, žádný cloud Hale', text: 'Nikde se neregistrujete a neexistuje žádný server Hale. Vaše záznamy zůstávají v Health Connect v Androidu, dokud je sami nepředáte dál.' },
+      { title: 'Žádné reklamy, žádná analytika', text: 'Žádná aplikace neobsahuje sledovací SDK a nikdo nepodniká s vašimi daty.' },
+      { title: 'Svobodný a otevřený software', text: 'Každá aplikace je svobodný software pod licencí AGPL-3.0-or-later se zdrojovým kódem na GitHubu.' },
+      { title: 'Provozuje je neziskový spolek', text: 'Hale MTÜ je registrován v Tallinnu v Estonsku. Jeho příjmy slouží jen jeho cílům a nikdy se nerozdělují.' }
+    ],
+    aboutTitle: 'O Hale',
+    aboutText: 'Hale je staré anglické slovo pro zdravý, jako v „hale and hearty“. Spolek vydává aplikace a pečuje o jejich kód a komunitu. Pište na hello@hale.ngo.'
+  },
+  openwatch: {
+    metaTitle: 'OpenWatch - Hodinky a váha pro Health Connect',
+    metaDescription: 'OpenWatch páruje hodinky Garmin a Wear OS a váhu Xiaomi přes Bluetooth a kopíruje, co zaznamenají, do Health Connect. Bez účtu, bez serveru, bez oprávnění k internetu.',
+    eyebrow: 'Hodinky a váha pro Health Connect',
+    lede: 'OpenWatch páruje vaše hodinky a váhu přes Bluetooth, kopíruje jejich záznamy do Health Connect a spravuje je. Bez účtu, bez serveru, bez oprávnění k internetu.',
+    devicesTitle: 'Podporovaná zařízení',
+    devices: [
+      { title: 'Hodinky Garmin', text: 'Aktivity, spánek a wellness synchronizované vlastním protokolem Garmin přes Bluetooth, k tomu oznámení, ovládání hudby, počasí, kalendář, budíky a hledání hodinek.' },
+      { title: 'Hodinky Wear OS', text: 'Aplikace OpenWatch v hodinkách zaznamenává tep, kroky a patra a synchronizuje je klepnutím nebo podle plánu, každou noc s odhadem spánku a klidového tepu.' },
+      { title: 'Váha Xiaomi S400', text: 'Každé vážení se uloží do Health Connect hned, ať je aplikace otevřená, nebo zavřená. Tělesný tuk, svalovou hmotu a vodu odhaduje telefon.' }
+    ],
+    privacyTitle: 'Kam jdou vaše data',
+    privacy: [
+      { title: 'Bez oprávnění k internetu', text: 'Aplikace v telefonu se k internetu nedostane. Vše putuje přes Bluetooth mezi zařízením a telefonem.' },
+      { title: 'Do Health Connect', text: 'Co zařízení zaznamená, skončí v úložišti zdravotních dat Androidu, odkud to může číst OpenVitals a každá aplikace, které to povolíte.' },
+      { title: 'Zbytek zůstává v telefonu', text: 'Měření, která Health Connect neumí uložit, například stres nebo Body Battery, zůstávají ve vlastní databázi OpenWatch.' }
+    ],
+    pairText: 'OpenWatch je odkud data přicházejí; OpenVitals je kde se na ně díváte.'
+  },
+  openbridge: {
+    metaTitle: 'OpenBridge - Předávání dat z OpenVitals online službám',
+    metaDescription: 'OpenBridge je volitelná aplikace pro Android, která čte data sdílená aplikací OpenVitals a může je předávat online službám. V rané fázi.',
+    eyebrow: 'Volitelná, v rané fázi',
+    lede: 'OpenVitals se k internetu nikdy nepřipojí. OpenBridge je samostatná aplikace, která to umí: čte jen to, co OpenVitals dovolíte sdílet, a může to předat online službám.',
+    stepsTitle: 'Jak získává data',
+    steps: [
+      'V nastavení OpenVitals zapněte sdílení s jinými aplikacemi. Ve výchozím stavu je vypnuté.',
+      'V OpenBridge požádejte o skupiny, které chcete sdílet. Android se zeptá jednou na každou z jedenácti skupin a odpověď můžete později změnit v jeho nastavení.',
+      'Načtěte jednu skupinu nebo všechny: denní souhrny za poslední týden, vzorky za poslední den, záznamy aktivit a trasy za poslední měsíc.'
+    ],
+    statusTitle: 'Kde to stojí',
+    statusText: 'Zatím není připojena žádná online služba a rozhraní pro sdílení je zatím jen v testovacích sestaveních OpenVitals. Vývoj můžete sledovat na GitHubu.'
   },
   nav: {
     primary: 'Hlavní navigace',
-    privacy: 'Soukromí',
-    features: 'Funkce',
     docs: 'Dokumentace',
     install: 'Instalace',
     home: 'Domovská stránka Hale',

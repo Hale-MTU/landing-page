@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const zh: Messages = {
   meta: {
-    title: 'Hale: OpenVitals - 数据留在本机的 Android 健康概览',
+    title: 'OpenVitals - 数据留在本机的 Android 健康概览',
     description:
       'OpenVitals 是一款数据留在本机的 Android 应用，用来查看、记录、导入和读懂 Health Connect 数据。无需账号，没有广告，也不做使用统计。',
     ogDescription:
@@ -17,14 +17,56 @@ const zh: Messages = {
     appsLabel: '应用',
     apps: {
       openvitals: { text: '仪表板。读取你的 Health Connect 记录并整理成每日视图；导入、记录和手动录入，全部在手机上完成。', link: '关于 OpenVitals' },
-      openwatch: { text: '设备。通过蓝牙配对 Garmin 和 Wear OS 手表以及小米体重秤，并把它们的记录写入 Health Connect。', link: 'Google Play 上的 OpenWatch' },
-      openbridge: { text: '对外的桥。一个可选应用，把 OpenVitals 共享的数据传给在线服务。尚处早期。', link: 'GitHub 上的 OpenBridge' }
-    }
+      openwatch: { text: '设备。通过蓝牙配对 Garmin 和 Wear OS 手表以及小米体重秤，并把它们的记录写入 Health Connect。', link: '关于 OpenWatch' },
+      openbridge: { text: '对外的桥。一个可选应用，把 OpenVitals 共享的数据传给在线服务。尚处早期。', link: '关于 OpenBridge' }
+    },
+    metaTitle: 'Hale - 面向 Android 的免费离线健康应用',
+    metaDescription: 'Hale MTÜ 是 OpenVitals、OpenWatch 和 OpenBridge 背后的爱沙尼亚非营利协会：免费开源的 Android 健康应用，没有账户、没有广告、没有云端。',
+    principlesTitle: '三款应用的共同点',
+    principles: [
+      { title: '没有账户，没有 Hale 云', text: '无需注册，也没有 Hale 服务器。除非你自己选择转出，你的记录一直留在 Android 的 Health Connect 中。' },
+      { title: '没有广告，没有分析', text: '所有应用都不含追踪 SDK，也没有任何基于你数据的生意。' },
+      { title: '自由开源', text: '每款应用都是采用 AGPL-3.0-or-later 许可的自由软件，源代码在 GitHub 上。' },
+      { title: '由非营利协会运营', text: 'Hale MTÜ 注册于爱沙尼亚塔林。它的收入只用于章程目标，从不分配。' }
+    ],
+    aboutTitle: '关于 Hale',
+    aboutText: 'Hale 是一个古老的英语单词，意思是健康，如 “hale and hearty”。协会发布这些应用，并维护它们的代码和社区。联系邮箱 hello@hale.ngo。'
+  },
+  openwatch: {
+    metaTitle: 'OpenWatch - 为 Health Connect 连接手表和体重秤',
+    metaDescription: 'OpenWatch 通过蓝牙配对 Garmin 和 Wear OS 手表以及小米体重秤，并把它们的记录写入 Health Connect。无需账户、无需服务器、没有联网权限。',
+    eyebrow: '为 Health Connect 连接手表和体重秤',
+    lede: 'OpenWatch 通过蓝牙配对你的手表和体重秤，把它们的记录写入 Health Connect，并管理这些设备。无需账户、无需服务器、没有联网权限。',
+    devicesTitle: '支持的设备',
+    devices: [
+      { title: 'Garmin 手表', text: '通过 Garmin 自己的蓝牙协议同步活动、睡眠和健康数据，还支持通知、音乐控制、天气、日历、闹钟和查找手表。' },
+      { title: 'Wear OS 手表', text: 'OpenWatch 手表应用记录心率、步数和爬楼层数，一键或按计划同步，每晚估算睡眠和静息心率。' },
+      { title: '小米 S400 体重秤', text: '每次称重都会立即写入 Health Connect，无论应用是否打开。体脂、去脂体重和身体水分由手机估算。' }
+    ],
+    privacyTitle: '你的数据去向',
+    privacy: [
+      { title: '没有联网权限', text: '手机应用无法访问互联网。所有数据都通过蓝牙在设备和手机之间传输。' },
+      { title: '写入 Health Connect', text: '设备记录的数据进入 Android 的健康数据存储，OpenVitals 和你授权的任何应用都可以读取。' },
+      { title: '其余留在手机上', text: 'Health Connect 无法保存的数据，例如压力或 Body Battery，保存在 OpenWatch 自己的数据库中。' }
+    ],
+    pairText: 'OpenWatch 负责把数据带进来，OpenVitals 负责让你查看。'
+  },
+  openbridge: {
+    metaTitle: 'OpenBridge - 把 OpenVitals 的数据传给在线服务',
+    metaDescription: 'OpenBridge 是一款可选的 Android 应用，读取 OpenVitals 共享的数据，并可以把它传给在线服务。尚处早期。',
+    eyebrow: '可选，尚处早期',
+    lede: 'OpenVitals 从不联网。OpenBridge 是能够联网的独立应用：它只读取你允许 OpenVitals 共享的数据，并可以把它传给在线服务。',
+    stepsTitle: '它如何获取数据',
+    steps: [
+      '在 OpenVitals 的设置中开启与其他应用共享。默认是关闭的。',
+      '在 OpenBridge 中请求你想共享的数据组。Android 会对十一个数据组逐一询问一次，之后可以在系统设置中更改。',
+      '读取一个或全部数据组：最近一周的每日汇总、最近一天的采样、最近一个月的运动和路线。'
+    ],
+    statusTitle: '目前进展',
+    statusText: '目前还没有连接任何在线服务，共享 API 暂时只在 OpenVitals 的测试版本中提供。可以在 GitHub 上关注进展。'
   },
   nav: {
     primary: '主导航',
-    privacy: '隐私',
-    features: '功能',
     docs: '文档',
     install: '安装',
     home: 'Hale 首页',

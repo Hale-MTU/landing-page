@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const fi: Messages = {
   meta: {
-    title: 'Hale: OpenVitals - Paikallisesti toimiva terveysyhteenveto Androidille',
+    title: 'OpenVitals - Paikallisesti toimiva terveysyhteenveto Androidille',
     description:
       'OpenVitals on paikallisesti toimiva Android-sovellus, jolla voit katsella, kirjata, tuoda ja ymmärtää Health Connect -tietojasi ilman tiliä, mainoksia tai analytiikkaa.',
     ogDescription:
@@ -17,14 +17,56 @@ const fi: Messages = {
     appsLabel: 'Sovellukset',
     apps: {
       openvitals: { text: 'Kojelauta. Lukee Health Connect -tietueesi ja kokoaa niistä päivänäkymän; tuo, tallentaa ja kirjaa, kaikki puhelimessa.', link: 'Tietoa OpenVitalsista' },
-      openwatch: { text: 'Laitteet. Yhdistää Garmin- ja Wear OS -kellot sekä Xiaomi-vaa\'an Bluetoothilla ja kopioi niiden tallenteet Health Connectiin.', link: 'OpenWatch Google Playssa' },
-      openbridge: { text: 'Ulospääsy. Valinnainen sovellus, joka välittää OpenVitalsin jakamat tiedot verkkopalveluihin. Varhaisessa vaiheessa.', link: 'OpenBridge GitHubissa' }
-    }
+      openwatch: { text: 'Laitteet. Yhdistää Garmin- ja Wear OS -kellot sekä Xiaomi-vaa\'an Bluetoothilla ja kopioi niiden tallenteet Health Connectiin.', link: 'Tietoa OpenWatchista' },
+      openbridge: { text: 'Ulospääsy. Valinnainen sovellus, joka välittää OpenVitalsin jakamat tiedot verkkopalveluihin. Varhaisessa vaiheessa.', link: 'Tietoa OpenBridgesta' }
+    },
+    metaTitle: 'Hale - Ilmaisia, verkottomia terveyssovelluksia Androidille',
+    metaDescription: 'Hale MTÜ on virolainen voittoa tavoittelematon yhdistys OpenVitalsin, OpenWatchin ja OpenBridgen takana: ilmaisia avoimen lähdekoodin terveyssovelluksia Androidille ilman tilejä, mainoksia tai pilveä.',
+    principlesTitle: 'Mitä kolmella sovelluksella on yhteistä',
+    principles: [
+      { title: 'Ei tiliä, ei Halen pilveä', text: 'Ei rekisteröitymistä eikä Halen palvelinta. Tietosi pysyvät Androidin Health Connectissa, ellet itse päätä välittää niitä eteenpäin.' },
+      { title: 'Ei mainoksia, ei analytiikkaa', text: 'Missään sovelluksessa ei ole seurantakirjastoja, eikä tiedoillasi tehdä liiketoimintaa.' },
+      { title: 'Vapaata ja avointa lähdekoodia', text: 'Jokainen sovellus on vapaata ohjelmistoa AGPL-3.0-or-later-lisenssillä, ja sen lähdekoodi on GitHubissa.' },
+      { title: 'Voittoa tavoittelemattoman yhdistyksen ylläpitämä', text: 'Hale MTÜ on rekisteröity Tallinnassa, Virossa. Sen tulot käytetään vain sen tarkoituksiin eikä niitä jaeta.' }
+    ],
+    aboutTitle: 'Tietoa Halesta',
+    aboutText: 'Hale on vanha englannin sana, joka tarkoittaa tervettä, kuten ilmauksessa ”hale and hearty”. Yhdistys julkaisee sovellukset ja huolehtii niiden koodista ja yhteisöstä. Kirjoita osoitteeseen hello@hale.ngo.'
+  },
+  openwatch: {
+    metaTitle: 'OpenWatch - Kellot ja vaaka Health Connectiin',
+    metaDescription: 'OpenWatch yhdistää Garmin- ja Wear OS -kellot sekä Xiaomi-vaa\'an Bluetoothilla ja kopioi niiden tallenteet Health Connectiin. Ilman tiliä, ilman palvelinta, ilman internet-lupaa.',
+    eyebrow: 'Kellot ja vaaka Health Connectiin',
+    lede: 'OpenWatch yhdistää kellosi ja vaakasi Bluetoothilla, kopioi niiden tallenteet Health Connectiin ja hallitsee niitä. Ilman tiliä, ilman palvelinta, ilman internet-lupaa.',
+    devicesTitle: 'Tuetut laitteet',
+    devices: [
+      { title: 'Garmin-kellot', text: 'Aktiviteetit, uni ja hyvinvointi synkronoidaan Garminin omalla Bluetooth-protokollalla, lisäksi ilmoitukset, musiikin ohjaus, sää, kalenteri, herätykset ja kellon etsiminen.' },
+      { title: 'Wear OS -kellot', text: 'OpenWatchin kellosovellus tallentaa sykkeen, askeleet ja kerrokset ja synkronoi ne napautuksella tai aikataulun mukaan, joka yöltä arvio unesta ja leposykkeestä.' },
+      { title: 'Xiaomi S400 -vaaka', text: 'Jokainen punnitus tallentuu heti Health Connectiin, oli sovellus auki tai kiinni. Kehon rasvan, rasvattoman massan ja kehon veden arvioi puhelin.' }
+    ],
+    privacyTitle: 'Minne tietosi menevät',
+    privacy: [
+      { title: 'Ei internet-lupaa', text: 'Puhelinsovellus ei pääse internetiin. Kaikki kulkee Bluetoothilla laitteen ja puhelimen välillä.' },
+      { title: 'Health Connectiin', text: 'Mitä laite tallentaa, päätyy Androidin terveystietovarastoon, josta OpenVitals ja jokainen sallimasi sovellus voi lukea sen.' },
+      { title: 'Loput pysyvät puhelimessa', text: 'Mittaukset, joita Health Connect ei voi säilyttää, kuten stressi tai Body Battery, pysyvät OpenWatchin omassa tietokannassa.' }
+    ],
+    pairText: 'OpenWatchilla tiedot tulevat sisään; OpenVitalsilla katsot niitä.'
+  },
+  openbridge: {
+    metaTitle: 'OpenBridge - OpenVitalsin tietojen välitys verkkopalveluihin',
+    metaDescription: 'OpenBridge on valinnainen Android-sovellus, joka lukee OpenVitalsin jakamat tiedot ja voi välittää ne verkkopalveluihin. Varhaisessa vaiheessa.',
+    eyebrow: 'Valinnainen, varhaisessa vaiheessa',
+    lede: 'OpenVitals ei koskaan yhdisty internetiin. OpenBridge on erillinen sovellus, joka voi: se lukee vain sen, minkä annat OpenVitalsin jakaa, ja voi välittää sen verkkopalveluihin.',
+    stepsTitle: 'Miten se saa tiedot',
+    steps: [
+      'Ota OpenVitalsin asetuksista käyttöön jakaminen muiden sovellusten kanssa. Se on aluksi pois päältä.',
+      'Pyydä OpenBridgessa ryhmät, jotka haluat jakaa. Android kysyy kerran kustakin yhdestätoista ryhmästä, ja voit muuttaa vastausta myöhemmin sen asetuksissa.',
+      'Lue yksi ryhmä tai kaikki: viimeisen viikon päiväsummat, viimeisen päivän näytteet, viimeisen kuukauden harjoitukset ja reitit.'
+    ],
+    statusTitle: 'Missä mennään',
+    statusText: 'Yhtään verkkopalvelua ei ole vielä yhdistetty, ja jakamisrajapinta on toistaiseksi vain OpenVitalsin testiversioissa. Seuraa työtä GitHubissa.'
   },
   nav: {
     primary: 'Päävalikko',
-    privacy: 'Tietosuoja',
-    features: 'Ominaisuudet',
     docs: 'Ohjeet',
     install: 'Asenna',
     home: 'Halen etusivu',

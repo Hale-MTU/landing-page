@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const de: Messages = {
   meta: {
-    title: 'Hale: OpenVitals - Gesundheitsübersicht für Android, lokal auf deinem Telefon',
+    title: 'OpenVitals - Gesundheitsübersicht für Android, lokal auf deinem Telefon',
     description:
       'OpenVitals ist eine Android-App, die lokal auf deinem Telefon arbeitet: Health-Connect-Daten ansehen, eintragen, importieren und verstehen, ohne Konto, Werbung oder Nutzungsanalyse.',
     ogDescription:
@@ -17,14 +17,56 @@ const de: Messages = {
     appsLabel: 'Die Apps',
     apps: {
       openvitals: { text: 'Das Dashboard. Liest deine Health-Connect-Einträge und macht daraus eine Tagesansicht; importiert, zeichnet auf und protokolliert, alles auf dem Telefon.', link: 'Über OpenVitals' },
-      openwatch: { text: 'Die Geräte. Koppelt Garmin- und Wear-OS-Uhren und eine Xiaomi-Waage per Bluetooth und kopiert ihre Aufzeichnungen nach Health Connect.', link: 'OpenWatch bei Google Play' },
-      openbridge: { text: 'Der Weg nach draußen. Eine optionale App, die von OpenVitals freigegebene Daten an Online-Dienste weitergibt. In früher Phase.', link: 'OpenBridge auf GitHub' }
-    }
+      openwatch: { text: 'Die Geräte. Koppelt Garmin- und Wear-OS-Uhren und eine Xiaomi-Waage per Bluetooth und kopiert ihre Aufzeichnungen nach Health Connect.', link: 'Über OpenWatch' },
+      openbridge: { text: 'Der Weg nach draußen. Eine optionale App, die von OpenVitals freigegebene Daten an Online-Dienste weitergibt. In früher Phase.', link: 'Über OpenBridge' }
+    },
+    metaTitle: 'Hale - Kostenlose Offline-Gesundheits-Apps für Android',
+    metaDescription: 'Hale MTÜ ist der estnische gemeinnützige Verein hinter OpenVitals, OpenWatch und OpenBridge: kostenlose Open-Source-Gesundheits-Apps für Android, ohne Konten, Werbung oder Cloud.',
+    principlesTitle: 'Was die drei Apps gemeinsam haben',
+    principles: [
+      { title: 'Kein Konto, keine Hale-Cloud', text: 'Keine Anmeldung und kein Hale-Server. Deine Einträge bleiben in Androids Health Connect, außer du gibst sie selbst weiter.' },
+      { title: 'Keine Werbung, keine Analytik', text: 'Keine Tracking-SDKs in irgendeiner App und kein Geschäft mit deinen Daten.' },
+      { title: 'Frei und quelloffen', text: 'Jede App ist freie Software unter der AGPL-3.0-or-later, mit ihrem Quellcode auf GitHub.' },
+      { title: 'Getragen von einem gemeinnützigen Verein', text: 'Hale MTÜ ist in Tallinn, Estland, eingetragen. Seine Einnahmen dienen nur seinen Zwecken und werden nie ausgeschüttet.' }
+    ],
+    aboutTitle: 'Über Hale',
+    aboutText: 'Hale ist das alte englische Wort für gesund, wie in „hale and hearty“. Der Verein veröffentlicht die Apps und kümmert sich um ihren Code und ihre Gemeinschaft. Schreib an hello@hale.ngo.'
+  },
+  openwatch: {
+    metaTitle: 'OpenWatch - Uhren und eine Waage für Health Connect',
+    metaDescription: 'OpenWatch koppelt Garmin- und Wear-OS-Uhren und eine Xiaomi-Waage per Bluetooth und kopiert ihre Aufzeichnungen nach Health Connect. Ohne Konto, ohne Server, ohne Internetberechtigung.',
+    eyebrow: 'Uhren und eine Waage für Health Connect',
+    lede: 'OpenWatch koppelt deine Uhr und deine Waage per Bluetooth, kopiert ihre Aufzeichnungen nach Health Connect und verwaltet sie. Ohne Konto, ohne Server, ohne Internetberechtigung.',
+    devicesTitle: 'Die unterstützten Geräte',
+    devices: [
+      { title: 'Garmin-Uhren', text: 'Aktivitäten, Schlaf und Wellness über Garmins eigenes Bluetooth-Protokoll synchronisiert, dazu Benachrichtigungen, Musiksteuerung, Wetter, Kalender, Wecker und Uhr finden.' },
+      { title: 'Wear-OS-Uhren', text: 'Die OpenWatch-Uhren-App zeichnet Herzfrequenz, Schritte und Etagen auf und synchronisiert sie per Tipp oder nach Zeitplan, mit geschätztem Schlaf und Ruhepuls jede Nacht.' },
+      { title: 'Xiaomi-Waage S400', text: 'Jede Wägung landet sofort in Health Connect, ob die App offen ist oder nicht. Körperfett, Magermasse und Körperwasser schätzt das Telefon.' }
+    ],
+    privacyTitle: 'Wohin deine Daten gehen',
+    privacy: [
+      { title: 'Keine Internetberechtigung', text: 'Die Telefon-App kann das Internet nicht erreichen. Alles läuft per Bluetooth zwischen Gerät und Telefon.' },
+      { title: 'Nach Health Connect', text: 'Was ein Gerät aufzeichnet, landet in Androids Gesundheitsspeicher, wo OpenVitals und jede App, die du zulässt, es lesen kann.' },
+      { title: 'Der Rest bleibt auf dem Telefon', text: 'Messwerte, die Health Connect nicht aufnehmen kann, etwa Stress oder Body Battery, bleiben in der eigenen Datenbank von OpenWatch.' }
+    ],
+    pairText: 'Mit OpenWatch kommen die Daten herein; mit OpenVitals schaust du sie dir an.'
+  },
+  openbridge: {
+    metaTitle: 'OpenBridge - OpenVitals-Daten an Online-Dienste weitergeben',
+    metaDescription: 'OpenBridge ist eine optionale Android-App, die von OpenVitals freigegebene Daten liest und an Online-Dienste weitergeben kann. In früher Phase.',
+    eyebrow: 'Optional, in früher Phase',
+    lede: 'OpenVitals geht nie ins Internet. OpenBridge ist die separate App, die es kann: Sie liest nur, was du OpenVitals freigeben lässt, und kann es an Online-Dienste weitergeben.',
+    stepsTitle: 'Wie sie an die Daten kommt',
+    steps: [
+      'Schalte in den Einstellungen von OpenVitals das Teilen mit anderen Apps ein. Es ist zunächst aus.',
+      'Fordere in OpenBridge die Gruppen an, die du teilen willst. Android fragt einmal für jede der elf Gruppen, und du kannst die Antwort später in seinen Einstellungen ändern.',
+      'Lies eine Gruppe oder alle: Tageswerte der letzten Woche, Messpunkte des letzten Tages, Einheiten und Routen des letzten Monats.'
+    ],
+    statusTitle: 'Wo sie steht',
+    statusText: 'Noch ist kein Online-Dienst angebunden, und die Teilen-Schnittstelle gibt es vorerst nur in Testversionen von OpenVitals. Verfolge die Arbeit auf GitHub.'
   },
   nav: {
     primary: 'Hauptnavigation',
-    privacy: 'Datenschutz',
-    features: 'Funktionen',
     docs: 'Doku',
     install: 'Installieren',
     home: 'Hale Startseite',

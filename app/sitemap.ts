@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { locales } from '../lib/i18n'
+import { apps } from '../lib/links'
 
 // Written once at build time; the site is a static export.
 export const dynamic = 'force-static'
@@ -13,11 +14,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 1
     },
-    ...locales.map((locale) => ({
-      url: `https://hale.ngo/${locale}/`,
-      lastModified,
-      changeFrequency: 'weekly' as const,
-      priority: 1
-    }))
+    ...locales.flatMap((locale) =>
+      ['', ...apps.map((app) => `${app}/`)].map((path) => ({
+        url: `https://hale.ngo/${locale}/${path}`,
+        lastModified,
+        changeFrequency: 'weekly' as const,
+        priority: path === '' ? 1 : 0.8
+      }))
+    )
   ]
 }

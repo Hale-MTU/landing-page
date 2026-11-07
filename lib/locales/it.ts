@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const it: Messages = {
   meta: {
-    title: 'Hale: OpenVitals - Dashboard per la salute su Android che funziona in locale',
+    title: 'OpenVitals - Dashboard per la salute su Android che funziona in locale',
     description:
       "OpenVitals è un'app Android che funziona in locale per vedere, registrare, importare e capire i dati di Health Connect, senza account, pubblicità né statistiche d'uso.",
     ogDescription:
@@ -17,14 +17,56 @@ const it: Messages = {
     appsLabel: 'Le app',
     apps: {
       openvitals: { text: 'Il cruscotto. Legge i tuoi record di Health Connect e li trasforma in una vista giornaliera; importa, registra e annota, tutto sul telefono.', link: 'Informazioni su OpenVitals' },
-      openwatch: { text: 'I dispositivi. Associa orologi Garmin e Wear OS e una bilancia Xiaomi via Bluetooth e copia ciò che registrano in Health Connect.', link: 'OpenWatch su Google Play' },
-      openbridge: { text: 'La via d\'uscita. Un\'app facoltativa che passa i dati condivisi da OpenVitals a servizi online. In fase iniziale.', link: 'OpenBridge su GitHub' }
-    }
+      openwatch: { text: 'I dispositivi. Associa orologi Garmin e Wear OS e una bilancia Xiaomi via Bluetooth e copia ciò che registrano in Health Connect.', link: 'Informazioni su OpenWatch' },
+      openbridge: { text: 'La via d\'uscita. Un\'app facoltativa che passa i dati condivisi da OpenVitals a servizi online. In fase iniziale.', link: 'Informazioni su OpenBridge' }
+    },
+    metaTitle: 'Hale - App per la salute gratuite e offline per Android',
+    metaDescription: 'Hale MTÜ è l\'associazione estone senza scopo di lucro dietro OpenVitals, OpenWatch e OpenBridge: app per la salute libere e gratuite per Android, senza account, pubblicità o cloud.',
+    principlesTitle: 'Cosa hanno in comune le tre app',
+    principles: [
+      { title: 'Nessun account, nessun cloud Hale', text: 'Niente da registrare e nessun server Hale. I tuoi dati restano in Health Connect di Android, a meno che tu non scelga di inoltrarli.' },
+      { title: 'Niente pubblicità, niente analitiche', text: 'Nessun SDK di tracciamento in nessuna app e nessun business costruito sui tuoi dati.' },
+      { title: 'Libere e open source', text: 'Ogni app è software libero con licenza AGPL-3.0-or-later e il suo codice è su GitHub.' },
+      { title: 'Gestite da un\'associazione senza scopo di lucro', text: 'Hale MTÜ è registrata a Tallinn, in Estonia. Le sue entrate servono solo ai suoi scopi e non vengono mai distribuite.' }
+    ],
+    aboutTitle: 'Chi è Hale',
+    aboutText: 'Hale è l\'antica parola inglese per sano, come in «hale and hearty». L\'associazione pubblica le app e si prende cura del loro codice e della loro comunità. Scrivi a hello@hale.ngo.'
+  },
+  openwatch: {
+    metaTitle: 'OpenWatch - Orologi e una bilancia per Health Connect',
+    metaDescription: 'OpenWatch associa orologi Garmin e Wear OS e una bilancia Xiaomi via Bluetooth e copia ciò che registrano in Health Connect. Senza account, senza server, senza permesso di accesso a internet.',
+    eyebrow: 'Orologi e una bilancia per Health Connect',
+    lede: 'OpenWatch associa il tuo orologio e la tua bilancia via Bluetooth, copia ciò che registrano in Health Connect e li gestisce. Senza account, senza server, senza permesso di accesso a internet.',
+    devicesTitle: 'I dispositivi supportati',
+    devices: [
+      { title: 'Orologi Garmin', text: 'Attività, sonno e benessere sincronizzati con il protocollo Bluetooth di Garmin, oltre a notifiche, controllo della musica, meteo, calendario, sveglie e trova orologio.' },
+      { title: 'Orologi Wear OS', text: 'L\'app OpenWatch per l\'orologio registra battito, passi e piani e li sincronizza con un tocco o secondo una pianificazione, con una stima del sonno e del battito a riposo ogni notte.' },
+      { title: 'Bilancia Xiaomi S400', text: 'Ogni pesata viene salvata subito in Health Connect, con l\'app aperta o chiusa. Massa grassa, massa magra e acqua corporea sono stimate sul telefono.' }
+    ],
+    privacyTitle: 'Dove vanno i tuoi dati',
+    privacy: [
+      { title: 'Nessun permesso internet', text: 'L\'app del telefono non può accedere a internet. Tutto passa via Bluetooth tra il dispositivo e il telefono.' },
+      { title: 'In Health Connect', text: 'Ciò che un dispositivo registra finisce nell\'archivio salute di Android, dove OpenVitals e qualsiasi app che autorizzi possono leggerlo.' },
+      { title: 'Il resto resta sul telefono', text: 'Le misure che Health Connect non può conservare, come lo stress o Body Battery, restano nel database di OpenWatch.' }
+    ],
+    pairText: 'OpenWatch è da dove arrivano i dati; OpenVitals è dove li guardi.'
+  },
+  openbridge: {
+    metaTitle: 'OpenBridge - Inoltrare i dati di OpenVitals a servizi online',
+    metaDescription: 'OpenBridge è un\'app Android facoltativa che legge i dati condivisi da OpenVitals e può inoltrarli a servizi online. In fase iniziale.',
+    eyebrow: 'Facoltativa, in fase iniziale',
+    lede: 'OpenVitals non si collega mai a internet. OpenBridge è l\'app separata che può farlo: legge solo ciò che lasci condividere a OpenVitals e può inoltrarlo a servizi online.',
+    stepsTitle: 'Come ottiene i dati',
+    steps: [
+      'Nelle impostazioni di OpenVitals, attiva la condivisione con altre app. All\'inizio è disattivata.',
+      'In OpenBridge, richiedi i gruppi che vuoi condividere. Android chiede una volta per ciascuno degli undici gruppi e puoi cambiare la risposta più tardi nelle sue impostazioni.',
+      'Leggi un gruppo o tutti: i totali giornalieri dell\'ultima settimana, i campioni dell\'ultimo giorno, le sessioni e i percorsi dell\'ultimo mese.'
+    ],
+    statusTitle: 'A che punto è',
+    statusText: 'Nessun servizio online è ancora collegato e per ora l\'API di condivisione è presente solo nelle versioni di prova di OpenVitals. Segui il lavoro su GitHub.'
   },
   nav: {
     primary: 'Navigazione principale',
-    privacy: 'Privacy',
-    features: 'Funzioni',
     docs: 'Documentazione',
     install: 'Installa',
     home: 'Home di Hale',

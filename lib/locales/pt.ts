@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const pt: Messages = {
   meta: {
-    title: 'Hale: OpenVitals - Painel de saúde para Android, com os dados no seu telemóvel',
+    title: 'OpenVitals - Painel de saúde para Android, com os dados no seu telemóvel',
     description:
       'O OpenVitals é uma aplicação Android que funciona localmente para ver, registar, importar e compreender dados do Health Connect, sem contas, anúncios nem telemetria.',
     ogDescription:
@@ -17,14 +17,56 @@ const pt: Messages = {
     appsLabel: 'As apps',
     apps: {
       openvitals: { text: 'O painel. Lê os seus registos do Health Connect e transforma-os numa vista diária; importa, grava e regista, tudo no telemóvel.', link: 'Sobre o OpenVitals' },
-      openwatch: { text: 'Os dispositivos. Emparelha relógios Garmin e Wear OS e uma balança Xiaomi por Bluetooth e copia o que registam para o Health Connect.', link: 'OpenWatch no Google Play' },
-      openbridge: { text: 'A saída. Uma app opcional que passa os dados partilhados pelo OpenVitals a serviços online. Em fase inicial.', link: 'OpenBridge no GitHub' }
-    }
+      openwatch: { text: 'Os dispositivos. Emparelha relógios Garmin e Wear OS e uma balança Xiaomi por Bluetooth e copia o que registam para o Health Connect.', link: 'Sobre o OpenWatch' },
+      openbridge: { text: 'A saída. Uma app opcional que passa os dados partilhados pelo OpenVitals a serviços online. Em fase inicial.', link: 'Sobre o OpenBridge' }
+    },
+    metaTitle: 'Hale - Apps de saúde gratuitas e offline para Android',
+    metaDescription: 'A Hale MTÜ é a associação estónia sem fins lucrativos por trás do OpenVitals, do OpenWatch e do OpenBridge: apps de saúde livres e gratuitas para Android, sem contas, sem anúncios e sem nuvem.',
+    principlesTitle: 'O que as três apps têm em comum',
+    principles: [
+      { title: 'Sem conta, sem nuvem da Hale', text: 'Nada para registar e nenhum servidor da Hale. Os seus registos ficam no Health Connect do Android, a menos que decida enviá-los para outro lado.' },
+      { title: 'Sem anúncios, sem análises', text: 'Nenhum SDK de rastreio em nenhuma app, e nenhum negócio construído sobre os seus dados.' },
+      { title: 'Livres e de código aberto', text: 'Todas as apps são software livre sob a AGPL-3.0-or-later, com o código no GitHub.' },
+      { title: 'Geridas por uma associação sem fins lucrativos', text: 'A Hale MTÜ está registada em Tallinn, na Estónia. As suas receitas destinam-se apenas aos seus fins e nunca são distribuídas.' }
+    ],
+    aboutTitle: 'Sobre a Hale',
+    aboutText: 'Hale é a antiga palavra inglesa para saudável, como em «hale and hearty». A associação publica as apps e cuida do seu código e da sua comunidade. Escreva para hello@hale.ngo.'
+  },
+  openwatch: {
+    metaTitle: 'OpenWatch - Relógios e uma balança para o Health Connect',
+    metaDescription: 'O OpenWatch emparelha relógios Garmin e Wear OS e uma balança Xiaomi por Bluetooth e copia o que registam para o Health Connect. Sem conta, sem servidor, sem permissão de internet.',
+    eyebrow: 'Relógios e uma balança para o Health Connect',
+    lede: 'O OpenWatch emparelha o seu relógio e a sua balança por Bluetooth, copia o que registam para o Health Connect e gere-os. Sem conta, sem servidor, sem permissão de internet.',
+    devicesTitle: 'Os dispositivos compatíveis',
+    devices: [
+      { title: 'Relógios Garmin', text: 'Atividades, sono e bem-estar sincronizados com o próprio protocolo Bluetooth da Garmin, além de notificações, controlo de música, meteorologia, calendário, alarmes e encontrar o relógio.' },
+      { title: 'Relógios Wear OS', text: 'A app OpenWatch para o relógio regista a frequência cardíaca, os passos e os pisos e sincroniza-os com um toque ou de forma agendada, com uma estimativa do sono e da frequência em repouso todas as noites.' },
+      { title: 'Balança Xiaomi S400', text: 'Cada pesagem é guardada no Health Connect de imediato, com a app aberta ou fechada. A gordura corporal, a massa magra e a água corporal são estimadas no telemóvel.' }
+    ],
+    privacyTitle: 'Para onde vão os seus dados',
+    privacy: [
+      { title: 'Sem permissão de internet', text: 'A app do telemóvel não consegue aceder à internet. Tudo viaja por Bluetooth entre o dispositivo e o telemóvel.' },
+      { title: 'Para o Health Connect', text: 'O que um dispositivo regista vai para o armazenamento de saúde do Android, onde o OpenVitals e qualquer app que autorize o podem ler.' },
+      { title: 'O resto fica no telemóvel', text: 'As medições que o Health Connect não guarda, como o stress ou a Body Battery, ficam na base de dados própria do OpenWatch.' }
+    ],
+    pairText: 'O OpenWatch é de onde vêm os dados; o OpenVitals é onde os vê.'
+  },
+  openbridge: {
+    metaTitle: 'OpenBridge - Enviar os dados do OpenVitals para serviços online',
+    metaDescription: 'O OpenBridge é uma app opcional para Android que lê os dados partilhados pelo OpenVitals e os pode enviar para serviços online. Em fase inicial.',
+    eyebrow: 'Opcional, em fase inicial',
+    lede: 'O OpenVitals nunca se liga à internet. O OpenBridge é a app à parte que pode: lê apenas o que deixa o OpenVitals partilhar e pode enviá-lo para serviços online.',
+    stepsTitle: 'Como obtém os dados',
+    steps: [
+      'Nas definições do OpenVitals, ative a partilha com outras apps. Vem desativada.',
+      'No OpenBridge, peça os grupos que quer partilhar. O Android pergunta uma vez por cada um dos onze grupos e pode alterar a resposta mais tarde nas definições.',
+      'Leia um grupo ou todos: totais diários da última semana, amostras do último dia, sessões e percursos do último mês.'
+    ],
+    statusTitle: 'Em que ponto está',
+    statusText: 'Ainda não há nenhum serviço online ligado e, por agora, a API de partilha só existe nas versões de teste do OpenVitals. Acompanhe o trabalho no GitHub.'
   },
   nav: {
     primary: 'Navegação principal',
-    privacy: 'Privacidade',
-    features: 'Funcionalidades',
     docs: 'Documentação',
     install: 'Instalar',
     home: 'Início da Hale',

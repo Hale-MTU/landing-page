@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const ja: Messages = {
   meta: {
-    title: 'Hale: OpenVitals - データを手元に置く Android 健康ダッシュボード',
+    title: 'OpenVitals - データを手元に置く Android 健康ダッシュボード',
     description:
       'OpenVitals は、Health Connect のデータを表示、記録、インポートし、読み解くための Android アプリです。データは手元に置いたまま。アカウントも広告も利用状況の分析もありません。',
     ogDescription:
@@ -17,14 +17,56 @@ const ja: Messages = {
     appsLabel: 'アプリ',
     apps: {
       openvitals: { text: 'ダッシュボード。Health Connectの記録を読み取って日々の表示にまとめ、インポート・記録・入力をすべてスマートフォン上で行います。', link: 'OpenVitalsについて' },
-      openwatch: { text: 'デバイス。GarminやWear OSの時計、Xiaomiの体重計とBluetoothでペアリングし、記録をHealth Connectに書き込みます。', link: 'Google PlayのOpenWatch' },
-      openbridge: { text: '外への橋。OpenVitalsが共有したデータをオンラインサービスへ渡す任意のアプリです。開発初期段階です。', link: 'GitHubのOpenBridge' }
-    }
+      openwatch: { text: 'デバイス。GarminやWear OSの時計、Xiaomiの体重計とBluetoothでペアリングし、記録をHealth Connectに書き込みます。', link: 'OpenWatchについて' },
+      openbridge: { text: '外への橋。OpenVitalsが共有したデータをオンラインサービスへ渡す任意のアプリです。開発初期段階です。', link: 'OpenBridgeについて' }
+    },
+    metaTitle: 'Hale - Android向けの無料・オフラインの健康アプリ',
+    metaDescription: 'Hale MTÜはOpenVitals、OpenWatch、OpenBridgeを開発するエストニアの非営利団体です。アカウントも広告もクラウドもない、Android向けの無料のオープンソース健康アプリです。',
+    principlesTitle: '3つのアプリに共通すること',
+    principles: [
+      { title: 'アカウントなし、Haleのクラウドなし', text: '登録は不要で、Haleのサーバーもありません。あなたが渡すと決めない限り、記録はAndroidのHealth Connectにとどまります。' },
+      { title: '広告なし、分析なし', text: 'どのアプリにも追跡用SDKはなく、あなたのデータで商売をすることもありません。' },
+      { title: '自由なオープンソース', text: 'すべてのアプリはAGPL-3.0-or-laterの自由ソフトウェアで、ソースコードはGitHubにあります。' },
+      { title: '非営利団体が運営', text: 'Hale MTÜはエストニアのタリンで登記されています。収入は活動目的にのみ使われ、分配されることはありません。' }
+    ],
+    aboutTitle: 'Haleについて',
+    aboutText: 'Haleは「健康な」を意味する古い英語で、「hale and hearty」という言い回しに使われます。団体はアプリを公開し、そのコードとコミュニティを支えています。お問い合わせはhello@hale.ngoへ。'
+  },
+  openwatch: {
+    metaTitle: 'OpenWatch - Health Connectのための時計と体重計',
+    metaDescription: 'OpenWatchはGarminやWear OSの時計、Xiaomiの体重計とBluetoothでペアリングし、記録をHealth Connectに書き込みます。アカウントもサーバーもインターネット権限も不要です。',
+    eyebrow: 'Health Connectのための時計と体重計',
+    lede: 'OpenWatchは時計と体重計をBluetoothでペアリングし、記録をHealth Connectに書き込み、デバイスを管理します。アカウントもサーバーもインターネット権限も不要です。',
+    devicesTitle: '対応デバイス',
+    devices: [
+      { title: 'Garminの時計', text: 'アクティビティ、睡眠、ウェルネスをGarmin独自のBluetoothプロトコルで同期。通知、音楽操作、天気、カレンダー、アラーム、時計を探す機能にも対応します。' },
+      { title: 'Wear OSの時計', text: 'OpenWatchの時計アプリが心拍数、歩数、上った階数を記録し、タップまたはスケジュールで同期。毎晩の睡眠と安静時心拍数も推定します。' },
+      { title: 'Xiaomi S400体重計', text: '計測のたびにすぐHealth Connectへ保存され、アプリが開いていても閉じていても動きます。体脂肪、除脂肪量、体水分はスマートフォンで推定します。' }
+    ],
+    privacyTitle: 'データの行き先',
+    privacy: [
+      { title: 'インターネット権限なし', text: 'スマートフォンのアプリはインターネットに接続できません。すべてデバイスとスマートフォンの間をBluetoothで移動します。' },
+      { title: 'Health Connectへ', text: 'デバイスの記録はAndroidの健康データストアに入り、OpenVitalsや許可したアプリが読めるようになります。' },
+      { title: '残りはスマートフォンに', text: 'ストレスやBody BatteryなどHealth Connectに保存できない値は、OpenWatch自身のデータベースに残ります。' }
+    ],
+    pairText: 'OpenWatchはデータの入り口、OpenVitalsはデータを見る場所です。'
+  },
+  openbridge: {
+    metaTitle: 'OpenBridge - OpenVitalsのデータをオンラインサービスへ',
+    metaDescription: 'OpenBridgeは、OpenVitalsが共有するデータを読み取り、オンラインサービスへ渡せる任意のAndroidアプリです。開発初期段階です。',
+    eyebrow: '任意・開発初期段階',
+    lede: 'OpenVitalsはインターネットに接続しません。それができるのが別アプリのOpenBridgeです。OpenVitalsに共有を許可したデータだけを読み取り、オンラインサービスへ渡せます。',
+    stepsTitle: 'データの受け取り方',
+    steps: [
+      'OpenVitalsの設定で、ほかのアプリとの共有をオンにします。初期状態はオフです。',
+      'OpenBridgeで、共有したいグループを要求します。Androidが11のグループごとに一度ずつ確認し、答えは後から設定で変更できます。',
+      '1つのグループまたはすべてを読み取ります。直近1週間の日別合計、直近1日のサンプル、直近1か月のセッションとルートです。'
+    ],
+    statusTitle: '現在の状況',
+    statusText: 'まだオンラインサービスには接続しておらず、共有APIは今のところOpenVitalsのテスト版にしかありません。進捗はGitHubで確認できます。'
   },
   nav: {
     primary: 'メインナビゲーション',
-    privacy: 'プライバシー',
-    features: '機能',
     docs: 'ドキュメント',
     install: 'インストール',
     home: 'Haleのホーム',
