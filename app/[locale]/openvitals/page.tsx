@@ -7,11 +7,11 @@ import { SiteFooter } from '@/app/components/SiteFooter'
 import { SiteHeader } from '@/app/components/SiteHeader'
 import { isLocale, localeTags, type Locale } from '@/lib/i18n'
 import {
-  docsUrl,
   healthConnectDocsUrl,
   installUrl,
   liberapayUrl,
   openVitalsCodeUrl,
+  openVitalsDocsUrl,
   openVitalsFdroidUrl,
   openVitalsPackage,
   openVitalsReleasesUrl,
@@ -147,7 +147,7 @@ export default async function OpenVitalsPage({
               {copy.hero.install}
               <ArrowIcon />
             </a>
-            <a className="button button-secondary" href={docsUrl}>
+            <a className="button button-secondary" href={openVitalsDocsUrl}>
               {copy.hero.docs}
               <ExternalIcon />
             </a>
