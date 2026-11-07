@@ -5,7 +5,7 @@ import { getMessages } from '@/lib/messages'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://hale.ngo'),
-  title: 'OpenVitals',
+  title: 'Hale',
   description: getMessages('en').meta.description,
   alternates: {
     languages: {
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     }
   },
   icons: {
-    icon: '/images/openvitals-logo.png',
-    apple: '/images/openvitals-logo.png'
+    icon: '/images/hale-mark.png',
+    apple: '/images/hale-mark.png'
   }
 }
 
@@ -25,7 +25,7 @@ export default function LanguageChooser() {
     <main>
       <LocaleRedirect />
       <noscript>
-        <h1>OpenVitals</h1>
+        <h1>Hale</h1>
         <ul>
           {locales.map((code) => (
             <li key={code}>

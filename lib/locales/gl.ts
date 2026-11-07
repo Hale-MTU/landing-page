@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const gl: Messages = {
   meta: {
-    title: 'OpenVitals - Panel de saúde para Android que funciona en local',
+    title: 'Hale: OpenVitals - Panel de saúde para Android que funciona en local',
     description:
       'OpenVitals é unha app Android que funciona en local para ver, rexistrar, importar e entender os datos de Health Connect, sen contas, anuncios nin analíticas.',
     ogDescription:
@@ -10,13 +10,24 @@ const gl: Messages = {
     twitterDescription:
       'Ferramentas de saúde para Android que funcionan en local cos datos de Health Connect, sen contas, anuncios nin analíticas.'
   },
+  hale: {
+    eyebrow: 'Apps de saúde gratuítas e sen conexión para Android',
+    title: 'Os teus datos de saúde, no teu teléfono e en ningún outro sitio.',
+    text: 'Hale MTÜ é a asociación estoniana sen ánimo de lucro detrás de OpenVitals, OpenWatch e OpenBridge: sen contas, sen anuncios, sen analíticas, sen nube.',
+    appsLabel: 'As apps',
+    apps: {
+      openvitals: { text: 'O panel. Le os teus rexistros de Health Connect e convérteos nunha vista diaria; importa, rexistra e anota, todo no teléfono.', link: 'Sobre OpenVitals' },
+      openwatch: { text: 'Os dispositivos. Emparella reloxos Garmin e Wear OS e unha báscula Xiaomi por Bluetooth e copia o que rexistran en Health Connect.', link: 'OpenWatch en Google Play' },
+      openbridge: { text: 'A saída. Unha app opcional que pasa os datos que OpenVitals comparte a servizos en liña. En fase inicial.', link: 'OpenBridge en GitHub' }
+    }
+  },
   nav: {
     primary: 'Navegación principal',
     privacy: 'Privacidade',
     features: 'Funcións',
     docs: 'Documentación',
     install: 'Instalar',
-    home: 'Inicio de OpenVitals',
+    home: 'Inicio de Hale',
     language: 'Idioma'
   },
   hero: {
@@ -273,6 +284,7 @@ const gl: Messages = {
     more: 'Máis formas de apoiar'
   },
   footer: {
+    publisher: 'Publicado por Hale MTÜ, unha asociación sen ánimo de lucro de Tallinn, Estonia.',
     nav: 'Navegación do pé de páxina',
     documentation: 'Documentación',
     privacy: 'Privacidade',

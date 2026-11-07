@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const it: Messages = {
   meta: {
-    title: 'OpenVitals - Dashboard per la salute su Android che funziona in locale',
+    title: 'Hale: OpenVitals - Dashboard per la salute su Android che funziona in locale',
     description:
       "OpenVitals è un'app Android che funziona in locale per vedere, registrare, importare e capire i dati di Health Connect, senza account, pubblicità né statistiche d'uso.",
     ogDescription:
@@ -10,13 +10,24 @@ const it: Messages = {
     twitterDescription:
       "Strumenti per la salute su Android che funzionano in locale con i dati di Health Connect, senza account, pubblicità né statistiche d'uso."
   },
+  hale: {
+    eyebrow: 'App per la salute gratuite e offline per Android',
+    title: 'I tuoi dati sulla salute, sul tuo telefono e da nessun\'altra parte.',
+    text: 'Hale MTÜ è l\'associazione estone senza scopo di lucro dietro OpenVitals, OpenWatch e OpenBridge: niente account, niente pubblicità, niente analitiche, niente cloud.',
+    appsLabel: 'Le app',
+    apps: {
+      openvitals: { text: 'Il cruscotto. Legge i tuoi record di Health Connect e li trasforma in una vista giornaliera; importa, registra e annota, tutto sul telefono.', link: 'Informazioni su OpenVitals' },
+      openwatch: { text: 'I dispositivi. Associa orologi Garmin e Wear OS e una bilancia Xiaomi via Bluetooth e copia ciò che registrano in Health Connect.', link: 'OpenWatch su Google Play' },
+      openbridge: { text: 'La via d\'uscita. Un\'app facoltativa che passa i dati condivisi da OpenVitals a servizi online. In fase iniziale.', link: 'OpenBridge su GitHub' }
+    }
+  },
   nav: {
     primary: 'Navigazione principale',
     privacy: 'Privacy',
     features: 'Funzioni',
     docs: 'Documentazione',
     install: 'Installa',
-    home: 'Home di OpenVitals',
+    home: 'Home di Hale',
     language: 'Lingua'
   },
   hero: {
@@ -273,6 +284,7 @@ const it: Messages = {
     more: 'Altri modi per sostenerci'
   },
   footer: {
+    publisher: 'Pubblicato da Hale MTÜ, associazione senza scopo di lucro di Tallinn, Estonia.',
     nav: 'Navigazione del piè di pagina',
     documentation: 'Documentazione',
     privacy: 'Privacy',

@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const ja: Messages = {
   meta: {
-    title: 'OpenVitals - データを手元に置く Android 健康ダッシュボード',
+    title: 'Hale: OpenVitals - データを手元に置く Android 健康ダッシュボード',
     description:
       'OpenVitals は、Health Connect のデータを表示、記録、インポートし、読み解くための Android アプリです。データは手元に置いたまま。アカウントも広告も利用状況の分析もありません。',
     ogDescription:
@@ -10,13 +10,24 @@ const ja: Messages = {
     twitterDescription:
       'Health Connect のデータを手元で扱う Android 向け健康ツールです。アカウントも広告も利用状況の分析もありません。'
   },
+  hale: {
+    eyebrow: 'Android向けの無料・オフラインの健康アプリ',
+    title: 'あなたの健康データは、あなたのスマートフォンの中だけに。',
+    text: 'Hale MTÜはOpenVitals、OpenWatch、OpenBridgeを開発するエストニアの非営利団体です。アカウントも広告も分析もクラウドもありません。',
+    appsLabel: 'アプリ',
+    apps: {
+      openvitals: { text: 'ダッシュボード。Health Connectの記録を読み取って日々の表示にまとめ、インポート・記録・入力をすべてスマートフォン上で行います。', link: 'OpenVitalsについて' },
+      openwatch: { text: 'デバイス。GarminやWear OSの時計、Xiaomiの体重計とBluetoothでペアリングし、記録をHealth Connectに書き込みます。', link: 'Google PlayのOpenWatch' },
+      openbridge: { text: '外への橋。OpenVitalsが共有したデータをオンラインサービスへ渡す任意のアプリです。開発初期段階です。', link: 'GitHubのOpenBridge' }
+    }
+  },
   nav: {
     primary: 'メインナビゲーション',
     privacy: 'プライバシー',
     features: '機能',
     docs: 'ドキュメント',
     install: 'インストール',
-    home: 'OpenVitals ホーム',
+    home: 'Haleのホーム',
     language: '言語'
   },
   hero: {
@@ -273,6 +284,7 @@ const ja: Messages = {
     more: 'その他の支援方法'
   },
   footer: {
+    publisher: '発行: Hale MTÜ（エストニア・タリンの非営利団体）',
     nav: 'フッターナビゲーション',
     documentation: 'ドキュメント',
     privacy: 'プライバシー',

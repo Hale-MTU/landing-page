@@ -21,6 +21,14 @@ export type Messages = {
     ogDescription: string
     twitterDescription: string
   }
+  hale: {
+    eyebrow: string
+    title: string
+    text: string
+    /** Accessible name of the app cards. */
+    appsLabel: string
+    apps: Record<'openvitals' | 'openwatch' | 'openbridge', { text: string; link: string }>
+  }
   nav: {
     primary: string
     privacy: string
@@ -119,6 +127,8 @@ export type Messages = {
     more: string
   }
   footer: {
+    /** The publisher line under the footer brand. */
+    publisher: string
     nav: string
     documentation: string
     privacy: string

@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const es: Messages = {
   meta: {
-    title: 'OpenVitals - Panel de salud local-first para Android',
+    title: 'Hale: OpenVitals - Panel de salud local-first para Android',
     description:
       'OpenVitals es una app Android local-first para ver, registrar, importar y entender datos de Health Connect sin cuentas, anuncios ni analítica.',
     ogDescription:
@@ -10,13 +10,24 @@ const es: Messages = {
     twitterDescription:
       'Herramientas de salud local-first para Android con datos de Health Connect, sin cuentas, anuncios ni analítica.'
   },
+  hale: {
+    eyebrow: 'Apps de salud gratuitas y sin conexión para Android',
+    title: 'Tus datos de salud, en tu teléfono y en ningún otro sitio.',
+    text: 'Hale MTÜ es la asociación estonia sin ánimo de lucro detrás de OpenVitals, OpenWatch y OpenBridge: sin cuentas, sin anuncios, sin analíticas, sin nube.',
+    appsLabel: 'Las apps',
+    apps: {
+      openvitals: { text: 'El panel. Lee tus registros de Health Connect y los convierte en una vista diaria; importa, registra y anota, todo en el teléfono.', link: 'Sobre OpenVitals' },
+      openwatch: { text: 'Los dispositivos. Empareja relojes Garmin y Wear OS y una báscula Xiaomi por Bluetooth y copia lo que registran en Health Connect.', link: 'OpenWatch en Google Play' },
+      openbridge: { text: 'La salida. Una app opcional que pasa los datos que OpenVitals comparte a servicios en línea. En fase inicial.', link: 'OpenBridge en GitHub' }
+    }
+  },
   nav: {
     primary: 'Navegación principal',
     privacy: 'Privacidad',
     features: 'Funciones',
     docs: 'Docs',
     install: 'Instalar',
-    home: 'Inicio de OpenVitals',
+    home: 'Inicio de Hale',
     language: 'Idioma'
   },
   hero: {
@@ -302,6 +313,7 @@ const es: Messages = {
     more: 'Más formas de apoyar'
   },
   footer: {
+    publisher: 'Publicado por Hale MTÜ, una asociación sin ánimo de lucro de Tallin, Estonia.',
     nav: 'Navegación del pie',
     documentation: 'Documentación',
     privacy: 'Privacidad',

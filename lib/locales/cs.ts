@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const cs: Messages = {
   meta: {
-    title: 'OpenVitals - Přehled zdraví pro Android, data zůstávají v telefonu',
+    title: 'Hale: OpenVitals - Přehled zdraví pro Android, data zůstávají v telefonu',
     description:
       'OpenVitals je aplikace pro Android, ve které data z Health Connect prohlížíte, zapisujete, importujete a lépe jim rozumíte. Data zůstávají v telefonu. Bez účtu, reklam a analytiky.',
     ogDescription:
@@ -10,13 +10,24 @@ const cs: Messages = {
     twitterDescription:
       'Nástroje pro zdraví na Androidu, které pracují s daty z Health Connect. Data zůstávají v telefonu. Bez účtu, reklam a analytiky.'
   },
+  hale: {
+    eyebrow: 'Bezplatné offline zdravotní aplikace pro Android',
+    title: 'Vaše zdravotní data ve vašem telefonu a nikde jinde.',
+    text: 'Hale MTÜ je estonský neziskový spolek, který stojí za aplikacemi OpenVitals, OpenWatch a OpenBridge: bez účtů, bez reklam, bez analytiky, bez cloudu.',
+    appsLabel: 'Aplikace',
+    apps: {
+      openvitals: { text: 'Přehled. Čte vaše záznamy z Health Connect a převádí je na denní přehled; importuje, zaznamenává a eviduje, vše v telefonu.', link: 'O aplikaci OpenVitals' },
+      openwatch: { text: 'Zařízení. Páruje hodinky Garmin a Wear OS a váhu Xiaomi přes Bluetooth a kopíruje, co zaznamenají, do Health Connect.', link: 'OpenWatch na Google Play' },
+      openbridge: { text: 'Cesta ven. Volitelná aplikace, která předává data sdílená aplikací OpenVitals online službám. V rané fázi.', link: 'OpenBridge na GitHubu' }
+    }
+  },
   nav: {
     primary: 'Hlavní navigace',
     privacy: 'Soukromí',
     features: 'Funkce',
     docs: 'Dokumentace',
     install: 'Instalace',
-    home: 'Domovská stránka OpenVitals',
+    home: 'Domovská stránka Hale',
     language: 'Jazyk'
   },
   hero: {
@@ -273,6 +284,7 @@ const cs: Messages = {
     more: 'Další způsoby podpory'
   },
   footer: {
+    publisher: 'Vydává Hale MTÜ, neziskový spolek se sídlem v Tallinnu v Estonsku.',
     nav: 'Navigace v zápatí',
     documentation: 'Dokumentace',
     privacy: 'Soukromí',

@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const pt: Messages = {
   meta: {
-    title: 'OpenVitals - Painel de saúde para Android, com os dados no seu telemóvel',
+    title: 'Hale: OpenVitals - Painel de saúde para Android, com os dados no seu telemóvel',
     description:
       'O OpenVitals é uma aplicação Android que funciona localmente para ver, registar, importar e compreender dados do Health Connect, sem contas, anúncios nem telemetria.',
     ogDescription:
@@ -10,13 +10,24 @@ const pt: Messages = {
     twitterDescription:
       'Ferramentas de saúde para Android que funcionam localmente com os dados do Health Connect, sem contas, anúncios nem telemetria.'
   },
+  hale: {
+    eyebrow: 'Apps de saúde gratuitas e offline para Android',
+    title: 'Os seus dados de saúde, no seu telemóvel e em mais lado nenhum.',
+    text: 'A Hale MTÜ é a associação estónia sem fins lucrativos por trás do OpenVitals, do OpenWatch e do OpenBridge: sem contas, sem anúncios, sem análises, sem nuvem.',
+    appsLabel: 'As apps',
+    apps: {
+      openvitals: { text: 'O painel. Lê os seus registos do Health Connect e transforma-os numa vista diária; importa, grava e regista, tudo no telemóvel.', link: 'Sobre o OpenVitals' },
+      openwatch: { text: 'Os dispositivos. Emparelha relógios Garmin e Wear OS e uma balança Xiaomi por Bluetooth e copia o que registam para o Health Connect.', link: 'OpenWatch no Google Play' },
+      openbridge: { text: 'A saída. Uma app opcional que passa os dados partilhados pelo OpenVitals a serviços online. Em fase inicial.', link: 'OpenBridge no GitHub' }
+    }
+  },
   nav: {
     primary: 'Navegação principal',
     privacy: 'Privacidade',
     features: 'Funcionalidades',
     docs: 'Documentação',
     install: 'Instalar',
-    home: 'Início do OpenVitals',
+    home: 'Início da Hale',
     language: 'Idioma'
   },
   hero: {
@@ -273,6 +284,7 @@ const pt: Messages = {
     more: 'Mais formas de apoiar'
   },
   footer: {
+    publisher: 'Publicado pela Hale MTÜ, uma associação sem fins lucrativos de Tallinn, Estónia.',
     nav: 'Navegação do rodapé',
     documentation: 'Documentação',
     privacy: 'Privacidade',

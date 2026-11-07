@@ -2,7 +2,7 @@ import type { Messages } from '../messages'
 
 const en: Messages = {
   meta: {
-    title: 'OpenVitals - Local-first Android health dashboard',
+    title: 'Hale: OpenVitals - Local-first Android health dashboard',
     description:
       'OpenVitals is a local-first Android app for viewing, logging, importing, and understanding Health Connect data without accounts, ads, or analytics.',
     ogDescription:
@@ -10,13 +10,24 @@ const en: Messages = {
     twitterDescription:
       'Local-first Android health tools for Health Connect data, without accounts, ads, or analytics.'
   },
+  hale: {
+    eyebrow: 'Free, offline health apps for Android',
+    title: 'Your health data, on your phone and nowhere else.',
+    text: 'Hale MTÜ is the Estonian non-profit association behind OpenVitals, OpenWatch and OpenBridge: no accounts, no ads, no analytics, no cloud.',
+    appsLabel: 'The apps',
+    apps: {
+      openvitals: { text: 'The dashboard. Reads your Health Connect records and turns them into a daily view; imports, records and logs, all on the phone.', link: 'About OpenVitals' },
+      openwatch: { text: 'The devices. Pairs Garmin and Wear OS watches and a Xiaomi scale over Bluetooth and copies what they record into Health Connect.', link: 'OpenWatch on Google Play' },
+      openbridge: { text: 'The way out. An optional app that passes the data OpenVitals shares on to online services. Early stage.', link: 'OpenBridge on GitHub' }
+    }
+  },
   nav: {
     primary: 'Primary navigation',
     privacy: 'Privacy',
     features: 'Features',
     docs: 'Docs',
     install: 'Install',
-    home: 'OpenVitals home',
+    home: 'Hale home',
     language: 'Language'
   },
   hero: {
@@ -273,6 +284,7 @@ const en: Messages = {
     more: 'More ways to support'
   },
   footer: {
+    publisher: 'Published by Hale MTÜ, a non-profit association in Tallinn, Estonia.',
     nav: 'Footer navigation',
     documentation: 'Documentation',
     privacy: 'Privacy',
