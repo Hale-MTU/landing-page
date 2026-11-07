@@ -13,7 +13,7 @@ const de: Messages = {
   hale: {
     eyebrow: 'Kostenlose Offline-Gesundheits-Apps für Android',
     title: 'Deine Gesundheitsdaten, auf deinem Telefon und nirgendwo sonst.',
-    text: 'Hale MTÜ ist der estnische gemeinnützige Verein hinter OpenVitals, OpenWatch und OpenBridge: keine Konten, keine Werbung, keine Analytik, keine Cloud.',
+    text: 'Hale MTÜ ist der gemeinnützige Verein hinter OpenVitals, OpenWatch und OpenBridge: keine Konten, keine Werbung, keine Analytik, keine Cloud.',
     appsLabel: 'Die Apps',
     apps: {
       openvitals: { text: 'Das Dashboard. Liest deine Health-Connect-Einträge und macht daraus eine Tagesansicht; importiert, zeichnet auf und protokolliert, alles auf dem Telefon.', link: 'Über OpenVitals' },
@@ -21,13 +21,13 @@ const de: Messages = {
       openbridge: { text: 'Der Weg nach draußen. Eine optionale App, die von OpenVitals freigegebene Daten an Online-Dienste weitergibt. In früher Phase.', link: 'Über OpenBridge' }
     },
     metaTitle: 'Hale - Kostenlose Offline-Gesundheits-Apps für Android',
-    metaDescription: 'Hale MTÜ ist der estnische gemeinnützige Verein hinter OpenVitals, OpenWatch und OpenBridge: kostenlose Open-Source-Gesundheits-Apps für Android, ohne Konten, Werbung oder Cloud.',
+    metaDescription: 'Hale MTÜ ist der gemeinnützige Verein hinter OpenVitals, OpenWatch und OpenBridge: kostenlose Open-Source-Gesundheits-Apps für Android, ohne Konten, Werbung oder Cloud.',
     principlesTitle: 'Was die drei Apps gemeinsam haben',
     principles: [
       { title: 'Kein Konto, keine Hale-Cloud', text: 'Keine Anmeldung und kein Hale-Server. Deine Einträge bleiben in Androids Health Connect, außer du gibst sie selbst weiter.' },
       { title: 'Keine Werbung, keine Analytik', text: 'Keine Tracking-SDKs in irgendeiner App und kein Geschäft mit deinen Daten.' },
       { title: 'Frei und quelloffen', text: 'Jede App ist freie Software unter der AGPL-3.0-or-later, mit ihrem Quellcode auf GitHub.' },
-      { title: 'Getragen von einem gemeinnützigen Verein', text: 'Hale MTÜ ist in Tallinn, Estland, eingetragen. Seine Einnahmen dienen nur seinen Zwecken und werden nie ausgeschüttet.' }
+      { title: 'Getragen von einem gemeinnützigen Verein', text: 'Hale MTÜ ist ein gemeinnütziger Verein. Seine Einnahmen dienen nur seinen Zwecken und werden nie ausgeschüttet.' }
     ],
     aboutTitle: 'Über Hale',
     aboutText: 'Hale ist das alte englische Wort für gesund, wie in „hale and hearty“. Der Verein veröffentlicht die Apps und kümmert sich um ihren Code und ihre Gemeinschaft. Schreib an hello@hale.ngo.'
@@ -326,7 +326,7 @@ const de: Messages = {
     more: 'Weitere Wege zu helfen'
   },
   footer: {
-    publisher: 'Herausgegeben von Hale MTÜ, einem gemeinnützigen Verein in Tallinn, Estland.',
+    publisher: 'Herausgegeben von Hale MTÜ, einem gemeinnützigen Verein.',
     nav: 'Fußzeilennavigation',
     documentation: 'Dokumentation',
     privacy: 'Datenschutz',

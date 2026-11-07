@@ -13,7 +13,7 @@ const pl: Messages = {
   hale: {
     eyebrow: 'Bezpłatne aplikacje zdrowotne offline na Androida',
     title: 'Twoje dane o zdrowiu w Twoim telefonie i nigdzie indziej.',
-    text: 'Hale MTÜ to estońskie stowarzyszenie non-profit stojące za OpenVitals, OpenWatch i OpenBridge: bez kont, bez reklam, bez analityki, bez chmury.',
+    text: 'Hale MTÜ to stowarzyszenie non-profit stojące za OpenVitals, OpenWatch i OpenBridge: bez kont, bez reklam, bez analityki, bez chmury.',
     appsLabel: 'Aplikacje',
     apps: {
       openvitals: { text: 'Pulpit. Odczytuje Twoje rekordy Health Connect i zamienia je w dzienny widok; importuje, rejestruje i zapisuje, wszystko w telefonie.', link: 'O OpenVitals' },
@@ -21,13 +21,13 @@ const pl: Messages = {
       openbridge: { text: 'Wyjście na zewnątrz. Opcjonalna aplikacja, która przekazuje dane udostępnione przez OpenVitals do usług online. Wczesna faza.', link: 'O OpenBridge' }
     },
     metaTitle: 'Hale - Bezpłatne aplikacje zdrowotne offline na Androida',
-    metaDescription: 'Hale MTÜ to estońskie stowarzyszenie non-profit stojące za OpenVitals, OpenWatch i OpenBridge: bezpłatne aplikacje zdrowotne na Androida z otwartym kodem, bez kont, reklam i chmury.',
+    metaDescription: 'Hale MTÜ to stowarzyszenie non-profit stojące za OpenVitals, OpenWatch i OpenBridge: bezpłatne aplikacje zdrowotne na Androida z otwartym kodem, bez kont, reklam i chmury.',
     principlesTitle: 'Co łączy trzy aplikacje',
     principles: [
       { title: 'Bez konta, bez chmury Hale', text: 'Nie trzeba się rejestrować i nie ma serwera Hale. Twoje dane zostają w Health Connect na Androidzie, chyba że sam zdecydujesz się je przekazać.' },
       { title: 'Bez reklam, bez analityki', text: 'Żadna aplikacja nie zawiera SDK śledzących i nikt nie robi interesów na Twoich danych.' },
       { title: 'Wolne i otwarte oprogramowanie', text: 'Każda aplikacja to wolne oprogramowanie na licencji AGPL-3.0-or-later, z kodem źródłowym na GitHubie.' },
-      { title: 'Prowadzone przez stowarzyszenie non-profit', text: 'Hale MTÜ jest zarejestrowane w Tallinie w Estonii. Jego przychody służą wyłącznie jego celom i nigdy nie są dzielone.' }
+      { title: 'Prowadzone przez stowarzyszenie non-profit', text: 'Hale MTÜ to stowarzyszenie non-profit. Jego przychody służą wyłącznie jego celom i nigdy nie są dzielone.' }
     ],
     aboutTitle: 'O Hale',
     aboutText: 'Hale to stare angielskie słowo oznaczające zdrowy, jak w „hale and hearty”. Stowarzyszenie wydaje aplikacje i dba o ich kod i społeczność. Napisz na hello@hale.ngo.'
@@ -326,7 +326,7 @@ const pl: Messages = {
     more: 'Więcej sposobów wsparcia'
   },
   footer: {
-    publisher: 'Wydawca: Hale MTÜ, stowarzyszenie non-profit z Tallina w Estonii.',
+    publisher: 'Wydawca: Hale MTÜ, stowarzyszenie non-profit.',
     nav: 'Nawigacja w stopce',
     documentation: 'Dokumentacja',
     privacy: 'Prywatność',

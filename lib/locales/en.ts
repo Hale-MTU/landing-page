@@ -13,7 +13,7 @@ const en: Messages = {
   hale: {
     eyebrow: 'Free, offline health apps for Android',
     title: 'Your health data, on your phone and nowhere else.',
-    text: 'Hale MTÜ is the Estonian non-profit association behind OpenVitals, OpenWatch and OpenBridge: no accounts, no ads, no analytics, no cloud.',
+    text: 'Hale MTÜ is the non-profit association behind OpenVitals, OpenWatch and OpenBridge: no accounts, no ads, no analytics, no cloud.',
     appsLabel: 'The apps',
     apps: {
       openvitals: { text: 'The dashboard. Reads your Health Connect records and turns them into a daily view; imports, records and logs, all on the phone.', link: 'About OpenVitals' },
@@ -21,13 +21,13 @@ const en: Messages = {
       openbridge: { text: 'The way out. An optional app that passes the data OpenVitals shares on to online services. Early stage.', link: 'About OpenBridge' }
     },
     metaTitle: 'Hale - Free, offline health apps for Android',
-    metaDescription: 'Hale MTÜ is the Estonian non-profit association behind OpenVitals, OpenWatch and OpenBridge: free, open-source health apps for Android with no accounts, no ads and no cloud.',
+    metaDescription: 'Hale MTÜ is the non-profit association behind OpenVitals, OpenWatch and OpenBridge: free, open-source health apps for Android with no accounts, no ads and no cloud.',
     principlesTitle: 'What the three apps share',
     principles: [
       { title: 'No account, no Hale cloud', text: 'Nothing to sign up for and no Hale server. Your records stay in Android\'s Health Connect unless you choose to pass them on.' },
       { title: 'No ads, no analytics', text: 'No tracking SDKs in any app, and no business built on your data.' },
       { title: 'Free and open source', text: 'Every app is free software under the AGPL-3.0-or-later, with its source on GitHub.' },
-      { title: 'Run by a non-profit', text: 'Hale MTÜ is registered in Tallinn, Estonia. Its income goes only to its aims and is never shared out.' }
+      { title: 'Run by a non-profit', text: 'Hale MTÜ is a non-profit association. Its income goes only to its aims and is never shared out.' }
     ],
     aboutTitle: 'About Hale',
     aboutText: 'Hale is the old English word for healthy, as in “hale and hearty”. The association publishes the apps and looks after their code and community. Write to hello@hale.ngo.'
@@ -326,7 +326,7 @@ const en: Messages = {
     more: 'More ways to support'
   },
   footer: {
-    publisher: 'Published by Hale MTÜ, a non-profit association in Tallinn, Estonia.',
+    publisher: 'Published by Hale MTÜ, a non-profit association.',
     nav: 'Footer navigation',
     documentation: 'Documentation',
     privacy: 'Privacy',

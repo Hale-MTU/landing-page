@@ -13,7 +13,7 @@ const et: Messages = {
   hale: {
     eyebrow: 'Tasuta võrguühenduseta terviserakendused Androidile',
     title: 'Sinu terviseandmed, sinu telefonis ja mitte kusagil mujal.',
-    text: 'Hale MTÜ on Eesti mittetulundusühing rakenduste OpenVitals, OpenWatch ja OpenBridge taga: ei kontosid, ei reklaame, ei analüütikat, ei pilve.',
+    text: 'Hale MTÜ on mittetulundusühing rakenduste OpenVitals, OpenWatch ja OpenBridge taga: ei kontosid, ei reklaame, ei analüütikat, ei pilve.',
     appsLabel: 'Rakendused',
     apps: {
       openvitals: { text: 'Töölaud. Loeb sinu Health Connecti kirjeid ja teeb neist päevavaate; impordib, salvestab ja logib, kõik telefonis.', link: 'OpenVitalsist lähemalt' },
@@ -21,13 +21,13 @@ const et: Messages = {
       openbridge: { text: 'Väljapääs. Valikuline rakendus, mis edastab OpenVitalsi jagatud andmed veebiteenustele. Varajases faasis.', link: 'OpenBridge’ist lähemalt' }
     },
     metaTitle: 'Hale - Tasuta võrguühenduseta terviserakendused Androidile',
-    metaDescription: 'Hale MTÜ on Eesti mittetulundusühing rakenduste OpenVitals, OpenWatch ja OpenBridge taga: tasuta avatud lähtekoodiga terviserakendused Androidile, ilma kontode, reklaamide ja pilveta.',
+    metaDescription: 'Hale MTÜ on mittetulundusühing rakenduste OpenVitals, OpenWatch ja OpenBridge taga: tasuta avatud lähtekoodiga terviserakendused Androidile, ilma kontode, reklaamide ja pilveta.',
     principlesTitle: 'Mis on kolmel rakendusel ühist',
     principles: [
       { title: 'Ei kontot, ei Hale pilve', text: 'Midagi pole vaja registreerida ja Hale serverit pole. Sinu kirjed jäävad Androidi Health Connecti, kui sa ise neid edasi ei saada.' },
       { title: 'Ei reklaame, ei analüütikat', text: 'Üheski rakenduses pole jälgimis-SDK-sid ega äri sinu andmetega.' },
       { title: 'Vaba ja avatud lähtekoodiga', text: 'Iga rakendus on vaba tarkvara AGPL-3.0-or-later litsentsi all ja selle lähtekood on GitHubis.' },
-      { title: 'Mittetulundusühingu hallata', text: 'Hale MTÜ on registreeritud Tallinnas. Ühingu tulu läheb ainult põhikirjaliste eesmärkide täitmiseks ja seda ei jagata.' }
+      { title: 'Mittetulundusühingu hallata', text: 'Hale MTÜ on mittetulundusühing. Ühingu tulu läheb ainult põhikirjaliste eesmärkide täitmiseks ja seda ei jagata.' }
     ],
     aboutTitle: 'Halest',
     aboutText: 'Hale on vana ingliskeelne sõna, mis tähendab tervet, nagu väljendis „hale and hearty“. Ühing annab rakendused välja ning hoolitseb nende koodi ja kogukonna eest. Kirjuta aadressil hello@hale.ngo.'
@@ -326,7 +326,7 @@ const et: Messages = {
     more: 'Veel võimalusi toetada'
   },
   footer: {
-    publisher: 'Välja andnud Hale MTÜ, Tallinnas tegutsev mittetulundusühing.',
+    publisher: 'Välja andnud Hale MTÜ, mittetulundusühing.',
     nav: 'Jaluse navigatsioon',
     documentation: 'Dokumentatsioon',
     privacy: 'Privaatsus',

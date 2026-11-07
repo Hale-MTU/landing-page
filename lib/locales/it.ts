@@ -13,7 +13,7 @@ const it: Messages = {
   hale: {
     eyebrow: 'App per la salute gratuite e offline per Android',
     title: 'I tuoi dati sulla salute, sul tuo telefono e da nessun\'altra parte.',
-    text: 'Hale MTÜ è l\'associazione estone senza scopo di lucro dietro OpenVitals, OpenWatch e OpenBridge: niente account, niente pubblicità, niente analitiche, niente cloud.',
+    text: 'Hale MTÜ è l\'associazione senza scopo di lucro dietro OpenVitals, OpenWatch e OpenBridge: niente account, niente pubblicità, niente analitiche, niente cloud.',
     appsLabel: 'Le app',
     apps: {
       openvitals: { text: 'Il cruscotto. Legge i tuoi record di Health Connect e li trasforma in una vista giornaliera; importa, registra e annota, tutto sul telefono.', link: 'Informazioni su OpenVitals' },
@@ -21,13 +21,13 @@ const it: Messages = {
       openbridge: { text: 'La via d\'uscita. Un\'app facoltativa che passa i dati condivisi da OpenVitals a servizi online. In fase iniziale.', link: 'Informazioni su OpenBridge' }
     },
     metaTitle: 'Hale - App per la salute gratuite e offline per Android',
-    metaDescription: 'Hale MTÜ è l\'associazione estone senza scopo di lucro dietro OpenVitals, OpenWatch e OpenBridge: app per la salute libere e gratuite per Android, senza account, pubblicità o cloud.',
+    metaDescription: 'Hale MTÜ è l\'associazione senza scopo di lucro dietro OpenVitals, OpenWatch e OpenBridge: app per la salute libere e gratuite per Android, senza account, pubblicità o cloud.',
     principlesTitle: 'Cosa hanno in comune le tre app',
     principles: [
       { title: 'Nessun account, nessun cloud Hale', text: 'Niente da registrare e nessun server Hale. I tuoi dati restano in Health Connect di Android, a meno che tu non scelga di inoltrarli.' },
       { title: 'Niente pubblicità, niente analitiche', text: 'Nessun SDK di tracciamento in nessuna app e nessun business costruito sui tuoi dati.' },
       { title: 'Libere e open source', text: 'Ogni app è software libero con licenza AGPL-3.0-or-later e il suo codice è su GitHub.' },
-      { title: 'Gestite da un\'associazione senza scopo di lucro', text: 'Hale MTÜ è registrata a Tallinn, in Estonia. Le sue entrate servono solo ai suoi scopi e non vengono mai distribuite.' }
+      { title: 'Gestite da un\'associazione senza scopo di lucro', text: 'Hale MTÜ è un\'associazione senza scopo di lucro. Le sue entrate servono solo ai suoi scopi e non vengono mai distribuite.' }
     ],
     aboutTitle: 'Chi è Hale',
     aboutText: 'Hale è l\'antica parola inglese per sano, come in «hale and hearty». L\'associazione pubblica le app e si prende cura del loro codice e della loro comunità. Scrivi a hello@hale.ngo.'
@@ -326,7 +326,7 @@ const it: Messages = {
     more: 'Altri modi per sostenerci'
   },
   footer: {
-    publisher: 'Pubblicato da Hale MTÜ, associazione senza scopo di lucro di Tallinn, Estonia.',
+    publisher: 'Pubblicato da Hale MTÜ, associazione senza scopo di lucro.',
     nav: 'Navigazione del piè di pagina',
     documentation: 'Documentazione',
     privacy: 'Privacy',
