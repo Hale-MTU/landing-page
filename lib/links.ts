@@ -14,7 +14,7 @@ export const healthConnectDocsUrl = `${openVitalsDocsUrl}app/health-connect/`
 export const translateUrl = 'https://translate.codeberg.org/projects/openvitals/mobile-app/'
 export const liberapayUrl = 'https://liberapay.com/hale.mtu/donate'
 
-export const openVitalsCodeUrl = `${orgUrl}/android-app`
+export const openVitalsCodeUrl = `${orgUrl}/OpenVitals`
 export const openVitalsReleasesUrl = `${openVitalsCodeUrl}/releases`
 export const openVitalsFdroidUrl = 'https://f-droid.org/en/packages/tech.mmarca.openvitals/'
 export const openWatchCodeUrl = `${orgUrl}/OpenWatch`
