@@ -13,7 +13,7 @@ const ja: Messages = {
   hale: {
     eyebrow: 'Android向けの無料・オフラインの健康アプリ',
     title: 'あなたの健康データは、あなたのスマートフォンの中だけに。',
-    text: 'Hale MTÜはOpenVitals、OpenWatch、OpenBridgeを開発するエストニアの非営利団体です。アカウントも広告も分析もクラウドもありません。',
+    text: 'Hale MTÜはOpenVitals、OpenWatch、OpenBridgeを開発する非営利団体です。アカウントも広告も分析もクラウドもありません。',
     appsLabel: 'アプリ',
     apps: {
       openvitals: { text: 'ダッシュボード。Health Connectの記録を読み取って日々の表示にまとめ、インポート・記録・入力をすべてスマートフォン上で行います。', link: 'OpenVitalsについて' },
@@ -21,13 +21,13 @@ const ja: Messages = {
       openbridge: { text: '外への橋。OpenVitalsが共有したデータをオンラインサービスへ渡す任意のアプリです。開発初期段階です。', link: 'OpenBridgeについて' }
     },
     metaTitle: 'Hale - Android向けの無料・オフラインの健康アプリ',
-    metaDescription: 'Hale MTÜはOpenVitals、OpenWatch、OpenBridgeを開発するエストニアの非営利団体です。アカウントも広告もクラウドもない、Android向けの無料のオープンソース健康アプリです。',
+    metaDescription: 'Hale MTÜはOpenVitals、OpenWatch、OpenBridgeを開発する非営利団体です。アカウントも広告もクラウドもない、Android向けの無料のオープンソース健康アプリです。',
     principlesTitle: '3つのアプリに共通すること',
     principles: [
       { title: 'アカウントなし、Haleのクラウドなし', text: '登録は不要で、Haleのサーバーもありません。あなたが渡すと決めない限り、記録はAndroidのHealth Connectにとどまります。' },
       { title: '広告なし、分析なし', text: 'どのアプリにも追跡用SDKはなく、あなたのデータで商売をすることもありません。' },
       { title: '自由なオープンソース', text: 'すべてのアプリはAGPL-3.0-or-laterの自由ソフトウェアで、ソースコードはGitHubにあります。' },
-      { title: '非営利団体が運営', text: 'Hale MTÜはエストニアのタリンで登記されています。収入は活動目的にのみ使われ、分配されることはありません。' }
+      { title: '非営利団体が運営', text: 'Hale MTÜは非営利団体です。収入は活動目的にのみ使われ、分配されることはありません。' }
     ],
     aboutTitle: 'Haleについて',
     aboutText: 'Haleは「健康な」を意味する古い英語で、「hale and hearty」という言い回しに使われます。団体はアプリを公開し、そのコードとコミュニティを支えています。お問い合わせはhello@hale.ngoへ。'
@@ -326,7 +326,7 @@ const ja: Messages = {
     more: 'その他の支援方法'
   },
   footer: {
-    publisher: '発行: Hale MTÜ（エストニア・タリンの非営利団体）',
+    publisher: '発行: Hale MTÜ（非営利団体）',
     nav: 'フッターナビゲーション',
     documentation: 'ドキュメント',
     privacy: 'プライバシー',

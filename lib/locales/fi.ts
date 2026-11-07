@@ -13,7 +13,7 @@ const fi: Messages = {
   hale: {
     eyebrow: 'Ilmaisia, verkottomia terveyssovelluksia Androidille',
     title: 'Terveystietosi omassa puhelimessasi, eikä missään muualla.',
-    text: 'Hale MTÜ on virolainen voittoa tavoittelematon yhdistys OpenVitalsin, OpenWatchin ja OpenBridgen takana: ei tilejä, ei mainoksia, ei analytiikkaa, ei pilveä.',
+    text: 'Hale MTÜ on voittoa tavoittelematon yhdistys OpenVitalsin, OpenWatchin ja OpenBridgen takana: ei tilejä, ei mainoksia, ei analytiikkaa, ei pilveä.',
     appsLabel: 'Sovellukset',
     apps: {
       openvitals: { text: 'Kojelauta. Lukee Health Connect -tietueesi ja kokoaa niistä päivänäkymän; tuo, tallentaa ja kirjaa, kaikki puhelimessa.', link: 'Tietoa OpenVitalsista' },
@@ -21,13 +21,13 @@ const fi: Messages = {
       openbridge: { text: 'Ulospääsy. Valinnainen sovellus, joka välittää OpenVitalsin jakamat tiedot verkkopalveluihin. Varhaisessa vaiheessa.', link: 'Tietoa OpenBridgesta' }
     },
     metaTitle: 'Hale - Ilmaisia, verkottomia terveyssovelluksia Androidille',
-    metaDescription: 'Hale MTÜ on virolainen voittoa tavoittelematon yhdistys OpenVitalsin, OpenWatchin ja OpenBridgen takana: ilmaisia avoimen lähdekoodin terveyssovelluksia Androidille ilman tilejä, mainoksia tai pilveä.',
+    metaDescription: 'Hale MTÜ on voittoa tavoittelematon yhdistys OpenVitalsin, OpenWatchin ja OpenBridgen takana: ilmaisia avoimen lähdekoodin terveyssovelluksia Androidille ilman tilejä, mainoksia tai pilveä.',
     principlesTitle: 'Mitä kolmella sovelluksella on yhteistä',
     principles: [
       { title: 'Ei tiliä, ei Halen pilveä', text: 'Ei rekisteröitymistä eikä Halen palvelinta. Tietosi pysyvät Androidin Health Connectissa, ellet itse päätä välittää niitä eteenpäin.' },
       { title: 'Ei mainoksia, ei analytiikkaa', text: 'Missään sovelluksessa ei ole seurantakirjastoja, eikä tiedoillasi tehdä liiketoimintaa.' },
       { title: 'Vapaata ja avointa lähdekoodia', text: 'Jokainen sovellus on vapaata ohjelmistoa AGPL-3.0-or-later-lisenssillä, ja sen lähdekoodi on GitHubissa.' },
-      { title: 'Voittoa tavoittelemattoman yhdistyksen ylläpitämä', text: 'Hale MTÜ on rekisteröity Tallinnassa, Virossa. Sen tulot käytetään vain sen tarkoituksiin eikä niitä jaeta.' }
+      { title: 'Voittoa tavoittelemattoman yhdistyksen ylläpitämä', text: 'Hale MTÜ on voittoa tavoittelematon yhdistys. Sen tulot käytetään vain sen tarkoituksiin eikä niitä jaeta.' }
     ],
     aboutTitle: 'Tietoa Halesta',
     aboutText: 'Hale on vanha englannin sana, joka tarkoittaa tervettä, kuten ilmauksessa ”hale and hearty”. Yhdistys julkaisee sovellukset ja huolehtii niiden koodista ja yhteisöstä. Kirjoita osoitteeseen hello@hale.ngo.'
@@ -326,7 +326,7 @@ const fi: Messages = {
     more: 'Muita tapoja tukea'
   },
   footer: {
-    publisher: 'Julkaisija Hale MTÜ, voittoa tavoittelematon yhdistys Tallinnassa, Virossa.',
+    publisher: 'Julkaisija Hale MTÜ, voittoa tavoittelematon yhdistys.',
     nav: 'Alatunnisteen valikko',
     documentation: 'Dokumentaatio',
     privacy: 'Tietosuoja',

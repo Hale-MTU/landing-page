@@ -13,7 +13,7 @@ const cs: Messages = {
   hale: {
     eyebrow: 'Bezplatné offline zdravotní aplikace pro Android',
     title: 'Vaše zdravotní data ve vašem telefonu a nikde jinde.',
-    text: 'Hale MTÜ je estonský neziskový spolek, který stojí za aplikacemi OpenVitals, OpenWatch a OpenBridge: bez účtů, bez reklam, bez analytiky, bez cloudu.',
+    text: 'Hale MTÜ je neziskový spolek, který stojí za aplikacemi OpenVitals, OpenWatch a OpenBridge: bez účtů, bez reklam, bez analytiky, bez cloudu.',
     appsLabel: 'Aplikace',
     apps: {
       openvitals: { text: 'Přehled. Čte vaše záznamy z Health Connect a převádí je na denní přehled; importuje, zaznamenává a eviduje, vše v telefonu.', link: 'O aplikaci OpenVitals' },
@@ -21,13 +21,13 @@ const cs: Messages = {
       openbridge: { text: 'Cesta ven. Volitelná aplikace, která předává data sdílená aplikací OpenVitals online službám. V rané fázi.', link: 'O aplikaci OpenBridge' }
     },
     metaTitle: 'Hale - Bezplatné offline zdravotní aplikace pro Android',
-    metaDescription: 'Hale MTÜ je estonský neziskový spolek, který stojí za aplikacemi OpenVitals, OpenWatch a OpenBridge: bezplatné zdravotní aplikace pro Android s otevřeným zdrojovým kódem, bez účtů, reklam a cloudu.',
+    metaDescription: 'Hale MTÜ je neziskový spolek, který stojí za aplikacemi OpenVitals, OpenWatch a OpenBridge: bezplatné zdravotní aplikace pro Android s otevřeným zdrojovým kódem, bez účtů, reklam a cloudu.',
     principlesTitle: 'Co mají všechny tři aplikace společné',
     principles: [
       { title: 'Žádný účet, žádný cloud Hale', text: 'Nikde se neregistrujete a neexistuje žádný server Hale. Vaše záznamy zůstávají v Health Connect v Androidu, dokud je sami nepředáte dál.' },
       { title: 'Žádné reklamy, žádná analytika', text: 'Žádná aplikace neobsahuje sledovací SDK a nikdo nepodniká s vašimi daty.' },
       { title: 'Svobodný a otevřený software', text: 'Každá aplikace je svobodný software pod licencí AGPL-3.0-or-later se zdrojovým kódem na GitHubu.' },
-      { title: 'Provozuje je neziskový spolek', text: 'Hale MTÜ je registrován v Tallinnu v Estonsku. Jeho příjmy slouží jen jeho cílům a nikdy se nerozdělují.' }
+      { title: 'Provozuje je neziskový spolek', text: 'Hale MTÜ je neziskový spolek. Jeho příjmy slouží jen jeho cílům a nikdy se nerozdělují.' }
     ],
     aboutTitle: 'O Hale',
     aboutText: 'Hale je staré anglické slovo pro zdravý, jako v „hale and hearty“. Spolek vydává aplikace a pečuje o jejich kód a komunitu. Pište na hello@hale.ngo.'
@@ -326,7 +326,7 @@ const cs: Messages = {
     more: 'Další způsoby podpory'
   },
   footer: {
-    publisher: 'Vydává Hale MTÜ, neziskový spolek se sídlem v Tallinnu v Estonsku.',
+    publisher: 'Vydává Hale MTÜ, neziskový spolek.',
     nav: 'Navigace v zápatí',
     documentation: 'Dokumentace',
     privacy: 'Soukromí',

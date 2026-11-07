@@ -13,7 +13,7 @@ const zh: Messages = {
   hale: {
     eyebrow: '面向 Android 的免费离线健康应用',
     title: '你的健康数据只在你的手机里，不在别处。',
-    text: 'Hale MTÜ 是 OpenVitals、OpenWatch 和 OpenBridge 背后的爱沙尼亚非营利协会：没有账户、没有广告、没有分析、没有云端。',
+    text: 'Hale MTÜ 是 OpenVitals、OpenWatch 和 OpenBridge 背后的非营利协会：没有账户、没有广告、没有分析、没有云端。',
     appsLabel: '应用',
     apps: {
       openvitals: { text: '仪表板。读取你的 Health Connect 记录并整理成每日视图；导入、记录和手动录入，全部在手机上完成。', link: '关于 OpenVitals' },
@@ -21,13 +21,13 @@ const zh: Messages = {
       openbridge: { text: '对外的桥。一个可选应用，把 OpenVitals 共享的数据传给在线服务。尚处早期。', link: '关于 OpenBridge' }
     },
     metaTitle: 'Hale - 面向 Android 的免费离线健康应用',
-    metaDescription: 'Hale MTÜ 是 OpenVitals、OpenWatch 和 OpenBridge 背后的爱沙尼亚非营利协会：免费开源的 Android 健康应用，没有账户、没有广告、没有云端。',
+    metaDescription: 'Hale MTÜ 是 OpenVitals、OpenWatch 和 OpenBridge 背后的非营利协会：免费开源的 Android 健康应用，没有账户、没有广告、没有云端。',
     principlesTitle: '三款应用的共同点',
     principles: [
       { title: '没有账户，没有 Hale 云', text: '无需注册，也没有 Hale 服务器。除非你自己选择转出，你的记录一直留在 Android 的 Health Connect 中。' },
       { title: '没有广告，没有分析', text: '所有应用都不含追踪 SDK，也没有任何基于你数据的生意。' },
       { title: '自由开源', text: '每款应用都是采用 AGPL-3.0-or-later 许可的自由软件，源代码在 GitHub 上。' },
-      { title: '由非营利协会运营', text: 'Hale MTÜ 注册于爱沙尼亚塔林。它的收入只用于章程目标，从不分配。' }
+      { title: '由非营利协会运营', text: 'Hale MTÜ 是一家非营利协会。它的收入只用于章程目标，从不分配。' }
     ],
     aboutTitle: '关于 Hale',
     aboutText: 'Hale 是一个古老的英语单词，意思是健康，如 “hale and hearty”。协会发布这些应用，并维护它们的代码和社区。联系邮箱 hello@hale.ngo。'
@@ -326,7 +326,7 @@ const zh: Messages = {
     more: '更多支持方式'
   },
   footer: {
-    publisher: '由 Hale MTÜ 发布，一家位于爱沙尼亚塔林的非营利协会。',
+    publisher: '由非营利协会 Hale MTÜ 发布。',
     nav: '页脚导航',
     documentation: '文档',
     privacy: '隐私',
