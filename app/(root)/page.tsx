@@ -4,7 +4,7 @@ import { localeLabels, localeTags, locales } from '@/lib/i18n'
 import { getMessages } from '@/lib/messages'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://openvitals.health'),
+  metadataBase: new URL('https://hale.ngo'),
   title: 'OpenVitals',
   description: getMessages('en').meta.description,
   alternates: {

@@ -5,11 +5,11 @@ import { LanguageSwitcher } from '@/app/components/LanguageSwitcher'
 import { isLocale, localeTags, type Locale } from '@/lib/i18n'
 import { getMessages } from '@/lib/messages'
 
-const docsUrl = 'https://docs.openvitals.health'
+const docsUrl = 'https://docs.hale.ngo'
 const installUrl = `${docsUrl}/app/install`
 const privacyUrl = `${docsUrl}/app/privacy`
 const supportUrl = `${docsUrl}/support`
-const codeUrl = 'https://github.com/OpenVitals-MTU/android-app'
+const codeUrl = 'https://github.com/Hale-MTU/android-app'
 const translateUrl = 'https://translate.codeberg.org/projects/openvitals/mobile-app/'
 const liberapayUrl = 'https://liberapay.com/manuel.mmarca.tech/donate'
 const releasesUrl = `${codeUrl}/releases`

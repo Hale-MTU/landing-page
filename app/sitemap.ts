@@ -8,13 +8,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date()
   return [
     {
-      url: 'https://openvitals.health/',
+      url: 'https://hale.ngo/',
       lastModified,
       changeFrequency: 'weekly',
       priority: 1
     },
     ...locales.map((locale) => ({
-      url: `https://openvitals.health/${locale}/`,
+      url: `https://hale.ngo/${locale}/`,
       lastModified,
       changeFrequency: 'weekly' as const,
       priority: 1

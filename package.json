@@ -4,10 +4,10 @@
   "private": true,
   "license": "AGPL-3.0-or-later",
   "description": "Marketing landing page for OpenVitals.",
-  "homepage": "https://openvitals.health/",
+  "homepage": "https://hale.ngo/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OpenVitals-MTU/landing-page.git"
+    "url": "https://github.com/Hale-MTU/landing-page.git"
   },
   "scripts": {
     "dev": "next dev --webpack",
