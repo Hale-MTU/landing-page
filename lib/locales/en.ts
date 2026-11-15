@@ -40,7 +40,7 @@ const en: Messages = {
     devicesTitle: 'The devices it works with',
     devices: [
       { title: 'Garmin watches', text: 'Activities, sleep and wellness synced over Garmin\'s own Bluetooth protocol, plus notifications, music controls, weather, calendar, alarms and find my watch.' },
-      { title: 'Wear OS watches', text: 'The OpenWatch watch app records heart rate, steps and floors and syncs them on a tap or a schedule, with an estimated sleep session and resting heart rate each night.' },
+      { title: 'Wear OS watches', text: 'The OpenWatch watch app records heart rate, steps and floors, workouts with GPS, and at night heart rate variability and, on a Samsung watch, SpO2 and skin temperature. It syncs them on a tap or a schedule, with an estimated sleep session, naps and resting heart rate each night.' },
       { title: 'Xiaomi S400 scale', text: 'Every weigh-in saved to Health Connect as it happens, with the app open or closed. Body fat, lean mass and body water are estimated on the phone.' }
     ],
     privacyTitle: 'Where your data goes',
@@ -121,13 +121,13 @@ const en: Messages = {
     eyebrow: 'Wearables',
     title: 'Works with your watch.',
     text:
-      "Connect any wearable through Gadgetbridge or your vendor's official app. Sync notifications, live heart rate, weather, and your calendar directly over Bluetooth. Everything flows into Health Connect, and OpenVitals brings it all together into one private dashboard.",
+      "Pair Garmin and Wear OS watches and the Xiaomi scale in OpenWatch, from the same project, or connect any other wearable through Gadgetbridge or your vendor's official app. Everything flows into Health Connect, and OpenVitals brings it all together into one private dashboard.",
     link: 'How Health Connect syncing works',
     listLabel: 'Watch and sensor support',
     points: [
       {
         title: 'Any wearable that writes to Health Connect',
-        text: 'Whether it uses Gadgetbridge or your vendor\'s official app, if the companion app syncs to Health Connect, OpenVitals sees it.'
+        text: 'Whether it uses OpenWatch, Gadgetbridge or your vendor\'s official app, if the companion app syncs to Health Connect, OpenVitals sees it. With OpenWatch on the phone, both apps keep one body profile and the dashboard shows your watch with its battery and a sync button.'
       },
       {
         title: 'Sleep, heart rate, steps, and workouts',
@@ -135,7 +135,7 @@ const en: Messages = {
       },
       {
         title: 'Live sensors stay direct',
-        text: 'BLE heart-rate straps and cadence and power sensors still connect to the app for live data while you record a workout.'
+        text: 'BLE heart-rate straps and cadence and power sensors still connect to the app for live data while you record a workout, and through OpenWatch so can your watch\'s heart rate.'
       }
     ]
   },
@@ -150,7 +150,7 @@ const en: Messages = {
       },
       {
         title: 'Import what you already have',
-        text: 'Bring in Apple Health exports, FIT, GPX, KML/KMZ, TCX, and CSV files, one at a time or whole folders. A CSV can hold a scale\'s weigh-ins, a blood pressure log, a spreadsheet of meals or the workouts you exported. The history you built elsewhere comes with you.',
+        text: 'Bring in Apple Health exports, FIT, GPX, KML/KMZ, TCX, and CSV files, one at a time or whole folders. A CSV can hold a scale\'s weigh-ins, a sleep app\'s nights, a blood pressure log, a spreadsheet of meals or the workouts you exported. The history you built elsewhere comes with you.',
         accent: '#2f6f9f'
       },
       {
@@ -160,7 +160,7 @@ const en: Messages = {
       },
       {
         title: 'Works with your watch',
-        text: "Connect any wearable through Gadgetbridge or your vendor's app: sync notifications and ringing calls, live heart rate, weather, calendar, and music controls over Bluetooth, on a schedule if you want. Everything syncs through Health Connect into one unified dashboard. Step on a supported Xiaomi scale and the weigh-in lands in Health Connect, even with the app closed.",
+        text: "Garmin and Wear OS watches and the Xiaomi scale sync through OpenWatch, from the same project; any other wearable through Gadgetbridge or your vendor's app. Everything lands in Health Connect and in one unified dashboard. With OpenWatch on the phone, the two apps keep one body profile, the dashboard shows your watch's battery with a sync button, and a recording can use the watch's heart rate.",
         accent: '#a07b00'
       },
       {

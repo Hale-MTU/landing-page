@@ -40,7 +40,7 @@ const zh: Messages = {
     devicesTitle: '支持的设备',
     devices: [
       { title: 'Garmin 手表', text: '通过 Garmin 自己的蓝牙协议同步活动、睡眠和健康数据，还支持通知、音乐控制、天气、日历、闹钟和查找手表。' },
-      { title: 'Wear OS 手表', text: 'OpenWatch 手表应用记录心率、步数和爬楼层数，一键或按计划同步，每晚估算睡眠和静息心率。' },
+      { title: 'Wear OS 手表', text: 'OpenWatch 手表应用记录心率、步数和爬楼层数以及带 GPS 的锻炼，夜间记录心率变异性，在三星手表上还记录 SpO2 和皮肤温度。一键或按计划同步，每晚估算睡眠、小睡和静息心率。' },
       { title: '小米 S400 体重秤', text: '每次称重都会立即写入 Health Connect，无论应用是否打开。体脂、去脂体重和身体水分由手机估算。' }
     ],
     privacyTitle: '你的数据去向',
@@ -121,13 +121,13 @@ const zh: Messages = {
     eyebrow: '可穿戴设备',
     title: '与你的手表配合使用。',
     text:
-      '通过 Gadgetbridge 或厂商官方应用，连接任何可穿戴设备。通知、实时心率、天气和日历，都能通过蓝牙直接同步。所有数据汇入 Health Connect，再由 OpenVitals 汇总到一个私密的概览中。',
+      '在同一项目的 OpenWatch 中配对 Garmin 和 Wear OS 手表以及小米体重秤，或通过 Gadgetbridge 或厂商官方应用连接任何其他可穿戴设备。所有数据汇入 Health Connect，再由 OpenVitals 汇总到一个私密的概览中。',
     link: '了解 Health Connect 同步的原理',
     listLabel: '手表和传感器支持',
     points: [
       {
         title: '任何写入 Health Connect 的可穿戴设备',
-        text: '无论使用 Gadgetbridge 还是厂商官方应用，只要配套应用能同步到 Health Connect，OpenVitals 就能看到这些数据。'
+        text: '无论使用 OpenWatch、Gadgetbridge 还是厂商官方应用，只要配套应用能同步到 Health Connect，OpenVitals 就能看到这些数据。手机上装有 OpenWatch 时，两个应用共用一份身体档案，概览会显示你的手表及其电量和同步按钮。'
       },
       {
         title: '睡眠、心率、步数和锻炼',
@@ -135,7 +135,7 @@ const zh: Messages = {
       },
       {
         title: '实时传感器直接连接',
-        text: '记录锻炼时，BLE 心率带、踏频传感器和功率传感器仍会直接连接应用，提供实时数据。'
+        text: '记录锻炼时，BLE 心率带、踏频传感器和功率传感器仍会直接连接应用，提供实时数据；通过 OpenWatch，手表的心率也可以。'
       }
     ]
   },
@@ -150,7 +150,7 @@ const zh: Messages = {
       },
       {
         title: '带上你已有的数据',
-        text: '可导入 Apple Health 导出数据，以及 FIT、GPX、KML/KMZ、TCX 和 CSV 文件，既能逐个导入，也能整个文件夹导入。CSV 可以是体重秤的称重记录、血压记录、餐食表格，或你导出的锻炼记录。你在别处积累的历史记录，都能一起带过来。',
+        text: '可导入 Apple Health 导出数据，以及 FIT、GPX、KML/KMZ、TCX 和 CSV 文件，既能逐个导入，也能整个文件夹导入。CSV 可以是体重秤的称重记录、睡眠应用的每晚记录、血压记录、餐食表格，或你导出的锻炼记录。你在别处积累的历史记录，都能一起带过来。',
         accent: '#2f6f9f'
       },
       {
@@ -160,7 +160,7 @@ const zh: Messages = {
       },
       {
         title: '与你的手表配合使用',
-        text: '通过 Gadgetbridge 或厂商应用连接任何可穿戴设备：通过蓝牙同步通知和来电、实时心率、天气、日历和音乐控制，如有需要还可以定时自动同步。所有数据都经由 Health Connect 汇入同一个概览。 站上受支持的小米体重秤，即使应用已关闭，称重也会保存到 Health Connect。',
+        text: 'Garmin 和 Wear OS 手表以及小米体重秤通过同一项目的 OpenWatch 同步；其他可穿戴设备则通过 Gadgetbridge 或厂商应用同步。所有数据都汇入 Health Connect 和同一个概览。手机上装有 OpenWatch 时，两个应用共用一份身体档案，概览显示手表电量和同步按钮，记录时还能使用手表的心率。',
         accent: '#a07b00'
       },
       {

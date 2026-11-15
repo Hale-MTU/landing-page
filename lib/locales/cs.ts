@@ -40,7 +40,7 @@ const cs: Messages = {
     devicesTitle: 'Podporovaná zařízení',
     devices: [
       { title: 'Hodinky Garmin', text: 'Aktivity, spánek a wellness synchronizované vlastním protokolem Garmin přes Bluetooth, k tomu oznámení, ovládání hudby, počasí, kalendář, budíky a hledání hodinek.' },
-      { title: 'Hodinky Wear OS', text: 'Aplikace OpenWatch v hodinkách zaznamenává tep, kroky a patra a synchronizuje je klepnutím nebo podle plánu, každou noc s odhadem spánku a klidového tepu.' },
+      { title: 'Hodinky Wear OS', text: 'Aplikace OpenWatch v hodinkách zaznamenává tep, kroky a patra, tréninky s GPS a v noci variabilitu srdeční frekvence a na hodinkách Samsung i SpO2 a teplotu kůže. Synchronizuje je klepnutím nebo podle plánu, každou noc s odhadem spánku, zdřímnutí a klidového tepu.' },
       { title: 'Váha Xiaomi S400', text: 'Každé vážení se uloží do Health Connect hned, ať je aplikace otevřená, nebo zavřená. Tělesný tuk, svalovou hmotu a vodu odhaduje telefon.' }
     ],
     privacyTitle: 'Kam jdou vaše data',
@@ -121,13 +121,13 @@ const cs: Messages = {
     eyebrow: 'Nositelná zařízení',
     title: 'Funguje s vašimi hodinkami.',
     text:
-      'Připojte jakékoli nositelné zařízení přes Gadgetbridge nebo oficiální aplikaci výrobce. Oznámení, tep v reálném čase, počasí a kalendář synchronizujte přímo přes Bluetooth. Vše putuje do Health Connect a OpenVitals to spojí do jednoho soukromého přehledu.',
+      'Spárujte hodinky Garmin a Wear OS a váhu Xiaomi v OpenWatch ze stejného projektu, nebo připojte jakékoli jiné nositelné zařízení přes Gadgetbridge či oficiální aplikaci výrobce. Vše putuje do Health Connect a OpenVitals to spojí do jednoho soukromého přehledu.',
     link: 'Jak funguje synchronizace s Health Connect',
     listLabel: 'Podpora hodinek a senzorů',
     points: [
       {
         title: 'Jakékoli zařízení, které zapisuje do Health Connect',
-        text: 'Ať zařízení používá Gadgetbridge, nebo oficiální aplikaci výrobce: když doprovodná aplikace synchronizuje do Health Connect, OpenVitals data uvidí.'
+        text: 'Ať zařízení používá OpenWatch, Gadgetbridge, nebo oficiální aplikaci výrobce: když doprovodná aplikace synchronizuje do Health Connect, OpenVitals data uvidí. S OpenWatch v telefonu mají obě aplikace jeden tělesný profil a přehled ukazuje vaše hodinky s baterií a tlačítkem pro synchronizaci.'
       },
       {
         title: 'Spánek, srdeční tep, kroky a tréninky',
@@ -135,7 +135,7 @@ const cs: Messages = {
       },
       {
         title: 'Senzory v reálném čase se připojují přímo',
-        text: 'Pásy na měření tepu přes BLE a senzory kadence a výkonu se dál připojují přímo k aplikaci a posílají data v reálném čase, když zaznamenáváte trénink.'
+        text: 'Pásy na měření tepu přes BLE a senzory kadence a výkonu se dál připojují přímo k aplikaci a posílají data v reálném čase, když zaznamenáváte trénink, a přes OpenWatch to zvládne i tep z vašich hodinek.'
       }
     ]
   },
@@ -150,7 +150,7 @@ const cs: Messages = {
       },
       {
         title: 'Importujte, co už máte',
-        text: 'Přeneste si exporty z Apple Health a soubory FIT, GPX, KML/KMZ, TCX a CSV, po jednom nebo celé složky. CSV může obsahovat vážení z váhy, deník krevního tlaku, tabulku jídel nebo exportované tréninky. Historie, kterou jste nasbírali jinde, jde s vámi.',
+        text: 'Přeneste si exporty z Apple Health a soubory FIT, GPX, KML/KMZ, TCX a CSV, po jednom nebo celé složky. CSV může obsahovat vážení z váhy, noci ze spánkové aplikace, deník krevního tlaku, tabulku jídel nebo exportované tréninky. Historie, kterou jste nasbírali jinde, jde s vámi.',
         accent: '#2f6f9f'
       },
       {
@@ -160,7 +160,7 @@ const cs: Messages = {
       },
       {
         title: 'Funguje s vašimi hodinkami',
-        text: 'Připojte jakékoli nositelné zařízení přes Gadgetbridge nebo aplikaci výrobce: přes Bluetooth synchronizujte oznámení a příchozí hovory, tep v reálném čase, počasí, kalendář a ovládání hudby, a pokud chcete, i automaticky v pravidelných intervalech. Vše se synchronizuje přes Health Connect do jednoho společného přehledu. Stoupněte si na podporovanou váhu Xiaomi a vážení dorazí do Health Connect, i když je aplikace zavřená.',
+        text: 'Hodinky Garmin a Wear OS a váha Xiaomi se synchronizují přes OpenWatch ze stejného projektu, jakékoli jiné nositelné zařízení přes Gadgetbridge nebo aplikaci výrobce. Vše končí v Health Connect a v jednom společném přehledu. S OpenWatch v telefonu mají obě aplikace jeden tělesný profil, přehled ukazuje baterii hodinek s tlačítkem pro synchronizaci a záznam může využít tep z hodinek.',
         accent: '#a07b00'
       },
       {

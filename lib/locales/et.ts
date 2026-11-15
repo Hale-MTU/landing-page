@@ -40,7 +40,7 @@ const et: Messages = {
     devicesTitle: 'Toetatud seadmed',
     devices: [
       { title: 'Garmini kellad', text: 'Tegevused, uni ja heaolu sünkroonitakse Garmini enda Bluetoothi-protokolliga, lisaks teavitused, muusika juhtimine, ilm, kalender, äratused ja kella otsimine.' },
-      { title: 'Wear OS-i kellad', text: 'OpenWatchi kellarakendus salvestab pulsi, sammud ja korrused ning sünkroonib need puudutusega või ajakava järgi, iga öö kohta une ja puhkepulsi hinnanguga.' },
+      { title: 'Wear OS-i kellad', text: 'OpenWatchi kellarakendus salvestab pulsi, sammud ja korrused, GPS-iga treeningud ning öösel pulsi varieeruvuse ja Samsungi kellal ka SpO2 ja naha temperatuuri. See sünkroonib need puudutusega või ajakava järgi, iga öö kohta une, uinakute ja puhkepulsi hinnanguga.' },
       { title: 'Xiaomi S400 kaal', text: 'Iga kaalumine salvestub kohe Health Connecti, olgu rakendus avatud või suletud. Keharasva, rasvavaba massi ja kehavett hindab telefon.' }
     ],
     privacyTitle: 'Kuhu sinu andmed lähevad',
@@ -121,13 +121,13 @@ const et: Messages = {
     eyebrow: 'Kantavad nutiseadmed',
     title: 'Töötab sinu kellaga.',
     text:
-      "Ühenda ükskõik milline kantav nutiseade Gadgetbridge'i või tootja ametliku rakenduse kaudu. Sünkrooni teavitused, reaalajas pulss, ilm ja kalender otse Bluetoothi kaudu. Kõik jõuab Health Connecti ja OpenVitals koondab selle ühte privaatsesse kokkuvõttesse.",
+      "Seo Garmini ja Wear OS-i kellad ning Xiaomi kaal sama projekti OpenWatchiga või ühenda mis tahes muu kantav nutiseade Gadgetbridge'i või tootja ametliku rakenduse kaudu. Kõik jõuab Health Connecti ja OpenVitals koondab selle ühte privaatsesse kokkuvõttesse.",
     link: 'Kuidas Health Connecti sünkroonimine töötab',
     listLabel: 'Kellade ja andurite tugi',
     points: [
       {
         title: 'Iga kantav seade, mis kirjutab Health Connecti',
-        text: 'Olgu see Gadgetbridge või tootja ametlik rakendus: kui kaasrakendus sünkroonib andmed Health Connecti, näeb OpenVitals neid.'
+        text: 'Olgu see OpenWatch, Gadgetbridge või tootja ametlik rakendus: kui kaasrakendus sünkroonib andmed Health Connecti, näeb OpenVitals neid. Kui telefonis on OpenWatch, on mõlemal rakendusel üks kehaprofiil ja kokkuvõte näitab sinu kella koos aku ja sünkroonimisnupuga.'
       },
       {
         title: 'Uni, pulss, sammud ja treeningud',
@@ -135,7 +135,7 @@ const et: Messages = {
       },
       {
         title: 'Reaalajas andurid ühenduvad otse',
-        text: 'BLE-pulsivööd ning sagedus- ja võimsusandurid ühenduvad treeningu salvestamise ajal endiselt otse rakendusega ja edastavad reaalajas andmeid.'
+        text: 'BLE-pulsivööd ning sagedus- ja võimsusandurid ühenduvad treeningu salvestamise ajal endiselt otse rakendusega ja edastavad reaalajas andmeid, ning OpenWatchi kaudu saab seda teha ka sinu kella pulss.'
       }
     ]
   },
@@ -150,7 +150,7 @@ const et: Messages = {
       },
       {
         title: 'Too kaasa, mis sul juba olemas on',
-        text: 'Impordi Apple Healthi ekspordid ning FIT-, GPX-, KML/KMZ-, TCX- ja CSV-failid ükshaaval või terve kausta korraga. CSV-fail võib sisaldada kaalu mõõtmisi, vererõhu logi, toidukordade tabelit või eksporditud treeninguid. Mujal kogunenud ajalugu tuleb sinuga kaasa.',
+        text: 'Impordi Apple Healthi ekspordid ning FIT-, GPX-, KML/KMZ-, TCX- ja CSV-failid ükshaaval või terve kausta korraga. CSV-fail võib sisaldada kaalu mõõtmisi, unerakenduse öid, vererõhu logi, toidukordade tabelit või eksporditud treeninguid. Mujal kogunenud ajalugu tuleb sinuga kaasa.',
         accent: '#2f6f9f'
       },
       {
@@ -160,7 +160,7 @@ const et: Messages = {
       },
       {
         title: 'Töötab sinu kellaga',
-        text: "Ühenda ükskõik milline kantav seade Gadgetbridge'i või tootja rakenduse kaudu: sünkrooni Bluetoothi kaudu teavitused ja sissetulevad kõned, reaalajas pulss, ilm, kalender ja muusika juhtimine, soovi korral ajakava järgi. Kõik sünkroonitakse Health Connecti kaudu ühte ühisesse kokkuvõttesse. Astu toetatud Xiaomi kaalule ja kaalumine jõuab Health Connecti, ka suletud rakendusega.",
+        text: "Garmini ja Wear OS-i kellad ning Xiaomi kaal sünkroonivad sama projekti OpenWatchi kaudu, mis tahes muu kantav seade Gadgetbridge'i või tootja rakenduse kaudu. Kõik jõuab Health Connecti ja ühte ühisesse kokkuvõttesse. Kui telefonis on OpenWatch, on mõlemal rakendusel üks kehaprofiil, kokkuvõte näitab kella akut koos sünkroonimisnupuga ja salvestus saab kasutada kella pulssi.",
         accent: '#a07b00'
       },
       {

@@ -40,7 +40,7 @@ const pl: Messages = {
     devicesTitle: 'Obsługiwane urządzenia',
     devices: [
       { title: 'Zegarki Garmin', text: 'Aktywności, sen i samopoczucie synchronizowane własnym protokołem Bluetooth Garmina, a do tego powiadomienia, sterowanie muzyką, pogoda, kalendarz, alarmy i znajdowanie zegarka.' },
-      { title: 'Zegarki Wear OS', text: 'Aplikacja OpenWatch na zegarek zapisuje tętno, kroki i piętra i synchronizuje je jednym dotknięciem lub według harmonogramu, co noc z szacunkiem snu i tętna spoczynkowego.' },
+      { title: 'Zegarki Wear OS', text: 'Aplikacja OpenWatch na zegarek zapisuje tętno, kroki i piętra, treningi z GPS, a w nocy zmienność rytmu serca, na zegarku Samsung także SpO2 i temperaturę skóry. Synchronizuje je jednym dotknięciem lub według harmonogramu, co noc z szacunkiem snu, drzemek i tętna spoczynkowego.' },
       { title: 'Waga Xiaomi S400', text: 'Każde ważenie trafia od razu do Health Connect, przy otwartej lub zamkniętej aplikacji. Tkankę tłuszczową, beztłuszczową masę ciała i wodę szacuje telefon.' }
     ],
     privacyTitle: 'Dokąd trafiają Twoje dane',
@@ -121,13 +121,13 @@ const pl: Messages = {
     eyebrow: 'Urządzenia noszone',
     title: 'Działa z Twoim zegarkiem.',
     text:
-      'Połącz dowolne urządzenie noszone przez Gadgetbridge lub oficjalną aplikację producenta. Synchronizuj powiadomienia, tętno na żywo, pogodę i kalendarz bezpośrednio przez Bluetooth. Wszystko trafia do Health Connect, a OpenVitals zbiera to w jednym prywatnym panelu.',
+      'Sparuj zegarki Garmin i Wear OS oraz wagę Xiaomi w OpenWatch z tego samego projektu albo połącz dowolne inne urządzenie noszone przez Gadgetbridge lub oficjalną aplikację producenta. Wszystko trafia do Health Connect, a OpenVitals zbiera to w jednym prywatnym panelu.',
     link: 'Jak działa synchronizacja z Health Connect',
     listLabel: 'Obsługa zegarków i czujników',
     points: [
       {
         title: 'Każde urządzenie, które zapisuje do Health Connect',
-        text: 'Niezależnie od tego, czy korzysta z Gadgetbridge, czy z oficjalnej aplikacji producenta: jeśli aplikacja towarzysząca przesyła dane do Health Connect, OpenVitals je widzi.'
+        text: 'Niezależnie od tego, czy korzysta z OpenWatch, Gadgetbridge, czy z oficjalnej aplikacji producenta: jeśli aplikacja towarzysząca przesyła dane do Health Connect, OpenVitals je widzi. Z OpenWatch na telefonie obie aplikacje mają jeden profil ciała, a panel pokazuje Twój zegarek z baterią i przyciskiem synchronizacji.'
       },
       {
         title: 'Sen, tętno, kroki i treningi',
@@ -135,7 +135,7 @@ const pl: Messages = {
       },
       {
         title: 'Czujniki na żywo łączą się bezpośrednio',
-        text: 'Pasy BLE do pomiaru tętna oraz czujniki kadencji i mocy nadal łączą się bezpośrednio z aplikacją i przesyłają dane na żywo, gdy rejestrujesz trening.'
+        text: 'Pasy BLE do pomiaru tętna oraz czujniki kadencji i mocy nadal łączą się bezpośrednio z aplikacją i przesyłają dane na żywo, gdy rejestrujesz trening, a przez OpenWatch może to robić także tętno z Twojego zegarka.'
       }
     ]
   },
@@ -150,7 +150,7 @@ const pl: Messages = {
       },
       {
         title: 'Zaimportuj to, co już masz',
-        text: 'Wczytaj eksporty z Apple Health oraz pliki FIT, GPX, KML/KMZ, TCX i CSV, pojedynczo albo całymi folderami. Plik CSV może zawierać pomiary z wagi, dziennik ciśnienia krwi, arkusz posiłków albo wyeksportowane treningi. Historia zebrana gdzie indziej przechodzi razem z Tobą.',
+        text: 'Wczytaj eksporty z Apple Health oraz pliki FIT, GPX, KML/KMZ, TCX i CSV, pojedynczo albo całymi folderami. Plik CSV może zawierać pomiary z wagi, noce z aplikacji do snu, dziennik ciśnienia krwi, arkusz posiłków albo wyeksportowane treningi. Historia zebrana gdzie indziej przechodzi razem z Tobą.',
         accent: '#2f6f9f'
       },
       {
@@ -160,7 +160,7 @@ const pl: Messages = {
       },
       {
         title: 'Działa z Twoim zegarkiem',
-        text: 'Połącz dowolne urządzenie noszone przez Gadgetbridge lub aplikację producenta: synchronizuj przez Bluetooth powiadomienia i przychodzące połączenia, tętno na żywo, pogodę, kalendarz i sterowanie muzyką, a jeśli chcesz, także automatycznie w regularnych odstępach. Wszystko synchronizuje się przez Health Connect do jednego wspólnego panelu. Stań na obsługiwanej wadze Xiaomi, a ważenie trafi do Health Connect, nawet przy zamkniętej aplikacji.',
+        text: 'Zegarki Garmin i Wear OS oraz waga Xiaomi synchronizują się przez OpenWatch z tego samego projektu, każde inne urządzenie noszone przez Gadgetbridge lub aplikację producenta. Wszystko trafia do Health Connect i do jednego wspólnego panelu. Z OpenWatch na telefonie obie aplikacje mają jeden profil ciała, panel pokazuje baterię zegarka z przyciskiem synchronizacji, a nagrywanie może korzystać z tętna z zegarka.',
         accent: '#a07b00'
       },
       {

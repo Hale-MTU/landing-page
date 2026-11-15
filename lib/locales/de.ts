@@ -40,7 +40,7 @@ const de: Messages = {
     devicesTitle: 'Die unterstützten Geräte',
     devices: [
       { title: 'Garmin-Uhren', text: 'Aktivitäten, Schlaf und Wellness über Garmins eigenes Bluetooth-Protokoll synchronisiert, dazu Benachrichtigungen, Musiksteuerung, Wetter, Kalender, Wecker und Uhr finden.' },
-      { title: 'Wear-OS-Uhren', text: 'Die OpenWatch-Uhren-App zeichnet Herzfrequenz, Schritte und Etagen auf und synchronisiert sie per Tipp oder nach Zeitplan, mit geschätztem Schlaf und Ruhepuls jede Nacht.' },
+      { title: 'Wear-OS-Uhren', text: 'Die OpenWatch-Uhren-App zeichnet Herzfrequenz, Schritte und Etagen auf, Trainings mit GPS und nachts die Herzfrequenzvariabilität, auf einer Samsung-Uhr auch SpO2 und Hauttemperatur. Sie synchronisiert sie per Tipp oder nach Zeitplan, mit geschätztem Schlaf, Nickerchen und Ruhepuls jede Nacht.' },
       { title: 'Xiaomi-Waage S400', text: 'Jede Wägung landet sofort in Health Connect, ob die App offen ist oder nicht. Körperfett, Magermasse und Körperwasser schätzt das Telefon.' }
     ],
     privacyTitle: 'Wohin deine Daten gehen',
@@ -121,13 +121,13 @@ const de: Messages = {
     eyebrow: 'Wearables',
     title: 'Funktioniert mit deiner Uhr.',
     text:
-      'Verbinde jedes Wearable über Gadgetbridge oder die offizielle App des Herstellers. Synchronisiere Benachrichtigungen, Live-Herzfrequenz, Wetter und deinen Kalender direkt über Bluetooth. Alles fließt in Health Connect, und OpenVitals führt es in einer privaten Übersicht zusammen.',
+      'Kopple Garmin- und Wear-OS-Uhren und die Xiaomi-Waage in OpenWatch aus demselben Projekt, oder verbinde jedes andere Wearable über Gadgetbridge oder die offizielle App des Herstellers. Alles fließt in Health Connect, und OpenVitals führt es in einer privaten Übersicht zusammen.',
     link: 'So funktioniert die Synchronisierung mit Health Connect',
     listLabel: 'Unterstützte Uhren und Sensoren',
     points: [
       {
         title: 'Jedes Wearable, das in Health Connect schreibt',
-        text: 'Ob über Gadgetbridge oder die offizielle App des Herstellers: Wenn die Begleit-App mit Health Connect synchronisiert, sieht OpenVitals die Daten.'
+        text: 'Ob über OpenWatch, Gadgetbridge oder die offizielle App des Herstellers: Wenn die Begleit-App mit Health Connect synchronisiert, sieht OpenVitals die Daten. Mit OpenWatch auf dem Telefon teilen sich beide Apps ein Körperprofil, und die Übersicht zeigt deine Uhr mit Akku und einer Schaltfläche zum Synchronisieren.'
       },
       {
         title: 'Schlaf, Herzfrequenz, Schritte und Trainings',
@@ -135,7 +135,7 @@ const de: Messages = {
       },
       {
         title: 'Live-Sensoren bleiben direkt verbunden',
-        text: 'BLE-Herzfrequenzgurte sowie Trittfrequenz- und Leistungssensoren verbinden sich weiterhin direkt mit der App und liefern Live-Werte, während du ein Training aufzeichnest.'
+        text: 'BLE-Herzfrequenzgurte sowie Trittfrequenz- und Leistungssensoren verbinden sich weiterhin direkt mit der App und liefern Live-Werte, während du ein Training aufzeichnest, und über OpenWatch kann das auch die Herzfrequenz deiner Uhr.'
       }
     ]
   },
@@ -150,7 +150,7 @@ const de: Messages = {
       },
       {
         title: 'Importiere, was du schon hast',
-        text: 'Übernimm Exporte aus Apple Health sowie FIT-, GPX-, KML/KMZ-, TCX- und CSV-Dateien, einzeln oder als ganze Ordner. Eine CSV-Datei kann die Messungen einer Waage, ein Blutdruckprotokoll, eine Tabelle deiner Mahlzeiten oder exportierte Trainings enthalten. Was du anderswo gesammelt hast, kommt mit.',
+        text: 'Übernimm Exporte aus Apple Health sowie FIT-, GPX-, KML/KMZ-, TCX- und CSV-Dateien, einzeln oder als ganze Ordner. Eine CSV-Datei kann die Messungen einer Waage, die Nächte einer Schlaf-App, ein Blutdruckprotokoll, eine Tabelle deiner Mahlzeiten oder exportierte Trainings enthalten. Was du anderswo gesammelt hast, kommt mit.',
         accent: '#2f6f9f'
       },
       {
@@ -160,7 +160,7 @@ const de: Messages = {
       },
       {
         title: 'Funktioniert mit deiner Uhr',
-        text: 'Verbinde jedes Wearable über Gadgetbridge oder die App des Herstellers: Synchronisiere Benachrichtigungen und eingehende Anrufe, Live-Herzfrequenz, Wetter, Kalender und Musiksteuerung über Bluetooth, auf Wunsch nach Zeitplan. Alles läuft über Health Connect in einer gemeinsamen Übersicht zusammen. Stell dich auf eine unterstützte Xiaomi-Waage, und die Messung landet in Health Connect, auch bei geschlossener App.',
+        text: 'Garmin- und Wear-OS-Uhren und die Xiaomi-Waage synchronisieren über OpenWatch aus demselben Projekt, jedes andere Wearable über Gadgetbridge oder die App des Herstellers. Alles landet in Health Connect und in einer gemeinsamen Übersicht. Mit OpenWatch auf dem Telefon teilen sich beide Apps ein Körperprofil, die Übersicht zeigt den Akku deiner Uhr mit einer Schaltfläche zum Synchronisieren, und eine Aufzeichnung kann die Herzfrequenz der Uhr nutzen.',
         accent: '#a07b00'
       },
       {

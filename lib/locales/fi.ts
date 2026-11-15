@@ -40,7 +40,7 @@ const fi: Messages = {
     devicesTitle: 'Tuetut laitteet',
     devices: [
       { title: 'Garmin-kellot', text: 'Aktiviteetit, uni ja hyvinvointi synkronoidaan Garminin omalla Bluetooth-protokollalla, lisäksi ilmoitukset, musiikin ohjaus, sää, kalenteri, herätykset ja kellon etsiminen.' },
-      { title: 'Wear OS -kellot', text: 'OpenWatchin kellosovellus tallentaa sykkeen, askeleet ja kerrokset ja synkronoi ne napautuksella tai aikataulun mukaan, joka yöltä arvio unesta ja leposykkeestä.' },
+      { title: 'Wear OS -kellot', text: 'OpenWatchin kellosovellus tallentaa sykkeen, askeleet ja kerrokset, GPS-treenit sekä yöllä sykevälivaihtelun ja Samsung-kellossa myös SpO2:n ja ihon lämpötilan. Se synkronoi ne napautuksella tai aikataulun mukaan, joka yöltä arvio unesta, päiväunista ja leposykkeestä.' },
       { title: 'Xiaomi S400 -vaaka', text: 'Jokainen punnitus tallentuu heti Health Connectiin, oli sovellus auki tai kiinni. Kehon rasvan, rasvattoman massan ja kehon veden arvioi puhelin.' }
     ],
     privacyTitle: 'Minne tietosi menevät',
@@ -121,13 +121,13 @@ const fi: Messages = {
     eyebrow: 'Puettavat laitteet',
     title: 'Toimii kellosi kanssa.',
     text:
-      'Yhdistä mikä tahansa puettava laite Gadgetbridgen tai valmistajan virallisen sovelluksen kautta. Synkronoi ilmoitukset, reaaliaikainen syke, sää ja kalenterisi suoraan Bluetoothilla. Kaikki kulkee Health Connectiin ja OpenVitals kokoaa sen yhdeksi yksityiseksi yhteenvedoksi.',
+      'Yhdistä Garmin- ja Wear OS -kellot sekä Xiaomi-vaaka saman projektin OpenWatchiin, tai mikä tahansa muu puettava laite Gadgetbridgen tai valmistajan virallisen sovelluksen kautta. Kaikki kulkee Health Connectiin ja OpenVitals kokoaa sen yhdeksi yksityiseksi yhteenvedoksi.',
     link: 'Näin synkronointi Health Connectin kanssa toimii',
     listLabel: 'Tuetut kellot ja anturit',
     points: [
       {
         title: 'Mikä tahansa laite, joka kirjoittaa Health Connectiin',
-        text: 'Käytitpä Gadgetbridgeä tai valmistajan virallista sovellusta: jos oheissovellus synkronoi Health Connectiin, OpenVitals näkee tiedot.'
+        text: 'Käytitpä OpenWatchia, Gadgetbridgeä tai valmistajan virallista sovellusta: jos oheissovellus synkronoi Health Connectiin, OpenVitals näkee tiedot. Kun puhelimessa on OpenWatch, molemmilla sovelluksilla on yksi kehoprofiili ja yhteenveto näyttää kellosi akun ja synkronointipainikkeen.'
       },
       {
         title: 'Uni, syke, askeleet ja treenit',
@@ -135,7 +135,7 @@ const fi: Messages = {
       },
       {
         title: 'Reaaliaikaiset anturit yhdistyvät suoraan',
-        text: 'BLE-sykevyöt sekä kadenssi- ja tehoanturit yhdistyvät edelleen suoraan sovellukseen ja välittävät reaaliaikaiset tiedot, kun tallennat treeniä.'
+        text: 'BLE-sykevyöt sekä kadenssi- ja tehoanturit yhdistyvät edelleen suoraan sovellukseen ja välittävät reaaliaikaiset tiedot, kun tallennat treeniä, ja OpenWatchin kautta myös kellosi syke.'
       }
     ]
   },
@@ -150,7 +150,7 @@ const fi: Messages = {
       },
       {
         title: 'Tuo se, mitä sinulla jo on',
-        text: 'Tuo Apple Health -viennit sekä FIT-, GPX-, KML/KMZ-, TCX- ja CSV-tiedostot yksitellen tai kokonaisina kansioina. CSV-tiedostossa voi olla vaa\'an punnitukset, verenpaineloki, aterioiden taulukko tai viedyt harjoitukset. Muualla kertynyt historiasi tulee mukanasi.',
+        text: 'Tuo Apple Health -viennit sekä FIT-, GPX-, KML/KMZ-, TCX- ja CSV-tiedostot yksitellen tai kokonaisina kansioina. CSV-tiedostossa voi olla vaa\'an punnitukset, unisovelluksen yöt, verenpaineloki, aterioiden taulukko tai viedyt harjoitukset. Muualla kertynyt historiasi tulee mukanasi.',
         accent: '#2f6f9f'
       },
       {
@@ -160,7 +160,7 @@ const fi: Messages = {
       },
       {
         title: 'Toimii kellosi kanssa',
-        text: 'Yhdistä mikä tahansa puettava laite Gadgetbridgen tai valmistajan sovelluksen kautta: synkronoi Bluetoothilla ilmoitukset ja saapuvat puhelut, reaaliaikainen syke, sää, kalenteri ja musiikin hallinta, halutessasi ajastetusti. Kaikki synkronoituu Health Connectin kautta yhteen yhtenäiseen yhteenvetoon. Astu tuetulle Xiaomi-vaa’alle, ja punnitus päätyy Health Connectiin, vaikka sovellus on kiinni.',
+        text: 'Garmin- ja Wear OS -kellot sekä Xiaomi-vaaka synkronoituvat saman projektin OpenWatchin kautta, mikä tahansa muu puettava laite Gadgetbridgen tai valmistajan sovelluksen kautta. Kaikki päätyy Health Connectiin ja yhteen yhtenäiseen yhteenvetoon. Kun puhelimessa on OpenWatch, molemmilla sovelluksilla on yksi kehoprofiili, yhteenveto näyttää kellon akun ja synkronointipainikkeen, ja tallennus voi käyttää kellon sykettä.',
         accent: '#a07b00'
       },
       {

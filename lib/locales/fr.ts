@@ -40,7 +40,7 @@ const fr: Messages = {
     devicesTitle: 'Les appareils pris en charge',
     devices: [
       { title: 'Montres Garmin', text: 'Activités, sommeil et bien-être synchronisés avec le protocole Bluetooth de Garmin, plus les notifications, le contrôle de la musique, la météo, l\'agenda, les alarmes et la recherche de la montre.' },
-      { title: 'Montres Wear OS', text: 'L\'appli OpenWatch pour la montre enregistre la fréquence cardiaque, les pas et les étages et les synchronise d\'une touche ou selon un horaire, avec chaque nuit une estimation du sommeil et du rythme au repos.' },
+      { title: 'Montres Wear OS', text: 'L\'appli OpenWatch pour la montre enregistre la fréquence cardiaque, les pas et les étages, les entraînements avec GPS et, la nuit, la variabilité de la fréquence cardiaque et, sur une montre Samsung, la SpO2 et la température cutanée. Elle les synchronise d\'une touche ou selon un horaire, avec chaque nuit une estimation du sommeil, des siestes et du rythme au repos.' },
       { title: 'Balance Xiaomi S400', text: 'Chaque pesée est enregistrée dans Health Connect aussitôt, appli ouverte ou fermée. La masse grasse, la masse maigre et l\'eau corporelle sont estimées sur le téléphone.' }
     ],
     privacyTitle: 'Où vont vos données',
@@ -121,13 +121,13 @@ const fr: Messages = {
     eyebrow: 'Objets connectés',
     title: 'Fonctionne avec votre montre.',
     text:
-      "Associez n'importe quel objet connecté via Gadgetbridge ou l'application officielle de son fabricant. Synchronisez les notifications, la fréquence cardiaque en direct, la météo et votre calendrier directement en Bluetooth. Tout arrive dans Santé Connect, et OpenVitals rassemble le tout dans un seul tableau de bord privé.",
+      "Associez les montres Garmin et Wear OS et la balance Xiaomi dans OpenWatch, du même projet, ou n'importe quel autre objet connecté via Gadgetbridge ou l'application officielle de son fabricant. Tout arrive dans Santé Connect, et OpenVitals rassemble le tout dans un seul tableau de bord privé.",
     link: 'Comment fonctionne la synchronisation avec Santé Connect',
     listLabel: 'Montres et capteurs compatibles',
     points: [
       {
         title: 'Tout objet connecté qui écrit dans Santé Connect',
-        text: "Qu'il passe par Gadgetbridge ou par l'application officielle du fabricant, si l'application compagnon synchronise ses données avec Santé Connect, OpenVitals les voit."
+        text: "Qu'il passe par OpenWatch, Gadgetbridge ou l'application officielle du fabricant, si l'application compagnon synchronise ses données avec Santé Connect, OpenVitals les voit. Avec OpenWatch sur le téléphone, les deux applications partagent un même profil corporel et le tableau de bord affiche votre montre avec sa batterie et un bouton de synchronisation."
       },
       {
         title: 'Sommeil, fréquence cardiaque, pas et entraînements',
@@ -135,7 +135,7 @@ const fr: Messages = {
       },
       {
         title: 'Les capteurs en direct restent reliés directement',
-        text: "Les ceintures cardiaques BLE et les capteurs de cadence et de puissance continuent de se connecter directement à l'application pour les données en direct pendant l'enregistrement d'un entraînement."
+        text: "Les ceintures cardiaques BLE et les capteurs de cadence et de puissance continuent de se connecter directement à l'application pour les données en direct pendant l'enregistrement d'un entraînement, et via OpenWatch, la fréquence cardiaque de votre montre aussi."
       }
     ]
   },
@@ -150,7 +150,7 @@ const fr: Messages = {
       },
       {
         title: 'Importez ce que vous avez déjà',
-        text: "Importez vos exports Apple Santé et vos fichiers FIT, GPX, KML/KMZ, TCX et CSV, un par un ou par dossiers entiers. Un CSV peut contenir les pesées d'une balance, un relevé de tension, un tableau de vos repas ou les entraînements que vous avez exportés. L'historique que vous avez construit ailleurs vous suit.",
+        text: "Importez vos exports Apple Santé et vos fichiers FIT, GPX, KML/KMZ, TCX et CSV, un par un ou par dossiers entiers. Un CSV peut contenir les pesées d'une balance, les nuits d'une appli de sommeil, un relevé de tension, un tableau de vos repas ou les entraînements que vous avez exportés. L'historique que vous avez construit ailleurs vous suit.",
         accent: '#2f6f9f'
       },
       {
@@ -160,7 +160,7 @@ const fr: Messages = {
       },
       {
         title: 'Fonctionne avec votre montre',
-        text: "Associez n'importe quel objet connecté via Gadgetbridge ou l'application du fabricant : synchronisez en Bluetooth les notifications et les appels entrants, la fréquence cardiaque en direct, la météo, le calendrier et les commandes de musique, à intervalles réguliers si vous le souhaitez. Tout se synchronise via Santé Connect dans un seul tableau de bord. Montez sur une balance Xiaomi compatible et la pesée arrive dans Santé Connect, même appli fermée.",
+        text: "Les montres Garmin et Wear OS et la balance Xiaomi se synchronisent via OpenWatch, du même projet ; tout autre objet connecté via Gadgetbridge ou l'application du fabricant. Tout arrive dans Santé Connect et dans un seul tableau de bord. Avec OpenWatch sur le téléphone, les deux applications partagent un même profil corporel, le tableau de bord affiche la batterie de votre montre avec un bouton de synchronisation, et un enregistrement peut utiliser la fréquence cardiaque de la montre.",
         accent: '#a07b00'
       },
       {

@@ -40,7 +40,7 @@ const pt: Messages = {
     devicesTitle: 'Os dispositivos compatíveis',
     devices: [
       { title: 'Relógios Garmin', text: 'Atividades, sono e bem-estar sincronizados com o próprio protocolo Bluetooth da Garmin, além de notificações, controlo de música, meteorologia, calendário, alarmes e encontrar o relógio.' },
-      { title: 'Relógios Wear OS', text: 'A app OpenWatch para o relógio regista a frequência cardíaca, os passos e os pisos e sincroniza-os com um toque ou de forma agendada, com uma estimativa do sono e da frequência em repouso todas as noites.' },
+      { title: 'Relógios Wear OS', text: 'A app OpenWatch para o relógio regista a frequência cardíaca, os passos e os pisos, treinos com GPS e, à noite, a variabilidade da frequência cardíaca e, num relógio Samsung, SpO2 e temperatura da pele. Sincroniza-os com um toque ou de forma agendada, com uma estimativa do sono, das sestas e da frequência em repouso todas as noites.' },
       { title: 'Balança Xiaomi S400', text: 'Cada pesagem é guardada no Health Connect de imediato, com a app aberta ou fechada. A gordura corporal, a massa magra e a água corporal são estimadas no telemóvel.' }
     ],
     privacyTitle: 'Para onde vão os seus dados',
@@ -121,13 +121,13 @@ const pt: Messages = {
     eyebrow: 'Wearables',
     title: 'Funciona com o seu relógio.',
     text:
-      'Ligue qualquer wearable através do Gadgetbridge ou da aplicação oficial do fabricante. Sincronize notificações, frequência cardíaca em tempo real, meteorologia e o seu calendário diretamente por Bluetooth. Tudo vai parar ao Health Connect, e o OpenVitals reúne tudo num único painel privado.',
+      'Emparelhe relógios Garmin e Wear OS e a balança Xiaomi no OpenWatch, do mesmo projeto, ou ligue qualquer outro wearable através do Gadgetbridge ou da aplicação oficial do fabricante. Tudo vai parar ao Health Connect, e o OpenVitals reúne tudo num único painel privado.',
     link: 'Como funciona a sincronização com o Health Connect',
     listLabel: 'Relógios e sensores compatíveis',
     points: [
       {
         title: 'Qualquer wearable que escreva no Health Connect',
-        text: 'Seja através do Gadgetbridge ou da aplicação oficial do fabricante, se a aplicação complementar sincronizar com o Health Connect, o OpenVitals vê os dados.'
+        text: 'Seja através do OpenWatch, do Gadgetbridge ou da aplicação oficial do fabricante, se a aplicação complementar sincronizar com o Health Connect, o OpenVitals vê os dados. Com o OpenWatch no telemóvel, as duas aplicações partilham um perfil corporal e o painel mostra o seu relógio com a bateria e um botão para sincronizar.'
       },
       {
         title: 'Sono, frequência cardíaca, passos e treinos',
@@ -135,7 +135,7 @@ const pt: Messages = {
       },
       {
         title: 'Os sensores em tempo real ligam-se diretamente',
-        text: 'As bandas de frequência cardíaca BLE e os sensores de cadência e potência continuam a ligar-se diretamente à aplicação para dar dados em tempo real enquanto grava um treino.'
+        text: 'As bandas de frequência cardíaca BLE e os sensores de cadência e potência continuam a ligar-se diretamente à aplicação para dar dados em tempo real enquanto grava um treino, e através do OpenWatch também a frequência cardíaca do seu relógio.'
       }
     ]
   },
@@ -150,7 +150,7 @@ const pt: Messages = {
       },
       {
         title: 'Importe o que já tem',
-        text: 'Traga exportações do Apple Health e ficheiros FIT, GPX, KML/KMZ, TCX e CSV, um de cada vez ou pastas inteiras. Um CSV pode trazer as pesagens de uma balança, um registo de pressão arterial, uma folha de refeições ou os treinos que exportou. O histórico que construiu noutro lado vem consigo.',
+        text: 'Traga exportações do Apple Health e ficheiros FIT, GPX, KML/KMZ, TCX e CSV, um de cada vez ou pastas inteiras. Um CSV pode trazer as pesagens de uma balança, as noites de uma app de sono, um registo de pressão arterial, uma folha de refeições ou os treinos que exportou. O histórico que construiu noutro lado vem consigo.',
         accent: '#2f6f9f'
       },
       {
@@ -160,7 +160,7 @@ const pt: Messages = {
       },
       {
         title: 'Funciona com o seu relógio',
-        text: 'Ligue qualquer wearable através do Gadgetbridge ou da aplicação do fabricante: sincronize por Bluetooth as notificações e as chamadas recebidas, a frequência cardíaca em tempo real, a meteorologia, o calendário e os controlos de música, de forma programada, se quiser. Tudo é sincronizado através do Health Connect num único painel. Suba para uma balança Xiaomi compatível e a pesagem chega ao Health Connect, mesmo com a app fechada.',
+        text: 'Os relógios Garmin e Wear OS e a balança Xiaomi sincronizam através do OpenWatch, do mesmo projeto; qualquer outro wearable através do Gadgetbridge ou da aplicação do fabricante. Tudo chega ao Health Connect e a um único painel. Com o OpenWatch no telemóvel, as duas aplicações partilham um perfil corporal, o painel mostra a bateria do seu relógio com um botão para sincronizar e uma gravação pode usar a frequência cardíaca do relógio.',
         accent: '#a07b00'
       },
       {
