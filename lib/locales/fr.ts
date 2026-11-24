@@ -17,7 +17,7 @@ const fr: Messages = {
     appsLabel: 'Les applis',
     apps: {
       openvitals: { text: 'Le tableau de bord. Lit vos enregistrements Health Connect et en fait une vue quotidienne ; importe, enregistre et consigne, tout sur le téléphone.', link: 'À propos d\'OpenVitals' },
-      openwatch: { text: 'Les appareils. Appaire les montres Garmin et Wear OS et une balance Xiaomi en Bluetooth et copie leurs enregistrements dans Health Connect.', link: 'À propos d\'OpenWatch' },
+      openwatch: { text: 'Les appareils. Appaire les montres Garmin et Wear OS, une balance Xiaomi et des appareils de santé Bluetooth standard et copie leurs enregistrements dans Santé Connect.', link: 'À propos d\'OpenWatch' },
       openbridge: { text: 'La sortie. Une appli facultative qui transmet les données partagées par OpenVitals à des services en ligne. À un stade précoce.', link: 'À propos d\'OpenBridge' }
     },
     metaTitle: 'Hale - Des applis santé gratuites et hors ligne pour Android',
@@ -40,8 +40,9 @@ const fr: Messages = {
     devicesTitle: 'Les appareils pris en charge',
     devices: [
       { title: 'Montres Garmin', text: 'Activités, sommeil et bien-être synchronisés avec le protocole Bluetooth de Garmin, plus les notifications, le contrôle de la musique, la météo, l\'agenda, les alarmes et la recherche de la montre.' },
-      { title: 'Montres Wear OS', text: 'L\'appli OpenWatch pour la montre enregistre la fréquence cardiaque, les pas et les étages, les entraînements avec GPS et, la nuit, la variabilité de la fréquence cardiaque et, sur une montre Samsung, la SpO2 et la température cutanée. Elle les synchronise d\'une touche ou selon un horaire, avec chaque nuit une estimation du sommeil, des siestes et du rythme au repos.' },
-      { title: 'Balance Xiaomi S400', text: 'Chaque pesée est enregistrée dans Health Connect aussitôt, appli ouverte ou fermée. La masse grasse, la masse maigre et l\'eau corporelle sont estimées sur le téléphone.' }
+      { title: 'Montres Wear OS', text: 'L\'appli OpenWatch pour la montre enregistre la fréquence cardiaque, les pas et les étages, les entraînements avec GPS, zones de fréquence cardiaque et mesure de la récupération cardiaque et, la nuit, la variabilité de la fréquence cardiaque et, sur une montre Samsung, la SpO2 et la température cutanée. Saisissez au poignet l\'eau bue, le poids ou la tension artérielle, mesurez ponctuellement le pouls ou la VFC et synchronisez le tout d\'une touche ou selon un horaire, avec chaque nuit une estimation du sommeil.' },
+      { title: 'Balance Xiaomi S400', text: 'Chaque pesée est enregistrée dans Health Connect aussitôt, appli ouverte ou fermée. La masse grasse, la masse maigre et l\'eau corporelle sont estimées sur le téléphone.' },
+      { title: 'Appareils Bluetooth standard', text: 'Ceintures cardio, balances, tensiomètres et glucomètres compatibles avec les profils santé standard du Bluetooth : leurs mesures vont dans Santé Connect. Nouveau dans OpenWatch 0.5.0.' }
     ],
     privacyTitle: 'Où vont vos données',
     privacy: [

@@ -17,7 +17,7 @@ const en: Messages = {
     appsLabel: 'The apps',
     apps: {
       openvitals: { text: 'The dashboard. Reads your Health Connect records and turns them into a daily view; imports, records and logs, all on the phone.', link: 'About OpenVitals' },
-      openwatch: { text: 'The devices. Pairs Garmin and Wear OS watches and a Xiaomi scale over Bluetooth and copies what they record into Health Connect.', link: 'About OpenWatch' },
+      openwatch: { text: 'The devices. Pairs Garmin and Wear OS watches, a Xiaomi scale and standard Bluetooth health devices and copies what they record into Health Connect.', link: 'About OpenWatch' },
       openbridge: { text: 'The way out. An optional app that passes the data OpenVitals shares on to online services. Early stage.', link: 'About OpenBridge' }
     },
     metaTitle: 'Hale - Free, offline health apps for Android',
@@ -40,8 +40,9 @@ const en: Messages = {
     devicesTitle: 'The devices it works with',
     devices: [
       { title: 'Garmin watches', text: 'Activities, sleep and wellness synced over Garmin\'s own Bluetooth protocol, plus notifications, music controls, weather, calendar, alarms and find my watch.' },
-      { title: 'Wear OS watches', text: 'The OpenWatch watch app records heart rate, steps and floors, workouts with GPS, and at night heart rate variability and, on a Samsung watch, SpO2 and skin temperature. It syncs them on a tap or a schedule, with an estimated sleep session, naps and resting heart rate each night.' },
-      { title: 'Xiaomi S400 scale', text: 'Every weigh-in saved to Health Connect as it happens, with the app open or closed. Body fat, lean mass and body water are estimated on the phone.' }
+      { title: 'Wear OS watches', text: 'The OpenWatch watch app records heart rate, steps and floors, workouts with GPS, heart rate zones and a recovery measurement, and at night heart rate variability and, on a Samsung watch, SpO2 and skin temperature. Log water, weight or blood pressure on the wrist, measure heart rate or HRV on the spot, and sync it all on a tap or a schedule, with an estimated sleep session each night.' },
+      { title: 'Xiaomi S400 scale', text: 'Every weigh-in saved to Health Connect as it happens, with the app open or closed. Body fat, lean mass and body water are estimated on the phone.' },
+      { title: 'Standard Bluetooth devices', text: 'Heart rate straps, scales, blood pressure monitors and glucose meters that speak the Bluetooth standard health profiles: their readings go to Health Connect. New in OpenWatch 0.5.0.' }
     ],
     privacyTitle: 'Where your data goes',
     privacy: [

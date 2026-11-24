@@ -17,7 +17,7 @@ const ja: Messages = {
     appsLabel: 'アプリ',
     apps: {
       openvitals: { text: 'ダッシュボード。Health Connectの記録を読み取って日々の表示にまとめ、インポート・記録・入力をすべてスマートフォン上で行います。', link: 'OpenVitalsについて' },
-      openwatch: { text: 'デバイス。GarminやWear OSの時計、Xiaomiの体重計とBluetoothでペアリングし、記録をHealth Connectに書き込みます。', link: 'OpenWatchについて' },
+      openwatch: { text: 'デバイス。GarminやWear OSの時計、Xiaomiの体重計、標準Bluetooth対応のヘルスケア機器とペアリングし、記録をHealth Connectに書き込みます。', link: 'OpenWatchについて' },
       openbridge: { text: '外への橋。OpenVitalsが共有したデータをオンラインサービスへ渡す任意のアプリです。開発初期段階です。', link: 'OpenBridgeについて' }
     },
     metaTitle: 'Hale - Android向けの無料・オフラインの健康アプリ',
@@ -40,8 +40,9 @@ const ja: Messages = {
     devicesTitle: '対応デバイス',
     devices: [
       { title: 'Garminの時計', text: 'アクティビティ、睡眠、ウェルネスをGarmin独自のBluetoothプロトコルで同期。通知、音楽操作、天気、カレンダー、アラーム、時計を探す機能にも対応します。' },
-      { title: 'Wear OSの時計', text: 'OpenWatchの時計アプリが心拍数、歩数、上った階数、GPS 付きのワークアウトを記録し、夜間は心拍変動を、Samsung の時計では SpO2 と皮膚温度も測定します。タップまたはスケジュールで同期し、毎晩の睡眠、仮眠、安静時心拍数も推定します。' },
-      { title: 'Xiaomi S400体重計', text: '計測のたびにすぐHealth Connectへ保存され、アプリが開いていても閉じていても動きます。体脂肪、除脂肪量、体水分はスマートフォンで推定します。' }
+      { title: 'Wear OSの時計', text: 'OpenWatchの時計アプリが心拍数、歩数、上った階数、GPS 付きのワークアウトとその心拍ゾーン、心拍回復を記録し、夜間は心拍変動を、Samsung の時計では SpO2 と皮膚温度も測定します。手首で水分、体重、血圧を記録し、心拍数や HRV をスポット測定して、すべてをタップまたはスケジュールで同期できます。毎晩の睡眠も推定します。' },
+      { title: 'Xiaomi S400体重計', text: '計測のたびにすぐHealth Connectへ保存され、アプリが開いていても閉じていても動きます。体脂肪、除脂肪量、体水分はスマートフォンで推定します。' },
+      { title: '標準Bluetoothデバイス', text: '標準のBluetoothヘルスケアプロファイルに対応した心拍ベルト、体重計、血圧計、血糖測定器。測定値はHealth Connectに送られます。OpenWatch 0.5.0の新機能です。' }
     ],
     privacyTitle: 'データの行き先',
     privacy: [

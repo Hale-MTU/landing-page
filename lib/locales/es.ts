@@ -17,7 +17,7 @@ const es: Messages = {
     appsLabel: 'Las apps',
     apps: {
       openvitals: { text: 'El panel. Lee tus registros de Health Connect y los convierte en una vista diaria; importa, registra y anota, todo en el teléfono.', link: 'Sobre OpenVitals' },
-      openwatch: { text: 'Los dispositivos. Empareja relojes Garmin y Wear OS y una báscula Xiaomi por Bluetooth y copia lo que registran en Health Connect.', link: 'Sobre OpenWatch' },
+      openwatch: { text: 'Los dispositivos. Empareja relojes Garmin y Wear OS, una báscula Xiaomi y dispositivos de salud con Bluetooth estándar y copia lo que registran en Health Connect.', link: 'Sobre OpenWatch' },
       openbridge: { text: 'La salida. Una app opcional que pasa los datos que OpenVitals comparte a servicios en línea. En fase inicial.', link: 'Sobre OpenBridge' }
     },
     metaTitle: 'Hale - Apps de salud gratuitas y sin conexión para Android',
@@ -40,8 +40,9 @@ const es: Messages = {
     devicesTitle: 'Los dispositivos compatibles',
     devices: [
       { title: 'Relojes Garmin', text: 'Actividades, sueño y bienestar sincronizados con el propio protocolo Bluetooth de Garmin, además de notificaciones, control de música, tiempo, calendario, alarmas y buscar el reloj.' },
-      { title: 'Relojes Wear OS', text: 'La app de OpenWatch para el reloj registra el pulso, los pasos y los pisos, entrenamientos con GPS y, por la noche, la variabilidad de la frecuencia cardiaca y, en un reloj Samsung, SpO2 y temperatura de la piel. Los sincroniza con un toque o de forma programada, con una estimación del sueño, las siestas y el pulso en reposo cada noche.' },
-      { title: 'Báscula Xiaomi S400', text: 'Cada pesaje se guarda en Health Connect al momento, con la app abierta o cerrada. La grasa corporal, la masa magra y el agua corporal se estiman en el teléfono.' }
+      { title: 'Relojes Wear OS', text: 'La app de OpenWatch para el reloj registra el pulso, los pasos y los pisos, entrenamientos con GPS, zonas de frecuencia cardiaca y una medición de la recuperación cardiaca y, por la noche, la variabilidad de la frecuencia cardiaca y, en un reloj Samsung, SpO2 y temperatura de la piel. Registra agua, peso o presión arterial desde la muñeca, mide al momento el pulso o la VFC y sincronízalo todo con un toque o de forma programada, con una estimación del sueño cada noche.' },
+      { title: 'Báscula Xiaomi S400', text: 'Cada pesaje se guarda en Health Connect al momento, con la app abierta o cerrada. La grasa corporal, la masa magra y el agua corporal se estiman en el teléfono.' },
+      { title: 'Dispositivos Bluetooth estándar', text: 'Bandas de frecuencia cardiaca, básculas, tensiómetros y glucómetros compatibles con los perfiles de salud estándar de Bluetooth: sus lecturas van a Health Connect. Novedad en OpenWatch 0.5.0.' }
     ],
     privacyTitle: 'Adónde van tus datos',
     privacy: [

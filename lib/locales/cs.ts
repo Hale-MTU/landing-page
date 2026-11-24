@@ -17,7 +17,7 @@ const cs: Messages = {
     appsLabel: 'Aplikace',
     apps: {
       openvitals: { text: 'Přehled. Čte vaše záznamy z Health Connect a převádí je na denní přehled; importuje, zaznamenává a eviduje, vše v telefonu.', link: 'O aplikaci OpenVitals' },
-      openwatch: { text: 'Zařízení. Páruje hodinky Garmin a Wear OS a váhu Xiaomi přes Bluetooth a kopíruje, co zaznamenají, do Health Connect.', link: 'O aplikaci OpenWatch' },
+      openwatch: { text: 'Zařízení. Páruje hodinky Garmin a Wear OS, váhu Xiaomi a standardní zdravotní přístroje s Bluetooth a kopíruje, co zaznamenají, do Health Connect.', link: 'O aplikaci OpenWatch' },
       openbridge: { text: 'Cesta ven. Volitelná aplikace, která předává data sdílená aplikací OpenVitals online službám. V rané fázi.', link: 'O aplikaci OpenBridge' }
     },
     metaTitle: 'Hale - Bezplatné offline zdravotní aplikace pro Android',
@@ -40,8 +40,9 @@ const cs: Messages = {
     devicesTitle: 'Podporovaná zařízení',
     devices: [
       { title: 'Hodinky Garmin', text: 'Aktivity, spánek a wellness synchronizované vlastním protokolem Garmin přes Bluetooth, k tomu oznámení, ovládání hudby, počasí, kalendář, budíky a hledání hodinek.' },
-      { title: 'Hodinky Wear OS', text: 'Aplikace OpenWatch v hodinkách zaznamenává tep, kroky a patra, tréninky s GPS a v noci variabilitu srdeční frekvence a na hodinkách Samsung i SpO2 a teplotu kůže. Synchronizuje je klepnutím nebo podle plánu, každou noc s odhadem spánku, zdřímnutí a klidového tepu.' },
-      { title: 'Váha Xiaomi S400', text: 'Každé vážení se uloží do Health Connect hned, ať je aplikace otevřená, nebo zavřená. Tělesný tuk, svalovou hmotu a vodu odhaduje telefon.' }
+      { title: 'Hodinky Wear OS', text: 'Aplikace OpenWatch v hodinkách zaznamenává tep, kroky a patra, tréninky s GPS, tepovými zónami a měřením zotavení tepu a v noci variabilitu srdeční frekvence a na hodinkách Samsung i SpO2 a teplotu kůže. Na zápěstí zapíšete vodu, hmotnost nebo krevní tlak, jednorázově změříte tep nebo HRV a vše synchronizujete klepnutím nebo podle plánu, každou noc s odhadem spánku.' },
+      { title: 'Váha Xiaomi S400', text: 'Každé vážení se uloží do Health Connect hned, ať je aplikace otevřená, nebo zavřená. Tělesný tuk, svalovou hmotu a vodu odhaduje telefon.' },
+      { title: 'Standardní zařízení Bluetooth', text: 'Hrudní pásy, váhy, tlakoměry a glukometry se standardními zdravotními profily Bluetooth: jejich naměřené hodnoty putují do Health Connect. Novinka v OpenWatch 0.5.0.' }
     ],
     privacyTitle: 'Kam jdou vaše data',
     privacy: [

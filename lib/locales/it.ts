@@ -17,7 +17,7 @@ const it: Messages = {
     appsLabel: 'Le app',
     apps: {
       openvitals: { text: 'Il cruscotto. Legge i tuoi record di Health Connect e li trasforma in una vista giornaliera; importa, registra e annota, tutto sul telefono.', link: 'Informazioni su OpenVitals' },
-      openwatch: { text: 'I dispositivi. Associa orologi Garmin e Wear OS e una bilancia Xiaomi via Bluetooth e copia ciò che registrano in Health Connect.', link: 'Informazioni su OpenWatch' },
+      openwatch: { text: 'I dispositivi. Associa orologi Garmin e Wear OS, una bilancia Xiaomi e dispositivi per la salute con Bluetooth standard e copia ciò che registrano in Health Connect.', link: 'Informazioni su OpenWatch' },
       openbridge: { text: 'La via d\'uscita. Un\'app facoltativa che passa i dati condivisi da OpenVitals a servizi online. In fase iniziale.', link: 'Informazioni su OpenBridge' }
     },
     metaTitle: 'Hale - App per la salute gratuite e offline per Android',
@@ -40,8 +40,9 @@ const it: Messages = {
     devicesTitle: 'I dispositivi supportati',
     devices: [
       { title: 'Orologi Garmin', text: 'Attività, sonno e benessere sincronizzati con il protocollo Bluetooth di Garmin, oltre a notifiche, controllo della musica, meteo, calendario, sveglie e trova orologio.' },
-      { title: 'Orologi Wear OS', text: 'L\'app OpenWatch per l\'orologio registra battito, passi e piani, allenamenti con GPS e, di notte, la variabilità della frequenza cardiaca e, su un orologio Samsung, SpO2 e temperatura cutanea. Li sincronizza con un tocco o secondo una pianificazione, con una stima del sonno, dei pisolini e del battito a riposo ogni notte.' },
-      { title: 'Bilancia Xiaomi S400', text: 'Ogni pesata viene salvata subito in Health Connect, con l\'app aperta o chiusa. Massa grassa, massa magra e acqua corporea sono stimate sul telefono.' }
+      { title: 'Orologi Wear OS', text: 'L\'app OpenWatch per l\'orologio registra battito, passi e piani, allenamenti con GPS, zone di frequenza cardiaca e una misurazione del recupero cardiaco e, di notte, la variabilità della frequenza cardiaca e, su un orologio Samsung, SpO2 e temperatura cutanea. Registra dal polso acqua, peso o pressione sanguigna, misura all\'istante battito o HRV e sincronizza tutto con un tocco o secondo una pianificazione, con una stima del sonno ogni notte.' },
+      { title: 'Bilancia Xiaomi S400', text: 'Ogni pesata viene salvata subito in Health Connect, con l\'app aperta o chiusa. Massa grassa, massa magra e acqua corporea sono stimate sul telefono.' },
+      { title: 'Dispositivi Bluetooth standard', text: 'Fasce cardio, bilance, misuratori di pressione e glucometri compatibili con i profili standard Bluetooth per la salute: le loro letture vanno in Health Connect. Novità di OpenWatch 0.5.0.' }
     ],
     privacyTitle: 'Dove vanno i tuoi dati',
     privacy: [

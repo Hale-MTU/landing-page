@@ -17,7 +17,7 @@ const zh: Messages = {
     appsLabel: '应用',
     apps: {
       openvitals: { text: '仪表板。读取你的 Health Connect 记录并整理成每日视图；导入、记录和手动录入，全部在手机上完成。', link: '关于 OpenVitals' },
-      openwatch: { text: '设备。通过蓝牙配对 Garmin 和 Wear OS 手表以及小米体重秤，并把它们的记录写入 Health Connect。', link: '关于 OpenWatch' },
+      openwatch: { text: '设备。配对 Garmin 和 Wear OS 手表、小米体重秤以及标准蓝牙健康设备，并把它们的记录写入 Health Connect。', link: '关于 OpenWatch' },
       openbridge: { text: '对外的桥。一个可选应用，把 OpenVitals 共享的数据传给在线服务。尚处早期。', link: '关于 OpenBridge' }
     },
     metaTitle: 'Hale - 面向 Android 的免费离线健康应用',
@@ -40,8 +40,9 @@ const zh: Messages = {
     devicesTitle: '支持的设备',
     devices: [
       { title: 'Garmin 手表', text: '通过 Garmin 自己的蓝牙协议同步活动、睡眠和健康数据，还支持通知、音乐控制、天气、日历、闹钟和查找手表。' },
-      { title: 'Wear OS 手表', text: 'OpenWatch 手表应用记录心率、步数和爬楼层数以及带 GPS 的锻炼，夜间记录心率变异性，在三星手表上还记录 SpO2 和皮肤温度。一键或按计划同步，每晚估算睡眠、小睡和静息心率。' },
-      { title: '小米 S400 体重秤', text: '每次称重都会立即写入 Health Connect，无论应用是否打开。体脂、去脂体重和身体水分由手机估算。' }
+      { title: 'Wear OS 手表', text: 'OpenWatch 手表应用记录心率、步数和爬楼层数，以及带 GPS、心率区间和心率恢复测量的锻炼，夜间记录心率变异性，在三星手表上还记录 SpO2 和皮肤温度。可在手腕上记录饮水、体重或血压，立即测量心率或 HRV，并一键或按计划同步所有数据，每晚估算睡眠。' },
+      { title: '小米 S400 体重秤', text: '每次称重都会立即写入 Health Connect，无论应用是否打开。体脂、去脂体重和身体水分由手机估算。' },
+      { title: '标准蓝牙设备', text: '支持蓝牙标准健康配置文件的心率带、体重秤、血压计和血糖仪：读数会写入 Health Connect。OpenWatch 0.5.0 新增支持。' }
     ],
     privacyTitle: '你的数据去向',
     privacy: [

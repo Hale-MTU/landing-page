@@ -17,7 +17,7 @@ const pt: Messages = {
     appsLabel: 'As apps',
     apps: {
       openvitals: { text: 'O painel. Lê os seus registos do Health Connect e transforma-os numa vista diária; importa, grava e regista, tudo no telemóvel.', link: 'Sobre o OpenVitals' },
-      openwatch: { text: 'Os dispositivos. Emparelha relógios Garmin e Wear OS e uma balança Xiaomi por Bluetooth e copia o que registam para o Health Connect.', link: 'Sobre o OpenWatch' },
+      openwatch: { text: 'Os dispositivos. Emparelha relógios Garmin e Wear OS, uma balança Xiaomi e dispositivos de saúde com Bluetooth padrão e copia o que registam para o Health Connect.', link: 'Sobre o OpenWatch' },
       openbridge: { text: 'A saída. Uma app opcional que passa os dados partilhados pelo OpenVitals a serviços online. Em fase inicial.', link: 'Sobre o OpenBridge' }
     },
     metaTitle: 'Hale - Apps de saúde gratuitas e offline para Android',
@@ -40,8 +40,9 @@ const pt: Messages = {
     devicesTitle: 'Os dispositivos compatíveis',
     devices: [
       { title: 'Relógios Garmin', text: 'Atividades, sono e bem-estar sincronizados com o próprio protocolo Bluetooth da Garmin, além de notificações, controlo de música, meteorologia, calendário, alarmes e encontrar o relógio.' },
-      { title: 'Relógios Wear OS', text: 'A app OpenWatch para o relógio regista a frequência cardíaca, os passos e os pisos, treinos com GPS e, à noite, a variabilidade da frequência cardíaca e, num relógio Samsung, SpO2 e temperatura da pele. Sincroniza-os com um toque ou de forma agendada, com uma estimativa do sono, das sestas e da frequência em repouso todas as noites.' },
-      { title: 'Balança Xiaomi S400', text: 'Cada pesagem é guardada no Health Connect de imediato, com a app aberta ou fechada. A gordura corporal, a massa magra e a água corporal são estimadas no telemóvel.' }
+      { title: 'Relógios Wear OS', text: 'A app OpenWatch para o relógio regista a frequência cardíaca, os passos e os pisos, treinos com GPS, zonas de frequência cardíaca e uma medição da recuperação cardíaca e, à noite, a variabilidade da frequência cardíaca e, num relógio Samsung, SpO2 e temperatura da pele. Registe no pulso água, peso ou tensão arterial, meça na hora a frequência cardíaca ou a VFC e sincronize tudo com um toque ou de forma agendada, com uma estimativa do sono todas as noites.' },
+      { title: 'Balança Xiaomi S400', text: 'Cada pesagem é guardada no Health Connect de imediato, com a app aberta ou fechada. A gordura corporal, a massa magra e a água corporal são estimadas no telemóvel.' },
+      { title: 'Dispositivos Bluetooth padrão', text: 'Cintas de frequência cardíaca, balanças, medidores de tensão arterial e glucómetros compatíveis com os perfis de saúde padrão do Bluetooth: as suas leituras vão para o Health Connect. Novidade no OpenWatch 0.5.0.' }
     ],
     privacyTitle: 'Para onde vão os seus dados',
     privacy: [

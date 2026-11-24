@@ -17,7 +17,7 @@ const et: Messages = {
     appsLabel: 'Rakendused',
     apps: {
       openvitals: { text: 'Töölaud. Loeb sinu Health Connecti kirjeid ja teeb neist päevavaate; impordib, salvestab ja logib, kõik telefonis.', link: 'OpenVitalsist lähemalt' },
-      openwatch: { text: 'Seadmed. Seob Garmini ja Wear OS-i kellad ning Xiaomi kaalu Bluetoothi kaudu ja kopeerib nende salvestused Health Connecti.', link: 'OpenWatchist lähemalt' },
+      openwatch: { text: 'Seadmed. Seob Garmini ja Wear OS-i kellad, Xiaomi kaalu ning standardsed Bluetoothi terviseseadmed ja kopeerib nende salvestused Health Connecti.', link: 'OpenWatchist lähemalt' },
       openbridge: { text: 'Väljapääs. Valikuline rakendus, mis edastab OpenVitalsi jagatud andmed veebiteenustele. Varajases faasis.', link: 'OpenBridge’ist lähemalt' }
     },
     metaTitle: 'Hale - Tasuta võrguühenduseta terviserakendused Androidile',
@@ -40,8 +40,9 @@ const et: Messages = {
     devicesTitle: 'Toetatud seadmed',
     devices: [
       { title: 'Garmini kellad', text: 'Tegevused, uni ja heaolu sünkroonitakse Garmini enda Bluetoothi-protokolliga, lisaks teavitused, muusika juhtimine, ilm, kalender, äratused ja kella otsimine.' },
-      { title: 'Wear OS-i kellad', text: 'OpenWatchi kellarakendus salvestab pulsi, sammud ja korrused, GPS-iga treeningud ning öösel pulsi varieeruvuse ja Samsungi kellal ka SpO2 ja naha temperatuuri. See sünkroonib need puudutusega või ajakava järgi, iga öö kohta une, uinakute ja puhkepulsi hinnanguga.' },
-      { title: 'Xiaomi S400 kaal', text: 'Iga kaalumine salvestub kohe Health Connecti, olgu rakendus avatud või suletud. Keharasva, rasvavaba massi ja kehavett hindab telefon.' }
+      { title: 'Wear OS-i kellad', text: 'OpenWatchi kellarakendus salvestab pulsi, sammud ja korrused, GPS-iga treeningud koos pulsitsoonide ja pulsi taastumise mõõtmisega ning öösel pulsi varieeruvuse ja Samsungi kellal ka SpO2 ja naha temperatuuri. Logi randmel vett, kaalu või vererõhku, mõõda kohe pulssi või HRV-d ja sünkrooni kõik puudutusega või ajakava järgi, iga öö kohta une hinnanguga.' },
+      { title: 'Xiaomi S400 kaal', text: 'Iga kaalumine salvestub kohe Health Connecti, olgu rakendus avatud või suletud. Keharasva, rasvavaba massi ja kehavett hindab telefon.' },
+      { title: 'Standardsed Bluetoothi seadmed', text: 'Pulsivööd, kaalud, vererõhumõõtjad ja glükomeetrid, mis kasutavad Bluetoothi standardseid terviseprofiile: nende näidud lähevad Health Connecti. Uus OpenWatchi versioonis 0.5.0.' }
     ],
     privacyTitle: 'Kuhu sinu andmed lähevad',
     privacy: [

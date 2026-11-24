@@ -17,7 +17,7 @@ const de: Messages = {
     appsLabel: 'Die Apps',
     apps: {
       openvitals: { text: 'Das Dashboard. Liest deine Health-Connect-Einträge und macht daraus eine Tagesansicht; importiert, zeichnet auf und protokolliert, alles auf dem Telefon.', link: 'Über OpenVitals' },
-      openwatch: { text: 'Die Geräte. Koppelt Garmin- und Wear-OS-Uhren und eine Xiaomi-Waage per Bluetooth und kopiert ihre Aufzeichnungen nach Health Connect.', link: 'Über OpenWatch' },
+      openwatch: { text: 'Die Geräte. Koppelt Garmin- und Wear-OS-Uhren, eine Xiaomi-Waage und Gesundheitsgeräte mit Standard-Bluetooth-Profil und kopiert ihre Aufzeichnungen nach Health Connect.', link: 'Über OpenWatch' },
       openbridge: { text: 'Der Weg nach draußen. Eine optionale App, die von OpenVitals freigegebene Daten an Online-Dienste weitergibt. In früher Phase.', link: 'Über OpenBridge' }
     },
     metaTitle: 'Hale - Kostenlose Offline-Gesundheits-Apps für Android',
@@ -40,8 +40,9 @@ const de: Messages = {
     devicesTitle: 'Die unterstützten Geräte',
     devices: [
       { title: 'Garmin-Uhren', text: 'Aktivitäten, Schlaf und Wellness über Garmins eigenes Bluetooth-Protokoll synchronisiert, dazu Benachrichtigungen, Musiksteuerung, Wetter, Kalender, Wecker und Uhr finden.' },
-      { title: 'Wear-OS-Uhren', text: 'Die OpenWatch-Uhren-App zeichnet Herzfrequenz, Schritte und Etagen auf, Trainings mit GPS und nachts die Herzfrequenzvariabilität, auf einer Samsung-Uhr auch SpO2 und Hauttemperatur. Sie synchronisiert sie per Tipp oder nach Zeitplan, mit geschätztem Schlaf, Nickerchen und Ruhepuls jede Nacht.' },
-      { title: 'Xiaomi-Waage S400', text: 'Jede Wägung landet sofort in Health Connect, ob die App offen ist oder nicht. Körperfett, Magermasse und Körperwasser schätzt das Telefon.' }
+      { title: 'Wear-OS-Uhren', text: 'Die OpenWatch-Uhren-App zeichnet Herzfrequenz, Schritte und Etagen auf, Trainings mit GPS, Herzfrequenzzonen und einer Messung des Erholungspulses und nachts die Herzfrequenzvariabilität, auf einer Samsung-Uhr auch SpO2 und Hauttemperatur. Trag Wasser, Gewicht oder Blutdruck am Handgelenk ein, miss Herzfrequenz oder HRV als Einzelmessung und synchronisiere alles per Tipp oder nach Zeitplan, mit geschätztem Schlaf jede Nacht.' },
+      { title: 'Xiaomi-Waage S400', text: 'Jede Wägung landet sofort in Health Connect, ob die App offen ist oder nicht. Körperfett, Magermasse und Körperwasser schätzt das Telefon.' },
+      { title: 'Standard-Bluetooth-Geräte', text: 'Herzfrequenzgurte, Waagen, Blutdruck- und Blutzuckermessgeräte, die die Standard-Gesundheitsprofile von Bluetooth beherrschen: ihre Messwerte landen in Health Connect. Neu in OpenWatch 0.5.0.' }
     ],
     privacyTitle: 'Wohin deine Daten gehen',
     privacy: [

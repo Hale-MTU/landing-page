@@ -17,7 +17,7 @@ const pl: Messages = {
     appsLabel: 'Aplikacje',
     apps: {
       openvitals: { text: 'Pulpit. Odczytuje Twoje rekordy Health Connect i zamienia je w dzienny widok; importuje, rejestruje i zapisuje, wszystko w telefonie.', link: 'O OpenVitals' },
-      openwatch: { text: 'Urządzenia. Paruje zegarki Garmin i Wear OS oraz wagę Xiaomi przez Bluetooth i kopiuje ich zapisy do Health Connect.', link: 'O OpenWatch' },
+      openwatch: { text: 'Urządzenia. Paruje zegarki Garmin i Wear OS, wagę Xiaomi oraz standardowe urządzenia zdrowotne Bluetooth i kopiuje ich zapisy do Health Connect.', link: 'O OpenWatch' },
       openbridge: { text: 'Wyjście na zewnątrz. Opcjonalna aplikacja, która przekazuje dane udostępnione przez OpenVitals do usług online. Wczesna faza.', link: 'O OpenBridge' }
     },
     metaTitle: 'Hale - Bezpłatne aplikacje zdrowotne offline na Androida',
@@ -40,8 +40,9 @@ const pl: Messages = {
     devicesTitle: 'Obsługiwane urządzenia',
     devices: [
       { title: 'Zegarki Garmin', text: 'Aktywności, sen i samopoczucie synchronizowane własnym protokołem Bluetooth Garmina, a do tego powiadomienia, sterowanie muzyką, pogoda, kalendarz, alarmy i znajdowanie zegarka.' },
-      { title: 'Zegarki Wear OS', text: 'Aplikacja OpenWatch na zegarek zapisuje tętno, kroki i piętra, treningi z GPS, a w nocy zmienność rytmu serca, na zegarku Samsung także SpO2 i temperaturę skóry. Synchronizuje je jednym dotknięciem lub według harmonogramu, co noc z szacunkiem snu, drzemek i tętna spoczynkowego.' },
-      { title: 'Waga Xiaomi S400', text: 'Każde ważenie trafia od razu do Health Connect, przy otwartej lub zamkniętej aplikacji. Tkankę tłuszczową, beztłuszczową masę ciała i wodę szacuje telefon.' }
+      { title: 'Zegarki Wear OS', text: 'Aplikacja OpenWatch na zegarek zapisuje tętno, kroki i piętra, treningi z GPS, strefami tętna i pomiarem regeneracji tętna, a w nocy zmienność rytmu serca, na zegarku Samsung także SpO2 i temperaturę skóry. Zapisuj na nadgarstku wodę, wagę lub ciśnienie krwi, mierz doraźnie tętno lub HRV i synchronizuj wszystko jednym dotknięciem lub według harmonogramu, co noc z szacunkiem snu.' },
+      { title: 'Waga Xiaomi S400', text: 'Każde ważenie trafia od razu do Health Connect, przy otwartej lub zamkniętej aplikacji. Tkankę tłuszczową, beztłuszczową masę ciała i wodę szacuje telefon.' },
+      { title: 'Standardowe urządzenia Bluetooth', text: 'Pasy do pomiaru tętna, wagi, ciśnieniomierze i glukometry obsługujące standardowe profile zdrowotne Bluetooth: ich odczyty trafiają do Health Connect. Nowość w OpenWatch 0.5.0.' }
     ],
     privacyTitle: 'Dokąd trafiają Twoje dane',
     privacy: [

@@ -17,7 +17,7 @@ const fi: Messages = {
     appsLabel: 'Sovellukset',
     apps: {
       openvitals: { text: 'Kojelauta. Lukee Health Connect -tietueesi ja kokoaa niistä päivänäkymän; tuo, tallentaa ja kirjaa, kaikki puhelimessa.', link: 'Tietoa OpenVitalsista' },
-      openwatch: { text: 'Laitteet. Yhdistää Garmin- ja Wear OS -kellot sekä Xiaomi-vaa\'an Bluetoothilla ja kopioi niiden tallenteet Health Connectiin.', link: 'Tietoa OpenWatchista' },
+      openwatch: { text: 'Laitteet. Yhdistää Garmin- ja Wear OS -kellot, Xiaomi-vaa\'an sekä vakio-Bluetooth-profiileja käyttävät terveyslaitteet ja kopioi niiden tallenteet Health Connectiin.', link: 'Tietoa OpenWatchista' },
       openbridge: { text: 'Ulospääsy. Valinnainen sovellus, joka välittää OpenVitalsin jakamat tiedot verkkopalveluihin. Varhaisessa vaiheessa.', link: 'Tietoa OpenBridgesta' }
     },
     metaTitle: 'Hale - Ilmaisia, verkottomia terveyssovelluksia Androidille',
@@ -40,8 +40,9 @@ const fi: Messages = {
     devicesTitle: 'Tuetut laitteet',
     devices: [
       { title: 'Garmin-kellot', text: 'Aktiviteetit, uni ja hyvinvointi synkronoidaan Garminin omalla Bluetooth-protokollalla, lisäksi ilmoitukset, musiikin ohjaus, sää, kalenteri, herätykset ja kellon etsiminen.' },
-      { title: 'Wear OS -kellot', text: 'OpenWatchin kellosovellus tallentaa sykkeen, askeleet ja kerrokset, GPS-treenit sekä yöllä sykevälivaihtelun ja Samsung-kellossa myös SpO2:n ja ihon lämpötilan. Se synkronoi ne napautuksella tai aikataulun mukaan, joka yöltä arvio unesta, päiväunista ja leposykkeestä.' },
-      { title: 'Xiaomi S400 -vaaka', text: 'Jokainen punnitus tallentuu heti Health Connectiin, oli sovellus auki tai kiinni. Kehon rasvan, rasvattoman massan ja kehon veden arvioi puhelin.' }
+      { title: 'Wear OS -kellot', text: 'OpenWatchin kellosovellus tallentaa sykkeen, askeleet ja kerrokset, GPS-treenit sykealueineen ja palautumismittauksineen sekä yöllä sykevälivaihtelun ja Samsung-kellossa myös SpO2:n ja ihon lämpötilan. Kirjaa kellossa vesi, paino tai verenpaine, mittaa syke tai HRV kertamittauksena ja synkronoi kaikki napautuksella tai aikataulun mukaan, joka yöltä arvio unesta.' },
+      { title: 'Xiaomi S400 -vaaka', text: 'Jokainen punnitus tallentuu heti Health Connectiin, oli sovellus auki tai kiinni. Kehon rasvan, rasvattoman massan ja kehon veden arvioi puhelin.' },
+      { title: 'Vakio-Bluetooth-laitteet', text: 'Sykevyöt, vaa\'at, verenpainemittarit ja verensokerimittarit, jotka käyttävät Bluetoothin vakiomuotoisia terveysprofiileja: niiden lukemat menevät Health Connectiin. Uutta OpenWatchin versiossa 0.5.0.' }
     ],
     privacyTitle: 'Minne tietosi menevät',
     privacy: [
